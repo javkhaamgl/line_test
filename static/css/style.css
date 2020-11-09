@@ -1,0 +1,727 @@
+@charset "utf-8";
+
+/*--------------------------------------------------
+ * top css
+ *-------------------------------------------------*/
+.sectionWrapper {
+  overflow: hidden;
+  clear: both;
+  position: relative;
+}
+.imgPaspo {
+  position: absolute;
+  right: 386px;
+  top: 78px;
+}
+.mainSection {
+  position: relative;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 158px;
+  padding-bottom: 50px;
+  background-repeat: repeat-x;
+}
+.sectionContent {
+  width: 400px;
+  overflow: hidden;
+}
+.mainSection .btnPrimary {
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+.tabiregSection {
+  background-color: #c7e9ff;
+  background-image: url('https://www.ezairyu.mofa.go.jp/img/bg_tabireg.png');
+  background-position: right top;
+  padding-bottom: 56px;
+}
+.orrnetSection {
+ background-color: #f7f7f7;
+ background-image: url('https://www.ezairyu.mofa.go.jp/img/bg_orrnet.png');
+ background-position: left top;
+}
+.tabiregSection .sectionContent {
+  float: right;
+  margin-right: 50px;
+}
+.orrnetSection .sectionContent {
+  float: left;
+  margin-left: 50px;
+}
+.sectionLogo {
+  height: 110px;
+  overflow: hidden;
+}
+.tabiregSection .sectionLogo p {
+ font-size: 12px;
+ margin-top: 6px;
+ font-weight: bold;
+}
+.orrnetSection .sectionLogo p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 4px;
+}
+.orrnetSection .sectionLogo p.mofa {
+  text-align: left;
+  padding-left: 80px;
+  font-size: 13px;
+  padding-top: 0;
+  padding-bottom: 4px;
+}
+.tabiregSection h3 {
+ font-size: 22px;
+ text-align: center;
+ margin-bottom: 15px;
+ margin-top: -1px;
+}
+.orrnetSection h3 {
+  font-size: 18px;
+  color: #0495a6;
+  text-align: center;
+  line-height: 24px;
+}
+.orrnetSection .subText {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 16px;
+}
+.orrnetSection .subText span.navyColor {
+  font-weight: bold;
+  color: #0e1a8e;
+}
+.orrnetSection h3 span.largeText {
+  font-size: 24px;
+}
+.contentsTitle {
+ position: absolute;
+ width: 332px;
+ top: 82px;
+ left: 50%;
+ margin-left: -166px;
+ font-size: 25px;
+ color: #00659b;
+ text-align: center;
+ box-sizing: border-box;
+ height: 51px;
+ line-height: 51px;
+ background-color: #fff;
+ box-shadow: 0 2px 10px 0 rgba(0,0,0,0.09);
+ -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.09);
+ -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.09);
+ z-index: 20;
+}
+.contentsTitle:before, .contentsTitle:after {
+ position: absolute;
+ top: 0px;
+ content: ' ';
+ display: block;
+ box-sizing: border-box;
+ width: 0;
+ height: 0;
+ border: 26px solid transparent;
+}
+.contentsTitle:before {
+ border-right: 26px solid transparent;
+ border-left: 26px solid #fff;
+ right: -52px;
+}
+.contentsTitle:after {
+ left: -52px;
+ border-left: 26px solid transparent;
+ border-right: 26px solid #fff;
+}
+.sectionLogo {
+ text-align: center;
+}
+.anshinList {
+  margin-left: 46px;
+}
+.anshinList > li {
+  position: relative;
+  margin-top: 5px;
+}
+.anshinList > li .item {
+  position: relative;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #fff7dd;
+  border: 2px solid #ce4040;
+  box-sizing: border-box;
+  height: 130px;
+  padding-left: 45px;
+  padding-top: 20px;
+}
+.anshinLabel {
+  position: absolute;
+  left: -14px;
+  top: 25px;
+  width: 28px;
+  height: 76px;
+  background-color: #ce4040;
+  padding: 8px 8px;
+  line-height: 15px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid #a53333;
+  z-index: 20;
+}
+.anshinLabel span {
+  font-size: 22px;
+  display: inline-block;
+  margin-top: 4px;
+}
+.anshinLabel:before, .anshinLabel:after {
+  position: absolute;
+  right: -15px;
+  top: 1px;
+  content: ' ';
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+  height: 20px;
+  border: 37px solid transparent;
+  border-right: 8px solid transparent;
+  border-left: 8px solid #ce4040;
+}
+.anshinList > li .item .mainText {
+  font-size: 15px;
+  padding-right: 20px;
+  line-height: 20px;
+}
+.anshinList > li .item .mainText span.redColor, .anshinList > li .item .mainText span.blueColor {
+  font-size: 20px;
+}
+.anshinList > li .item .itemImg {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.anshinList > li .item2 .itemImg .imgBlock {
+  padding: 20px 20px 0 0;
+}
+.anshinList > li .item3 .itemImg .imgBlock {
+  padding: 10px 10px 0 0;
+}
+.anshinList > li .item .itemDescription {
+  padding-right: 134px;
+  font-size: 11px;
+  margin-top: 10px;
+  line-height: 16px;
+}
+.anshinListKanni > li .item {
+  background-color: #eef9ff;
+  border: 2px solid #0067bb;
+  padding-top: 12px;
+}
+.anshinListKanni > li .anshinLabel {
+  background-color: #0067bb;
+  border-bottom: 2px solid #005296;
+}
+.anshinListKanni > li .anshinLabel:before, .anshinListKanni > li .anshinLabel:after {
+  border-left: 8px solid #0067bb;
+}
+.anshinListKanni > li .item .itemDescriptionList {
+  margin-top: 10px;
+}
+.anshinListKanni > li .item .itemDescriptionList li {
+  font-size: 11px;
+  line-height: 15px;
+}
+.anshinListKanni > li .item .itemDescriptionList li span {
+  font-weight: bold;
+  font-size: 13px;
+}
+.anshinListHeader {
+  position: absolute;
+  left: 0;
+  width: 20px;
+}
+.anshinListBlock {
+  position: relative;
+}
+.anshinListHeaderTabireg {
+  top: 10px;
+  height: 380px;
+  box-sizing: border-box;
+  padding-top: 116px;
+}
+.anshinListHeader:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 0;
+  border-left: 2px solid #ce4040;
+  top: 0;
+  left: 6px;
+  z-index: 1;
+}
+.anshinListHeaderTabireg:after {
+  border-left: 2px solid #ce4040;
+  height: 380px;
+}
+.anshinListHeaderKanni {
+  padding-top: 15px;
+}
+.anshinListHeaderKanni:after {
+  border-left: 2px solid #0067bb;
+  height: 130px;
+}
+.anshinListHeader span {
+  position: relative;
+  z-index: 2;
+  background-color: #c7e9ff;
+  display: inline-block;
+  padding: 10px 0;
+}
+.targetList {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+  -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+  margin-top: 22px;
+}
+.targetList > li .item {
+  margin: 0 40px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+
+}
+.targetList > li .item .itemContent {
+  position: relative;
+  padding: 29px 0;
+  box-sizing: border-box;
+}
+.targetList > li .item3 {
+  border-bottom: 0;
+}
+.targetList > li .item .itemTitle {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+.targetList > li .item .itemTitle span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0495a6;
+}
+.tab {
+  display: none;
+}
+
+/*--------------------------------------------------
+ * sp css
+ *-------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .headerText {
+    display: none;
+  }
+  .mainSection {
+    width: 100%;
+    border-top: 3px solid #00649b;
+    padding-top: 36px;
+    padding-bottom: 20px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .mainSection .sectionContent {
+    width: 100%;
+    float: none;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .tabiregSection {
+    background-image: url(https://www.ezairyu.mofa.go.jp/img/sp/bg_tabireg.png);
+  }
+  .orrnetSection {
+    display: none;
+    background-image: url(https://www.ezairyu.mofa.go.jp/img/sp/bg_orrnet.png);
+  }
+  .tabiregSection .sectionLogo p {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .contentsTitle {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    background: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #00659b;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+  }
+  .contentsTitle:before, .contentsTitle:after {
+    display: none;
+  }
+  .tabiregSection h3 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .tabiregSection h3 span {
+    display: block;
+  }
+  .tab {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 58px;
+  }
+  .tab li {
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    box-sizing: border-box;
+    z-index: 20;
+  }
+  .tab li.menuTabireg {
+    left: 0;
+  }
+  .tab li.menuOrrnet {
+    right: 0;
+  }
+  .tab li .item {
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    height: 38px;
+    line-height: 42px;
+    box-shadow: 0 0 40px 0 rgba(190,222,227,0.9);
+    -moz-box-shadow: 0 0 40px 0 rgba(190,222,227,0.9);
+    -webkit-box-shadow: 0 0 40px 0 rgba(190,222,227,0.9);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+  }
+  .tab li.menuTabireg .item {
+    color: #ff832d;
+    margin-right: 5px;
+  }
+  .tab li.menuOrrnet .item {
+    color: #0096a7;
+    margin-left: 5px;
+  }
+  .tab li.active {
+    bottom: -10px;
+  }
+  .tab li.active .item {
+    height: 60px;
+    line-height: 60px;
+  }
+  .tab li.active .item:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    bottom: -28px;
+    content: ' ';
+    display: block;
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-top: 14px solid #fff;
+    z-index: 30;
+  }
+  .sectionLogo {
+    position: relative;
+    text-align: center;
+    height: 104px;
+    z-index: 20;
+  }
+  .sectionLogo img {
+    width: 204px;
+    margin: 0 auto;
+  }
+  .mainSection .btnPrimary {
+    margin-top: 0;
+  }
+  .imgPaspo {
+    width: 23%;
+    right: 2%;
+    top: 1%;
+    z-index: 10;
+  }
+  .imgPaspo img {
+    width: 100%;
+  }
+  .anshinListHeader {
+    position: relative;
+    width: 100%;
+    left: auto;
+    top: auto;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .anshinListHeader span {
+    background-color: transparent;
+    padding: 10px 12px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .anshinListHeader:before, .anshinListHeader:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 0;
+    top: 22px;
+    z-index: 1;
+    border: 0;
+    border-bottom: 2px solid #ce4040;
+  }
+  .anshinListHeader:before {
+    left: -90px;
+  }
+  .anshinListHeader:after {
+    right: -90px;
+    left: auto;
+  }
+  .anshinListHeaderKanni:before {
+    left: -64px;
+    border-bottom: 2px solid #0067bb;
+  }
+  .anshinListHeaderKanni:after {
+    right: -64px;
+    left: auto;
+    border-bottom: 2px solid #0067bb;
+  }
+  .anshinListHeaderKanni {
+    margin-top: -10px;
+  }
+  .anshinList {
+    margin-left: 0;
+    overflow: hidden;
+  }
+  .anshinLabel {
+    width: 84px;
+    height: 30px;
+    margin: auto;
+    line-height: 22px;
+    padding: 0;
+    left: 50%;
+    margin-left: -42px;
+    top: -17px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .anshinLabel:before, .anshinLabel:after {
+    width: 78px;
+    height: 0;
+    left: 3px;
+    top: auto;
+    bottom: -19px;
+    border: 39px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #ce4040;
+  }
+  .anshinLabel:before {
+    bottom: -21px;
+    border-top: 10px solid #a53333;
+  }
+  .anshinList > li {
+    margin: 25px 0;
+  }
+  .anshinListKanni > li .anshinLabel:before, .anshinListKanni > li .anshinLabel:after {
+    border: 39px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #0067bb;
+  }
+  .anshinListKanni > li .anshinLabel:before {
+    bottom: -21px;
+    border-top: 10px solid #005296;
+  }
+  .anshinList > li .item {
+    padding: 30px;
+    height: 160px;
+  }
+  .anshinList > li .item .itemDescription {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 10px 10px 10px;
+    box-sizing: border-box;
+  }
+  .anshinList > li .item .mainText {
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .anshinList > li .item .mainText span.redColor, .anshinList > li .item .mainText span.blueColor {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .anshinList > li .item .itemImg {
+    text-align: right;
+  }
+  .anshinList > li .item .itemImg img.layout_sp {
+    width: 55%;
+    display: inline-block !important;
+  }
+  .anshinListKanni > li .item .itemDescriptionList li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .anshinListKanni > li .item {
+    padding-left: 15px;
+  }
+  .contentsTitle {
+    width: 100%;
+    font-size: 23px;
+  }
+  .orrnetSection {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .orrnetSection .sectionLogo p {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .orrnetSection .sectionLogo {
+    width: 204px;
+    margin: 0 auto;
+    height: 120px;
+  }
+  .orrnetSection .sectionLogo p.mofa {
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .orrnetSection h3 {
+    font-weight: bold;
+    line-height: 24px;
+  }
+  .orrnetSection h3 span {
+    display: block;
+  }
+  .orrnetSection h3 span.largeText {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .orrnetSection .subText {
+    font-size: 14px;
+  }
+  .targetList > li .item {
+    position: relative;
+  }
+  .targetList > li .item .itemTitle {
+    text-align: right;
+    padding-right: 78px;
+    margin-left: -30px;
+    margin-bottom: 0;
+  }
+  .targetList > li .item .itemImg {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    text-align: right;
+  }
+  .targetList > li .item2 .itemImg {
+    top: 24px;
+  }
+  .targetList > li .item .itemImg img {
+    width: 60%;
+  }
+  .targetList > li .item .itemImg img.layout_sp {
+    display: inline-block !important;
+  }
+}
+@media screen and (min-width: 769px) {
+ .tabiregSection, .orrnetSection {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .anshinList > li .item {
+    padding-left: 14px;
+  }
+  .anshinList > li .item .itemImg img.layout_sp {
+    width: 50%;
+  }
+  .anshinList > li .item1 .itemImg {
+    top: 14px;
+  }
+  .anshinList > li .item3 .itemImg {
+    right: 4px;
+  }
+  .anshinList > li .item4 .itemImg {
+    right: 4px;
+  }
+  .anshinList > li .item .mainText {
+    font-size: 14px;
+  }
+  .anshinList > li .item .mainText span.redColor, .anshinList > li .item .mainText span.blueColor {
+    font-size: 19px;
+  }
+  .targetList > li .item {
+    margin: 0 20px;
+  }
+  .targetList > li .item .itemContent {
+    width: 100%;
+  }
+  .targetList > li .item .itemTitle {
+    padding-right: 68px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .targetList > li .item .itemContent {
+    margin: 0 auto;
+    width: 280px;
+  }
+  .anshinList > li .item {
+    padding: 0 30px;
+  }
+  .anshinList > li .item .itemContent {
+    padding: 26px 0;
+    position: relative;
+    margin: 0 auto;
+    width: 55%;
+    height: 156px;
+    box-sizing: border-box;
+  }
+  .anshinList > li .item .mainText {
+    position: relative;
+    z-index: 10;
+  }
+  .anshinList > li .item .itemImg {
+    z-index: 1;
+  }
+  .anshinList > li .item .itemDescription {
+    position: relative;
+    z-index: 10;
+  }
+  @media screen and (max-width: 600px) {
+    .anshinList > li .item .itemContent {
+      width: 80%;
+    }
+  }
+}

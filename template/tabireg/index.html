@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="content-language" content="ja">
+        <meta property="fb:app_id" content="621416251289480"/>
+        <meta property="og:title" content="外務省海外旅行登録「たびレジ」"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/"/>
+        <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
+        <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
+        <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！"/>
+        <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」"/>
+        <meta name="format-detection" content="telephone=no,email=no">
+        <title>たびレジ - 外務省 海外安全情報配信サービス</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/application.js') }}"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-49881348-4');
+
+
+          newsjson();
+          noticejson();
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+
+                <div class="headerInner">
+                    <div class="logo">
+                        <a href="/"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="「たびレジ」 外務省 海外安全情報配信サービス">
+                            <p>外務省 海外安全情報配信サービス</p></a>
+                    </div>
+                    <nav id="nav">
+                        <ul class="headerMenu">
+                            <li class="registerMenu">
+                                <a href="/tabireq/agree"><span class="redColor">新規利用者登録をする</span></a>
+                                <a href="/tabireq/login">
+                                    <span class="subtxt2">追加・変更・削除</span><div class="icon">
+                                        <div class="pencil"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="instantRegisterMenu">
+                                <a href="simple/register"><span class="blueColor">利用者登録をせずに利用する</span></a>
+                                <a href="simple/auth">
+                                    <span class="subtxt2">追加・変更・削除</span><div class="icon">
+                                        <div class="pencil"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="headerIconMenuArea">
+                            <ul class="headerIconMenu">
+                                <li class="guidance"><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                                <li class="faq"><a href="faq.html">よくある質問</a></li>
+                                <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                            </ul>
+                            <div id="logstatus">
+                                <ul class="headerIconMenu">
+                                    <li class="corp"><a href="companylist.html">企業・法人の方へ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="headerBnr">
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_pc" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png" alt="PC 外務省"></a>
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_sp" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
+                    </div>
+                    <div class="menuBtn" id="menuBtn">
+                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon"><img
+                            src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon" id="closeMenuIcon">
+                    </div>
+                </div>
+                <div class="dropdownMenu" id="dropdownMenu">
+                    <div class="dropdownInner">
+                        <ul class="listNav">
+                            <li><a href="agree.html" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="login"
+                                class="submenu submenu1">追加・変更・削除</a></li>
+                            <li><a href="simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a
+                                href="simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
+                        </ul>
+
+                        <div class="halfColListBlock">
+                            <ul class="listNav">
+                                <li><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                            </ul>
+                            <ul class="listNav">
+                                <li><a href="faq.html">よくある質問</a></li>
+                            </ul>
+                            <ul class="listNav">
+                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                            </ul>
+                            <ul class="listNav">
+                                <li><a href="companylist.html">企業・法人の方へ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div id="contents">
+                <div class="kvWrapper">
+                    <div class="kvBg" style="background-repeat: repeat-x;">
+                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/bg_kv_sp.png" class="layout_sp" alt="背景">
+                    </div>
+                    <div class="kvTextBlock">
+                        <div class="contentsInner">
+                            <h1 class="kvText textStroke">
+                                <span class="block_pc">「たびレジ」とは、</span> <span class="blueColor">外務省</span>からの<span class="block_sp">最新の安全情報を日本語で受信できる</span>
+                                <span class="blockText">
+                                    <span class="orangeColor">海外安全情報 </span>
+                                    <span class="orangeColor">無料配信サービス</span>
+                                    <span class="block_sp">です。</span>
+                                </span>
+                            </h1>
+                            <div class="kvPaspo">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_paspo_kv.png" alt="外務省から最新の安全情報を日本語で受信！(pc)" class="layout_pc">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_paspo_kv.png" alt="外務省から最新の安全情報を日本語で受信！(sp)" class="layout_sp">
+                            </div>
+                            <ul class="kvBtns listCol2">
+                                <li class="kvBtn1">
+                                    <p class="redColor textStroke">渡航予定がある方</p>
+                                    <a href="agree" class="btn btnPrimary">
+                                        <span class="p0 txt_vm sp_dis_tablecell"><span class="buttonTxt">新規利用者登録をする</span></span>
+                                    </a>
+                                    <span class="oneRowText leadTxt textStroke">利用者IDの有効期限が</span>
+                                    <span class="oneRowText textStroke sp_mb20">切れた方もこちら</span>
+                                    <a href="login" class="btn btnPrimary"><span class="p0 pr15 txt_vm sp_dis_tablecell"><span class="buttonTxt">登録済の渡航予定を変更する</span></span></a>
+                                </li>
+                                <li class="kvBtn2">
+                                    <p class="blueColor textStroke">渡航予定がない方</p>
+                                    <a href="simple/register" class="btn btnPrimary2"><span class="p0 txt_vm sp_dis_tablecell"><span class="buttonTxt">利用者登録をせずに利用する</span></span></a>
+                                    <span class="oneRowText leadTxt textStroke">渡航予定はないが安全情報を</span>
+                                    <span class="oneRowText textStroke sp_mb20">受け取りたい方はこちら</span>
+                                    <a href="simple/auth" class="btn btnPrimary2"><span class="p0 pr15 txt_vm sp_dis_tablecell"><span class="buttonTxt">登録内容を変更する</span></span></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="notificationBlock redColor" id="set_point">
+                </div>
+                <section class="topMainSection">
+                    <div class="wavePattern"></div>
+                    <div class="topMainSectionInner">
+                        <div class="contentsInner">
+                            <h2 class="textStroke border_no">
+                                「たびレジ」の<span class="orangeColor">4</span>つの安心
+                            </h2>
+                            <div class="anshinBlock">
+                                <div class="anshinTabiregBlock">
+                                    <div class="anshinHeader">
+                                        <div class="anshinHeaderTabireg">
+                                            <span class="redColor textStroke">「たびレジ」に登録で</span>
+                                        </div>
+                                    </div>
+                                    <ol class="anshinList">
+                                        <li class="listItemTabireg">
+                                            <div class="item item1">
+                                                <div class="itemContent">
+                                                    <div class="anshinLabel">
+                                                        安心<span>1</span>
+                                                    </div>
+                                                    <div class="mainText">
+                                                        出発前から<br> <span class="redColor">旅先の安全情報</span>を<br>入手！
+                                                    </div>
+                                                    <div class="itemImg">
+                                                        <div class="imgBlock">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_anshin1.png" alt="" class="layout_pc">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_anshin1.png" alt="" class="layout_sp">
+                                                        </div>
+                                                    </div>
+                                                    <p class="itemDescription">「◯◯地区では外国人旅行者を狙ったひったくりが多発しています！」</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="listItemTabireg">
+                                            <div class="item item2">
+                                                <div class="itemContent">
+                                                    <div class="anshinLabel">
+                                                        安心<span>2</span>
+                                                    </div>
+                                                    <div class="mainText">
+                                                        旅行中も<br> <span class="redColor">最新情報</span>を<br>受信！
+                                                    </div>
+                                                    <div class="itemImg">
+                                                        <div class="imgBlock">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_anshin2.png" alt="" class="layout_pc">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_anshin2.png" alt="" class="layout_sp">
+                                                        </div>
+                                                    </div>
+                                                    <p class="itemDescription">「◯◯地区では外出禁止令が発出されました！」</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="listItemTabireg">
+                                            <div class="item item3">
+                                                <div class="itemContent">
+                                                    <div class="anshinLabel">
+                                                        安心<span>3</span>
+                                                    </div>
+                                                    <div class="mainText">
+                                                        現地で事件・事故に<br>巻き込まれても<br> <span class="redColor">素早く支援!</span>
+                                                    </div>
+                                                    <div class="itemImg">
+                                                        <div class="imgBlock">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_anshin3.png" alt="" class="layout_pc">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_anshin3.png" alt="" class="layout_sp">
+                                                        </div>
+                                                    </div>
+                                                    <p class="itemDescription">「被害に遭われていませんか？」</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="anshinKanniBlock">
+                                    <div class="anshinHeader">
+                                        <div class="anshinHeaderKanni">
+                                            <span class="blueColor textStroke">簡易登録で</span>
+                                        </div>
+                                    </div>
+                                    <ul class="anshinList">
+                                        <li class="listItemKanni">
+                                            <div class="item item4">
+                                                <div class="itemContent">
+                                                    <div class="anshinLabel">
+                                                        安心<span>4</span>
+                                                    </div>
+                                                    <div class="mainText">
+                                                        日本にいても<br> <span class="blueColor">世界の最新情報</span>を<br>入手！
+                                                    </div>
+                                                    <div class="itemImg">
+                                                        <div class="imgBlock">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_anshin4.png" alt="" class="layout_pc">
+                                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_anshin4.png" alt="" class="layout_sp">
+                                                        </div>
+                                                    </div>
+                                                    <ul class="anshin4list">
+                                                        <li><i></i>△△地区で地震が発生！</li>
+                                                        <li><i></i>××国で感染症が流行！</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="registerSection">
+                    <div class="contentsInner">
+                        <h2 class="textStroke border_no blackColor">
+                            「たびレジ」登録はこちら
+                        </h2>
+                        <ul class="registerationBlock">
+                            <li class="listItemTabireg">
+                                <div class="item">
+                                    <div class="itemContent">
+                                        <div class="itemTarget">
+                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_target1.png" alt="渡航予定がある方(pc)" class="layout_pc">
+                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_target1.png" alt="渡航予定がある方(sp)" class="layout_sp">
+                                        </div>
+                                        <h3>渡航予定がある方</h3>
+                                        <div class="itemInfo">
+                                            <div class="infoLabel">登録情報</div>
+                                            <ul class="infoList">
+                                                <li>渡航国・地域</li>
+                                                <li>渡航期間</li>
+                                                <li>名前、メールアドレス、電話番号など</li>
+                                            </ul>
+                                        </div>
+                                        <div class="registerBtn">
+                                            <a href="agree.html" class="btn btnPrimary w100p">新規利用者登録をする</a>
+                                        </div>
+                                        <div class="oneRowTextBlock">
+                                            <span class="oneRowText leadTxt textStroke">利用者IDの有効期限が</span>
+                                            <span class="oneRowText textStroke">切れた方もこちら</span>
+                                        </div>
+                                        <div class="registerBtn">
+                                            <a href="login" class="btn btnPrimary w100p fs100p">登録済の渡航予定を変更する</a>
+                                        </div>
+                                        <div class="itemSubText">
+                                            <a href="user/password/reset">パスワードを忘れた方、変更したい方</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subDescription">
+                                    <span class="redColor textStroke">旅先でいざというときも<span class="block_sp">素早く支援</span></span>
+                                </div>
+                            </li>
+                            <li class="listItemKanni">
+                                <div class="item">
+                                    <div class="itemContent">
+                                        <div class="itemTarget">
+                                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_target2.png" alt="渡航予定のない方(pc)" class="layout_pc"><img
+                                                src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_target2.png" alt="渡航予定のない方(sp)" class="layout_sp">
+                                        </div>
+                                        <h3>渡航予定がない方</h3>
+                                        <div class="itemInfo">
+                                            <div class="infoLabel">登録情報</div>
+                                            <ul class="infoList">
+                                                <li>情報を希望する国・地域</li>
+                                                <li>メールアドレス</li>
+                                            </ul>
+                                        </div>
+                                        <div class="registerBtn">
+                                            <a href="simple/register" class="btn btnPrimary2 w100p">利用者登録をせずに利用する</a>
+                                        </div>
+                                        <span class="oneRowText leadTxt textStroke">渡航予定はないが安全情報を</span>
+                                        <span class="oneRowText textStroke">受け取りたい方はこちら</span>
+                                        <div class="registerBtn">
+                                            <a href="simple/auth" class="btn btnPrimary2 w100p fs100p">登録内容を変更する</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subDescription">
+                                    <span class="blueColor textStroke">日々の情報収集に</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="mailExampleSection">
+                    <div class="contentsInner">
+                        <h2 class="border_no blackColor">「たびレジ」からのメール例</h2>
+                        <ul class="listCol3 mailExampleList">
+                            <li>
+                                <div class="item item1">
+                                    <div class="itemContent">
+                                        <h3 class="textStroke">
+                                            海外渡航者の安全のため<br> 現地の<span class="blueColor">重大事件・事故</span>の<br> 情報を配信
+                                        </h3>
+                                        <div class="itemIllust">
+                                            <div class="mailBalloon">
+                                                <div class="balloonText">
+                                                    ◯◯で爆発事件発生! <span class="block_pc">近づかないでください!</span>
+                                                </div>
+                                            </div>
+                                            <div class="itemImg">
+                                                <div class="img1">
+                                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/img_smartphone.png" alt="">
+                                                </div>
+                                                <div class="img2">
+                                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/img_house.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item item2">
+                                    <div class="itemContent">
+                                        <h3 class="textStroke">
+                                            注意が必要な<br>イベント・トラブルについて<br> <span class="blueColor">事前の注意喚起</span>
+                                        </h3>
+                                        <div class="itemIllust">
+                                            <div class="mailBalloon mailBalloon2">
+                                                <div class="balloonText">
+                                                    ○月○日はデモが予定<br>されています。<br>慎重な行動を！
+                                                </div>
+                                            </div>
+                                            <div class="itemImg">
+                                                <div class="img1">
+                                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/img_smartphone.png" alt="">
+                                                </div>
+                                                <div class="img2">
+                                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/img_demo.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item item3">
+                                    <div class="itemContent">
+                                        <h3 class="textStroke">
+                                            外務省<span class="blueColor">海外安全ホームページ</span>の<br>
+                                            更新情報の配信
+                                        </h3>
+                                        <div class="itemIllust">
+                                            <div class="mailBalloon">
+                                                <div class="balloonText">
+                                                    ○○国の危険情報を更新しました！
+                                                </div>
+                                            </div>
+                                            <div class="itemImg">
+                                                <div class="img1">
+                                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/img_smartphone.png" alt="">
+                                                </div>
+                                                <div class="img2">
+                                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/img_strike.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="detailLink">
+                            <a href="faq.html#q12">実際のメール例はこちら</a>
+                        </p>
+                    </div>
+                </section>
+                <section class="faqSection">
+                    <div class="contentsInner">
+                        <div class="patternWave"></div>
+                        <div class="sectionContent">
+                            <h2 class="border_no blackColor">よくある質問</h2>
+                            <p class="text">
+                                どのタイミングで登録したらいいの？情報はどのようにして利用されるの？<br>など、皆様の疑問にパスポ君がお答えします！
+                            </p>
+                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/top/img_paspo_faq.png" alt="ボクが答えます！（パスポくん）(pc)" class="faqImg layout_pc">
+                            <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/top/img_paspo_faq.png" alt="ボクが答えます！（パスポくん）(sp)" class="faqImg layout_sp">
+                            <p class="detailLink">
+                                <a href="faq.html">よくある質問はこちら</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="autoRegistrationSection">
+                    <div class="contentsInner">
+                        <h2 class="border_no blackColor">
+                            「たびレジ」自動登録サービス<span class="block_sp">のご案内</span>
+                        </h2>
+                        <p class="detailLink">
+                            <a href="companylist.html">企業・法人の方へ</a>
+                        </p>
+                    </div>
+                </section>
+                <div class="footerBnrBlock">
+                    <div class="layout_pc">
+                        <a href="../RRnet/index.html" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/bnr_orr.png" alt="3ヶ月以上の渡航予定の方はこちら ORRnet"></a>
+                        <a href="http://www.mofa.go.jp/mofaj/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/bnr_mofa_japan.png" alt="外務省"></a>
+                        <a href="https://www.anzen.mofa.go.jp/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/bnr_mofa_anzen.png" alt="MOFA 外務省"></a>
+                        <a href="https://www.anzen.mofa.go.jp/anzen_info/gaimushoxkenkoba.html" target="_blank"><img class="max_h60px" src="https://www.ezairyu.mofa.go.jp/tabireg/img/bnr_gaimushoxkenkoba.png" alt="ケンコバ×外務省"></a>
+                        <a href="https://www.anzen.mofa.go.jp/c_info/tabireg-woman.html" target="_blank"><img class="max_h60px" src="https://www.ezairyu.mofa.go.jp/tabireg/img/bnr_tabireg-woman.png" alt="女性旅行者必見!"></a>
+                    </div>
+                    <div class="contentsInner layout_sp">
+                        <a href="../RRnet/index.html" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/bnr_orr.png" alt="Orrnet"></a>
+                        <a href="http://www.mofa.go.jp/mofaj/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/bnr_mofa_japan.png" alt="外務省"></a>
+                        <a href="https://www.anzen.mofa.go.jp/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/bnr_mofa_anzen.png" alt="MOFA 外務省"></a>
+                        <a href="https://www.anzen.mofa.go.jp/anzen_info/gaimushoxkenkoba.html" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/bnr_gaimushoxkenkoba.png" alt="ケンコバ×外務省"></a>
+                        <a href="https://www.anzen.mofa.go.jp/c_info/tabireg-woman.html" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/bnr_tabireg-woman.png" alt="女性旅行者必見!"></a>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="contentsInner">
+                    <ul class="footerMenu layout_pc">
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li>
+                            <a href="legalmatters.html">法的事項</a>
+                        </li>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                    </ul>
+                    <div class="layout_sp">
+                        <ul class="listNav">
+                            <li><a href="index.html">TOP</a></li>
+                            <li><a href="faq.html">よくある質問</a></li>
+                            <li>
+                                <a href="legalmatters.html">法的事項</a>
+                            </li>
+                            <li><a href="privacy.html">プライバシーポリシー</a></li>
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <div class="footerBottomBar">
+                            <div id="pageTop">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+                    <ul class="socialBtns">
+                        <li>
+                            <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="addressArea">
+                    <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                        <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                        <br class="contact">
+                            電話（代表）03-3580-3311　法人番号　9000012040001
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

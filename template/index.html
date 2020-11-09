@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>海外へ渡航される皆様へ</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/application.js') }}"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49881348-4');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="https://www.mofa.go.jp/mofaj/"><img src="https://www.ezairyu.mofa.go.jp/img/logo.png" alt="MOFA 外務省" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/logo.png" alt="MOFA 外務省" class="layout_sp"></a>
+                </div>
+                <h1 class="headerText">
+                    外務省では、2種類の渡航登録サービスを提供しています。<br>登録した方に在外公館からの緊急一斉連絡メールなどをお届けします。
+                </h1>
+            </div>
+        </header>
+        <div id="contents">
+            <div class="sectionWrapper">
+                <h2 class="contentsTitle">海外へ渡航される皆様へ</h2>
+                <ul class="tab">
+                    <li class="menuTabireg active" data-tab="1">
+                        <div class="item">たびレジ</div>
+                    </li>
+                    <li class="menuOrrnet" data-tab="2">
+                        <div class="item">在留届</div>
+                    </li>
+                </ul>
+                <section class="mainSection tabiregSection" id="tabContent_1">
+                    <div class="imgPaspo"><img src="https://www.ezairyu.mofa.go.jp/img/img_paspo.png" alt="パスポくん" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/img_paspo.png" alt="パスポくん" class="layout_sp"></div>
+                    <div class="sectionContent">
+                        <div class="sectionLogo">
+                            <img src="https://www.ezairyu.mofa.go.jp/img/logo_tabireg.png" alt="たびレジ" class="layout_pc">
+                            <img src="https://www.ezairyu.mofa.go.jp/img/sp/logo_tabireg.png" alt="たびレジ" class="layout_sp">
+                            <p class="textStroke">外務省 海外安全情報配信サービス</p>
+                        </div>
+                        <a href="tabireg" class="btn btnPrimary btnTabireg">たびレジに登録する</a>
+                        <h3 class="textStroke">たびレジに登録すると<span class="orangeColor">こんなに安心！</span></h3>
+                        <div class="anshinListBlock">
+                            <div class="anshinListHeader anshinListHeaderTabireg"><span class="redColor textStroke">たびレジに登録で</span></div>
+                            <ol class="anshinList anshinListTabireg">
+                                <li>
+                                    <div class="anshinLabel">安心<span>1</span></div>
+                                    <div class="item item1">
+                                        <div class="itemContent">
+                                            <div class="mainText">
+                                                出発前から<br><span class="redColor">旅先の安全情報</span><span class="block_sp">を入手！</span>
+                                            </div>
+                                            <div class="itemImg">
+                                                <div class="imgBlock"><img src="https://www.ezairyu.mofa.go.jp/img/img_anshin1.png" alt="" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/img_anshin1.png" alt="" class="layout_sp"></div>
+                                            </div>
+                                            <p class="itemDescription">「◯◯地区では外国人旅行者を狙ったひったくりが多発しています！」</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="anshinLabel">安心<span>2</span></div>
+                                    <div class="item item2">
+                                        <div class="itemContent">
+                                            <div class="mainText"><span class="block_sp">旅行中も</span><span class="redColor">最新情報</span>を<br>受信！
+                                            </div>
+                                            <div class="itemImg">
+                                                <div class="imgBlock"><img src="https://www.ezairyu.mofa.go.jp/img/img_anshin2.png" alt="" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/img_anshin2.png" alt="" class="layout_sp"></div>
+                                            </div>
+                                            <p class="itemDescription">「◯◯地区で外出禁止令が発出<span class="block_pc">されました！」</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="anshinLabel">安心<span>3</span></div>
+                                    <div class="item item3">
+                                        <div class="itemContent">
+                                            <div class="mainText">現地で事件・事故に<br>巻き込まれても<br><span class="redColor">素早く支援!</span></div>
+                                            <div class="itemImg">
+                                                <div class="imgBlock"><img src="https://www.ezairyu.mofa.go.jp/img/img_anshin3.png" alt="" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/img_anshin3.png" alt="" class="layout_sp"></div>
+                                            </div>
+                                            <p class="itemDescription">「被害に遭われていませんか？」</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="anshinListBlock">
+                            <div class="anshinListHeader anshinListHeaderKanni"><span class="blueColor textStroke">簡易登録で</span></div>
+                            <ul class="anshinList anshinListKanni">
+                                <li>
+                                    <div class="anshinLabel">安心<span>4</span></div>
+                                    <div class="item item4">
+                                        <div class="itemContent">
+                                            <div class="mainText">
+                                                日本にいても<br><span class="blueColor">世界の最新情報</span>を<br>入手！
+                                            </div>
+                                            <div class="itemImg">
+                                                <div class="imgBlock"><img src="https://www.ezairyu.mofa.go.jp/img/img_anshin4.png" alt="" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/img_anshin4.png" alt="" class="layout_sp"></div>
+                                            </div>
+                                            <ul class="itemDescriptionList">
+                                                <li><span class="blueColor">・</span>△△地区で地震が発生！</li>
+                                                <li><span class="blueColor">・</span>××国で感染症が流行！</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="mainSection orrnetSection" id="tabContent_2">
+                    <div class="sectionContent">
+                        <div class="sectionLogo">
+                            <p class="mofa">外務省</p>
+                            <img src="https://www.ezairyu.mofa.go.jp/img/logo_orrnet.png" alt="ORRnet" class="layout_pc">
+                            <img src="https://www.ezairyu.mofa.go.jp/img/sp/logo_orrnet.png" alt="ORRnet" class="layout_sp">
+                            <p class="textStroke">外務省 在留届電子届出システム</p>
+                        </div>
+                        <a href="RRnet" class="btn btnPrimary btnOrrnet">在留届を提出する</a>
+                        <h3><span class="block_pc">在留届の提出は、<span class="block_sp">外国に住所又は居所を定めて</span></span><span class="largeText">3か月以上滞在する方</span>が対象です。</h3>
+                        <p class="subText">
+                            <span class="block_sp">
+                                ※ <span class="navyColor">旅券法第16条により、</span>その地域を管轄する</span>日本大使館または<span class="block_pc">総領事館に速やかに<span class="navyColor">在留届を提出することが義務付けられています。</span></span>
+                        </p>
+                        <ul class="targetList">
+                            <li>
+                                <div class="item item1">
+                                    <div class="itemContent">
+                                        <div class="itemTitle"><span>海外転勤</span>になった</div>
+                                        <div class="itemImg"><img src="https://www.ezairyu.mofa.go.jp/img/icon_target1.png" alt="転勤" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/icon_target1.png" alt="転勤" class="layout_sp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item item2">
+                                    <div class="itemContent">
+                                        <div class="itemTitle"><span>海外留学</span>する</div>
+                                        <div class="itemImg"><img src="https://www.ezairyu.mofa.go.jp/img/icon_target2.png" alt="留学" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/icon_target2.png" alt="留学" class="layout_sp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item item3">
+                                    <div class="itemContent">
+                                        <div class="itemTitle">海外に<span>永住・長期滞在</span>する</div>
+                                        <div class="itemImg"><img src="https://www.ezairyu.mofa.go.jp/img/icon_target3.png" alt="長期滞在" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/img/sp/icon_target3.png" alt="長期滞在" class="layout_sp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footerBnrBlock">
+                <div class="layout_pc">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/img/bnr_mofa_japan.png" alt="外務省"></a>
+                    <a href="https://www.anzen.mofa.go.jp/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/img/bnr_mofa_anzen.png" alt="MOFA 外務省"></a>
+                </div>
+                <div class="contentsInner layout_sp">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/img/sp/bnr_mofa_japan.png" alt="外務省"></a>
+                    <a href="https://www.anzen.mofa.go.jp/" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/img/sp/bnr_mofa_anzen.png" alt="MOFA 外務省"></a>
+                </div>
+            </div>
+            <div class="contentsInner">
+                <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+            </div>
+            <div class="footerBottomBar layout_sp">
+                <div id="pageTop"><img src="https://www.ezairyu.mofa.go.jp/img/sp/pagetop.png" alt="PAGETOP" class="pagetop"></div>
+            </div>
+            <div class="addressArea">
+                <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                    <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                    <br class="contact">
+                    電話（代表）03-3580-3311　法人番号　9000012040001
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+<script>
+liff
+    .init({
+        liffId: "1655202322-oWP2NlzN",
+    })
+    .then(() => {
+        liff.getProfile().then(function(profile) {
+            alert(profile.userId);
+        }).catch(function(error) {
+            console.log("Error getting profile: " + error);
+        });
+    })
+    .catch(err => {
+        alert(`error: ${JSON.stringify(err)}`);
+    });
+</script>
+
+</html>

@@ -1,0 +1,2875 @@
+/*--------------------------------------------------
+ * orrnet top
+ *-------------------------------------------------*/
+.contentsSection {
+    display: block;
+    width: 100%;
+    padding: 58px 0 22px 0;
+}
+
+.contentsSection h1 {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    color: #0495a6;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.contentsSection h2 {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    color: #0495a6;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.contentsSection .sectionDescription {
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.kvWrapper {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.kvBg {
+    height: auto;
+    overflow: hidden;
+}
+
+.kvBg img {
+    position: relative;
+    width: 100%;
+    min-width: 1024px;
+    height: auto;
+    display: block;
+    z-index: 10;
+}
+
+.kvTextBlock {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: -28px;
+    z-index: 20;
+}
+
+.kvTextBlock .kvText {
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topInfoBlock {
+    background-color: #0e1a8e;
+    padding: 27px 0;
+    text-align: center;
+}
+
+.topInfoBlock p {
+    font-size: 19px;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.topInfoBlock p>span {
+    font-size: 17px;
+}
+
+.topInfoBlock .btnScrollToZairyu {
+    display: inline-block;
+    width: 480px;
+}
+
+.topInfoBlock .btnScrollToZairyu:hover {
+    filter: alpha(opacity = 92);
+    -moz-opacity: 0.92;
+    opacity: 0.92;
+}
+
+.topInfoBlock .btnScrollToZairyu:active {
+    filter: alpha(opacity = 80);
+    -moz-opacity: 0.80;
+    opacity: 0.80;
+}
+
+.newsBlock {
+    padding: 35px 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.newsBlock .newsInner {
+    margin-top: 22px;
+}
+
+.squareLabel {
+    width: 128px;
+    height: 40px;
+    padding: 10px 10px 20px 10px;
+    line-height: 22px;
+    background-color: #00a6ca;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.newsBlock .newsList {
+    float: left;
+}
+
+.newsBlock .newsList li {
+    font-size: 13px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.newsBlock .newsList li a {
+    color: #333;
+}
+
+.newsBlock .newsList li a:hover {
+    text-decoration: underline;
+}
+
+.newsBlock .newsList li .date {
+    display: inline-block;
+    margin-right: 10px;
+    color: #0495a6;
+}
+
+.targetSection h2 {
+    margin-bottom: 28px;
+}
+
+.targetImages {
+    margin-bottom: 40px;
+}
+
+.targetImages li {
+    position: relative;
+    height: 172px;
+}
+
+.targetImages li .item {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.targetImages li .item p {
+    font-size: 17px;
+    margin-top: 20px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+}
+
+.targetImages li .item p span {
+    font-size: 160%;
+    font-weight: bold;
+}
+
+.cardList {
+    position: relative;
+    margin: 0 -16px;
+}
+
+.cardList li {
+    height: 33.3333%;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardList li .cardItem {
+    display: block;
+    background-color: #fff;
+    margin: 0 16px;
+    height: 408px;
+}
+
+.cardList li a:hover {
+    filter: alpha(opacity = 85);
+    -moz-opacity: 0.85;
+    opacity: 0.85;
+}
+
+.cardList li img {
+    width: 100%;
+}
+
+.cardList li .cardBody {
+    padding: 19px;
+}
+
+.cardList li .cardThumb {
+    height: 170px;
+    overflow: hidden;
+    display: block;
+}
+
+.cardList li .cardBody .cardTitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+    position: relative;
+    margin-right: -10px;
+    font-weight: bold;
+    display: block;
+    line-height: 21px;
+}
+
+.cardList li .cardBody .cardDescription {
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.cardList li .cardBody .cardDescription .cardDescriptionLink {
+    margin-top: 10px;
+}
+
+.cardList li .cardBody .cardDescription a {
+    color: #666666;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.cardList li .cardBody .cardDescription a:hover {
+    text-decoration: none;
+}
+
+.submissionSection {
+    position: relative;
+    padding-bottom: 18px;
+    background-color: #0e1a8e;
+    padding-top: 78px;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+.bgArrow {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 25%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.bgArrow>span {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -1000px;
+    border-left: 1000px solid transparent;
+    border-right: 1000px solid transparent;
+    border-top: 80px solid #f7f7f7;
+}
+
+.submissionSection h2 {
+    margin-bottom: 19px;
+    font-size: 28px;
+}
+
+.submissionSection .submissionSectionInner {
+    position: relative;
+    margin: 44px 0;
+    background-color: #fff;
+    padding: 44px 50px 32px 50px;
+    overflow: hidden;
+    clear: both;
+    z-index: 2;
+}
+
+.submissionSection .sectionDescription {
+    margin-bottom: 18px;
+}
+
+.submissionSection .sectionButtonBlock {
+    margin-top: 34px;
+    margin-left: -25px;
+    margin-right: -25px;
+    text-align: center;
+}
+
+.submissionSection .sectionButtonBlock .btn {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.zairyuPrepareListHeader {
+    background-color: #19138b;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.zairyuPrepareList {
+    overflow: hidden;
+    border-left: 1px solid #999999;
+    box-sizing: border-box;
+}
+
+.zairyuPrepareList li {
+    display: block;
+    float: left;
+    height: 45px;
+    line-height: 22px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.zairyuPrepareList li p {
+    padding: 12px;
+    padding-right: 2px;
+    height: 20px;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.zairyuPrepareList li.col2line {
+    height: 69px;
+}
+
+.zairyuPrepareList li.col3line {
+    height: 168px;
+}
+
+.zairyuPrepareList li.col2line p {
+    height: 44px;
+}
+
+.zairyuPrepareList li.col3line p {
+    height: 143px;
+}
+
+.zairyuPrepareList li.colL {
+    width: 30%;
+    text-align: center;
+}
+
+.zairyuPrepareList li.colM {
+    width: 20%;
+    float: right;
+}
+
+.zairyuPrepareList li.colR {
+    width: 50%;
+    float: right;
+}
+
+.zairyuPrepareList li .empColor {
+    font-weight: bold;
+}
+
+.zairyuPrepareList .header {
+    background-color: #fff;
+}
+
+.sectionButtonBlock {
+    position: relative;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.sectionButtonBlock img {
+    display: inline-block;
+}
+
+.submitReportButtonBlock .detailPdfLink {
+    display: inline-block;
+    position: relative;
+    padding-right: 24px;
+    margin-top: 35px;
+    font-size: 13px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.submitReportButtonBlock .detailPdfLink:after {
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0;
+    top: -2px;
+    background: url('../img/icon_pdf.png') no-repeat;
+    background-position: center center;
+}
+
+.submitReportButtonBlock .detailPdfLink:hover {
+    text-decoration: none;
+}
+
+.faqSection {
+    background: url('../img/top/bg_faq_section.png') 0 100% no-repeat;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top/bg_faq_section.png', sizingMethod='scale');
+    padding-top: 46px;
+    padding-bottom: 20px;
+}
+
+.faqSection h2 {
+    margin-bottom: 20px;
+}
+
+.faqSection .sectionButtonBlock {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.faqSection .sectionDescription {
+    font-size: 14px;
+}
+/*--------------------------------------------------
+ * orrnet faq
+ *-------------------------------------------------*/
+
+.faqListHeader {
+  background-color: #19138b;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  text-align: left;
+  font-size: 15px;
+  padding: 1px 10px;
+}
+.faqTable td {
+  line-height: 20px;
+}
+.faqList {
+  overflow: hidden;
+  border-left: 1px solid #999999;
+  box-sizing: border-box;
+}
+.faqList li {
+  display: block;
+  float: left;
+  height: 45px;
+  line-height: 22px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+.faqList li p {
+  padding: 12px;
+  padding-riht: 2px;
+  height: 20px;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+.faqList li.col2line {
+  height: 69px;
+}
+.faqList li.col2line p {
+  height: 44px;
+}
+.faqList li.col4line {
+  height: 113px;
+}
+.faqList li.col4line p {
+  height: 88px;
+}
+.faqList li.col6line {
+  height: 157px;
+}
+.faqList li.col6line p {
+  height: 132px;
+}
+.faqList li.col12line {
+  height: 289px;
+}
+.faqList li.col12line p {
+  height: 264px;
+}
+
+/*--------------------------------------------------
+  orrnet top sp
+--------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .kvWrapper .kvBg {
+        height: auto;
+    }
+    .kvWrapper .kvBg img {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .kvWrapper .kvTextBlock .kvText {
+        font-size: 17px;
+        height: 50px;
+        padding: 10px 12px;
+        line-height: 25px;
+        margin: 0 auto;
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .kvWrapper .kvTextBlock .kvText span {
+        display: block;
+    }
+    .topInfoBlock {
+        position: relative;
+        margin-top: -2px;
+    }
+    .topInfoBlock p {
+        font-size: 17px;
+    }
+    .topInfoBlock p>span {
+        display: inline-block;
+        margin-top: 25px;
+    }
+    .topInfoBlock .btnScrollToZairyu {
+        display: inline-block !important;
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 100%;
+        font-size: 13px;
+        line-height: normal;
+        box-sizing: border-box;
+    }
+    .newsBlock {
+        padding-top: 0;
+    }
+    .squareLabel {
+        background-color: transparent;
+        color: #00a6ca;
+        font-size: 19px;
+        padding: 0;
+        text-align: left;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        float: none;
+        clear: both;
+        width: 100%;
+    }
+    .newsBlock .newsList {
+        width: 100%;
+        float: none;
+        clear: both;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+    .newsBlock .newsList li {
+        height: auto;
+        line-height: 22px;
+        font-size: 15px;
+        border-bottom: 1px solid #cccccc;
+    }
+    .newsBlock .newsList li:last-child {
+        border: 0;
+    }
+    .newsBlock .newsList li .date {
+        clear: both;
+        display: block;
+    }
+    .newsBlock .newsList li a {
+        display: block;
+        padding: 15px;
+    }
+    #contents .contentsSection {
+        padding-top: 40px;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+    #contents .contentsSection h2 {
+        line-height: 34px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #contents .contentsSection h2 span {
+        display: block;
+    }
+    #contents .contentsSection .sectionDescription {
+        text-align: left;
+        margin-top: 15px;
+    }
+    .targetImages {
+        margin-top: 20px;
+    }
+    .targetImages li {
+        height: auto;
+        clear: both;
+    }
+    .targetImages li .item {
+        position: relative;
+        bottom: auto;
+        margin-bottom: 50px;
+    }
+    .targetImages li .item p {
+        font-size: 20px;
+    }
+    .targetImages li .item3 {
+        margin-bottom: 25px;
+    }
+    .cardList {
+        margin-top: 40px;
+    }
+    .cardList li .cardItem {
+        height: auto;
+    }
+    .cardList li .cardBody .cardTitle {
+        font-weight: bold;
+        font-size: 16.5px;
+    }
+    .cardList li .cardBody .cardDescription {
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .submissionSection .submissionSectionInner {
+        margin-top: 60px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #contents .submissionSection .sectionDescription {
+        padding: 0 20px;
+    }
+    .submissionSection .sectionButtonBlock {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .submissionSection .sectionButtonBlock .btn {
+        margin-bottom: 20px;
+    }
+    .zairyuBlock {
+        background-color: #e5e5e5;
+        padding: 15px;
+    }
+    .zairyuPrepareListHeader {
+        font-size: 18px;
+        padding: 15px;
+        height: auto;
+        line-height: 24px;
+    }
+    .zairyuPrepareListHeader span {
+        display: block;
+    }
+    .zairyuBlock ol.zairyuPrepareList {
+        border: 0;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background-color: #fff;
+    }
+    .zairyuBlock ol.zairyuPrepareList li {
+        width: 100% !important;
+        float: none;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        height: auto;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .zairyuBlock ol.zairyuPrepareList li p {
+        height: auto;
+        border: 0;
+    }
+    .zairyuBlock ol.zairyuPrepareList li .empColor {
+        display: block;
+    }
+    .submitReportButtonBlock .detailPdfLink {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        clear: both;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+    .faqSection {
+        background: url(../img/sp/top/bg_faq_section_sp.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    #contents .faqSection .sectionDescription {
+        text-align: center;
+    }
+    #contents .faqSection .sectionDescription span {
+        display: block;
+    }
+    .sectionButtonBlock {
+        margin: 20px 0 30px 0;
+    }
+    .faqBlock {
+/*
+        background-color: #e5e5e5;
+        padding: 15px;
+*/
+    }
+    .faqListHeader {
+        font-size: 18px;
+        padding: 15px;
+        height: auto;
+        line-height: 24px;
+    }
+    .faqListHeader span {
+        display: block;
+    }
+    .faqBlock ol.faqList {
+        border: 0;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background-color: #fff;
+    }
+    .faqBlock ol.faqList li {
+        width: 100% !important;
+        float: none;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        height: auto;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .faqBlock ol.faqList li p {
+            height: auto;
+            border: 0;
+    }
+    .faqTable th {
+        display: block;
+        width: 100%;
+        text-align: left;
+        vertical-align: top;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .faqTable td {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+    .zairyuPrepareList li.col2line {
+        height: 69px;
+    }
+    .zairyuPrepareList li.col2line p {
+        height: 44px;
+    }
+    .faqList li.col2line {
+        height: 69px;
+    }
+    .faqList li.col2line p {
+        height: 44px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 920px) {
+    .contentsSection h2 {
+        font-size: 22px;
+    }
+    .submissionSection .sectionButtonBlock .btn {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .targetSection .sectionDescription span {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+    ul.headerMenu li {
+        padding: 0 12px;
+    }
+    ul.headerIconMenu li {
+        padding-left: 12px;
+    }
+    .submitReportButtonBlock .detailPdfLink {
+        display: block;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+    .submitReportButtonBlock .detailPdfLink:after {
+        position: relative;
+        margin-left: 6px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .kvWrapper .kvTextBlock {
+        margin-top: -40px;
+    }
+    .kvWrapper .kvTextBlock .kvText {
+        font-size: 17px;
+        height: 54px;
+        padding: 12px 14px;
+        line-height: 27px;
+        margin: 0 auto;
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .kvWrapper .kvTextBlock .kvText {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 376px) and ( max-width: 480px) {
+    .kvWrapper .kvTextBlock .kvText {
+        font-size: 16px;
+    }
+    .kvWrapper .kvTextBlock {
+        margin-top: -35px;
+    }
+    .kvWrapper .kvTextBlock .kvText {
+        font-size: 17px;
+        height: 75px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #contents .contentsSection h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .kvWrapper .kvTextBlock {
+        margin-top: -34px;
+    }
+    .kvWrapper .kvTextBlock .kvText {
+        font-size: 14px;
+        height: 66px;
+        line-height: 22px;
+    }
+    .submitReportButtonBlock .detailPdfLink {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .topInfoBlock .btnScrollToZairyu {
+        font-size: 11px;
+    }
+}
+
+/*--------------------------------------------------
+ * orrnet zairyu
+ *-------------------------------------------------*/
+.zairyuStep {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.zairyuSectionBlock {
+    background-color: #fff;
+    padding-top: 0px;
+}
+
+.breadcrumbs {
+    background-color: #f0f0f0;
+    width: 100%;
+    overflow: hidden;
+    /*
+  height: 42px;
+*/
+}
+
+.breadcrumbsInner {
+    /*
+  overflow-y: hidden;
+  overflow: auto;
+*/
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.breadcrumbs ol {
+    max-width: 1024px;
+    /*
+  width: 1024px;
+  height: 62px;
+*/
+    margin: 0 auto;
+}
+
+.breadcrumbs li {
+    float: left;
+    position: relative;
+}
+
+.breadcrumbs li a {
+    color: #333;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 6px 0 28px;
+    cursor: default;
+}
+
+.breadcrumbs li a:hover {
+    color: #707070;
+}
+
+.breadcrumbs li.first a {
+    padding-left: 10px;
+}
+
+.breadcrumbs li.current {
+    overflow: hidden;
+    border-radius: 0 21px 21px 0;
+    -moz-border-radius: 0 21px 21px 0;
+    -webkit-border-radius: 0 21px 21px 0;
+}
+
+.breadcrumbs li.current a {
+    padding-right: 20px;
+    color: #fff;
+}
+
+.breadcrumbs li>span, .breadcrumbs li>span:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    width: 0;
+    height: 42px;
+    border: 21px solid transparent;
+}
+
+.breadcrumbs li>span {
+    right: -37px;
+    border-left: 16px solid #d8d8d8;
+    z-index: 1;
+}
+
+.breadcrumbs li>span:after {
+    top: -21px;
+    left: -18px;
+    border-left: 16px solid #f0f0f0;
+    z-index: 2;
+}
+
+.breadcrumbs li.current {
+    background-color: #19138b;
+}
+
+.breadcrumbs li.first:after {
+    display: none;
+}
+
+.breadcrumbs li.last:before {
+    display: none;
+}
+
+.stepList {
+    overflow: hidden;
+}
+
+.stepList li {
+    position: relative;
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 22%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.stepList li.first {
+    padding-left: 0;
+}
+
+.stepList li .step {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.stepList li.step2 {
+    width: 30.5%;
+}
+
+.stepList li .step p {
+    height: 64px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.stepList li .step p .txtSmall {
+    display: block;
+    font-size: 13px;
+}
+
+.stepList li.current .step {
+    background-color: #19138b;
+    color: #fff;
+}
+
+.stepList li .arrow {
+    display: block;
+    position: absolute;
+    right: -52px;
+    top: 0;
+    box-sizing: border-box;
+    width: 0;
+    height: 64px;
+    border: 32px solid transparent;
+    border-left: 20px solid #f0f0f0;
+    z-index: 10;
+}
+
+.stepList li.current .arrow {
+    border-left: 20px solid #19138b;
+}
+
+.stepList li .step:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 0;
+    height: 64px;
+    border: 32px solid transparent;
+    border-left: 20px solid #fff;
+    z-index: 1;
+}
+
+.stepList li.first .step:after {
+    content: none;
+    border: 0;
+}
+
+.stepList li>span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    line-height: 20px;
+    color: #666666;
+    font-size: 13px;
+}
+
+.stepList li.current>span {
+    color: #1d188d;
+}
+
+.zairyuInfoSection {
+    padding: 30px 0 20px 0;
+    background-color: #f7f7f7;
+}
+
+.zairyuInfoSection h2 {
+    margin-bottom: 18px;
+}
+
+.zairyuInfoTableBlock {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+.zairyuInfoTableBlock table {
+    width: 100%;
+}
+
+.zairyuInfoTableBlock table tr th, .zairyuInfoTableBlock table tr td {
+    text-align: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.zairyuSubmitForm {
+    background-color: #fff;
+}
+
+.zairyuSubmitFormInner {
+    padding: 32px 0 53px;
+    box-sizing: border-box;
+}
+
+.zairyuSubmitForm .txt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.importantNotices {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.importantNotices li {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.zairyuSubmitFormInner .txt .requiredLabel {
+    margin-right: 9px;
+}
+
+.zairyuSubmitForm .addButtonGroup {
+    overflow: hidden;
+    clear: both;
+    margin-top: 27px;
+}
+
+.zairyuSubmitForm .addButtonGroup .txt {
+    float: left;
+    line-height: 49px;
+}
+
+.zairyuSubmitForm .addButtonGroup .btn {
+    float: left;
+    margin-left: 40px;
+}
+
+table.formTable, table.formTable2 {
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 17px;
+    table-layout: fixed;
+}
+
+table.formTable tr, table.formTable2 tr {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+table.formTable tr th, table.formTable2 tr th {
+    background-color: #f7f7f7;
+    width: 240px;
+    padding: 37px 22px 37px 27px;
+    box-sizing: border-box;
+}
+
+table.formTable tr th span, table.formTable2 tr th span {
+    display: block;
+}
+
+table.formTable tr th span.requiredLabel, table.formTable2 tr th span.requiredLabel {
+    display: inline-block;
+    margin-left: 5px !important;
+}
+
+table.formTable tr th, table.formTable tr td, table.formTable2 tr th, table.formTable tr td {
+    font-size: 14px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+table.formTable tr th:first-child, table.formTable2 tr th:first-child {
+
+}
+
+table.formTable tr th[rowspan="2"], table.formTable2 tr th[rowspan="2"] {
+
+}
+
+table.formTable tr td, table.formTable2 tr td {
+    padding: 30px 40px;
+}
+
+table.formTable tr td a, table.formTable2 tr td a {
+    text-decoration: underline;
+    color: #666666;
+}
+
+table.formTable tr td a:hover, table.formTable2 tr td a:hover {
+    text-decoration: none;
+}
+
+table.formTable tr td .txt, table.formTable2 tr td .txt {
+    font-size: 13px;
+    color: #666666;
+    font-weight: normal;
+    line-height: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+.inputText {
+    overflow: hidden;
+    margin-right: 24px;
+}
+
+.inputText input {
+    width: 154px;
+    float: left;
+}
+
+.inputTextMedium input {
+    width: 170px;
+}
+
+.inputTextLarge input {
+    width: 420px;
+}
+
+.inputText label {
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    min-width: 34px;
+    padding-right: 6px;
+}
+
+table.formTable tr td .selectbox, table.formTable2 tr td .selectbox {
+    margin-right: 8px;
+    margin-left: 0px;
+}
+
+table.formTable tr td .selectboxLabel, table.formTable2 tr td .selectboxLabel {
+    margin-right: 30px;
+}
+
+table.formTable tr td input.inputSmall, table.formTable2 tr td input.inputSmall {
+    width: 99px;
+}
+
+table.formTable tr td .radio, table.formTable2 tr td .radio {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+table.formTable tr.emailRow .inputText, table.formTable2 tr.emailRow .inputText {
+    margin-top: 6px;
+}
+
+table.formTable tr.addressRow .inputText label, table.formTable2 tr.addressRow .inputText label {
+    /*
+  width: 60px;
+*/
+
+}
+
+table.formTable tr.domicileRow .selectboxLabel, table.formTable2 tr.domicileRow .selectboxLabel {
+    margin-right: 10px;
+}
+
+table.formTable tr.domicileRow .inputTextMedium input, table.formTable2 tr.domicileRow .inputTextMedium input {
+    width: 250px;
+}
+
+table.formTable tr .relationshipBlock, table.formTable2 tr .relationshipBlock {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+table.formTable tr .relationshipBlock label, table.formTable2 tr .relationshipBlock label {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+table.formTable tr.zairyuEmergencyRow label, table.formTable2 tr.zairyuEmergencyRow label {
+    height: 30px;
+    line-height: 30px;
+}
+
+.submitButtonGroup {
+    width: 430px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.submitButtonGroup .btn {
+    width: 100%;
+}
+
+.submitButtonGroup .btnClear {
+    margin-top: 23px;
+}
+
+.moClr {
+  height: 30px !important;
+  background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 769px) {
+    table.formTable tr.subscriptionRow th, table.formTable tr.subscriptionRow td, table.formTable2 tr.subscriptionRow th,
+        table.formTable2 tr.subscriptionRow td {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+/*--------------------------------------------------
+  orrnet zairyu sp
+--------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .breadcrumbs li {
+        display: table;
+        width: 33.333%;
+        text-align: center;
+    }
+    .breadcrumbs li.current {
+        border-radius: 0;
+    }
+    .breadcrumbs li>a {
+        display: table-cell;
+        padding: 5px 10px;
+        height: 60px;
+        line-height: normal;
+        border-right: 1px solid #ddd;
+        vertical-align: middle;
+    }
+    .breadcrumbs li:nth-child(3)>a, .breadcrumbs li:nth-child(6)>a, .breadcrumbs li:nth-child(9)>a {
+        border-right: none;
+    }
+    .breadcrumbs li>span {
+        display: none;
+    }
+    .zairyuStep {
+        padding: 20px 0 32px;
+    }
+    .stepList {
+        margin-right: -2px;
+    }
+    .stepList li {
+        width: 23%;
+        padding-left: 4px;
+        margin-left: -2px;
+        height: 94px;
+    }
+    .stepList li .step, .stepList li .arrow, .stepList li .step:after, .stepList li .step p {
+        height: 74px;
+    }
+    .stepList li.step2 {
+        width: 27.5%;
+    }
+    .stepList li .arrow {
+        right: -45px;
+        border: 37px solid transparent;
+        border-left: 8px solid #f0f0f0;
+    }
+    .stepList li.current .arrow {
+        border-left: 8px solid #19138b;
+    }
+    .stepList li .step:after {
+        border: 37px solid transparent;
+        border-left: 8px solid #fff;
+    }
+    .stepList li>span {
+        left: 2px;
+        font-size: 12px;
+    }
+    .stepList li .step p {
+        font-size: 13px;
+        line-height: 18px;
+        padding-top: 12px;
+    }
+    .stepList li.step2 .step p {
+        padding-top: 6px;
+    }
+    .stepList li .step p .txtSmall {
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 14px;
+    }
+    .stepList li .step p>span.br:before {
+        content: "\A";
+        white-space: pre;
+    }
+    #contents .zairyuInfoSection {
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .zairyuInfoSection h2 {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    .zairyuInfoTableBlock table tr th, .zairyuInfoTableBlock table tr td {
+        width: 100%;
+        display: block;
+        height: 24px;
+        line-height: 24px;
+    }
+    .zairyuInfoTableBlock table tr th {
+        font-weight: normal;
+    }
+    .zairyuInfoTableBlock table tr td {
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .zairyuSubmitFormInner {
+        padding: 25px 0;
+    }
+    table.formTable tr th, table.formTable tr td, table.formTable2 tr th, table.formTable2 tr td {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    table.formTable tr th, table.formTable2 tr th {
+        background-color: transparent;
+        padding: 18px 0;
+    }
+    table.formTable tr th:first-child, table.formTable2 tr th:first-child {
+        width: auto;
+    }
+    table.formTable tr th[rowspan="2"], table.formTable2 tr th[rowspan="2"] {
+        width: auto;
+        border-right: none;
+    }
+    table.formTable tr td, table.formTable2 tr td {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    table.formTable tr td .inputText, table.formTable2 tr td .inputText {
+        float: none;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    table.formTable tr td .inputText input, table.formTable2 tr td .inputText input {
+        height: 48px;
+        line-height: 48px;
+    }
+    table.formTable tr td .inputText label, table.formTable2 tr td .inputText label {
+        float: left;
+        /*width: 15%;*/
+        height: auto;
+        padding-left: 6px;
+        box-sizing: border-box;
+    }
+    table.formTable tr td .inputTextLarge label, table.formTable2 tr td .inputTextLarge label {
+        padding-left: 0;
+    }
+    table.formTable tr td .inputText label.labelYear, table.formTable2 tr td .inputText label.labelYear {
+        width: auto;
+    }
+    table.formTable tr td .inputText input, table.formTable2 tr td .inputText input {
+        float: right;
+        width: 85%;
+        margin: 0;
+    }
+    table.formTable tr td .inputText input.inputYear, table.formTable2 tr td .inputText input.inputYear {
+        float: left;
+        width: 70%;
+    }
+    table.formTable tr td .inputTextLarge input, table.formTable2 tr td .inputTextLarge input {
+        float: none;
+        width: 100%;
+    }
+    table.formTable tr td .selectboxGroup, table.formTable2 tr td .selectboxGroup {
+        overflow: hidden;
+        /*margin-left: 14%;*/
+    }
+    table.formTable tr td .selectbox, table.formTable2 tr td .selectbox {
+        margin-left: 0;
+    }
+    table.formTable tr td .selectbox, table.formTable2 tr td .selectbox {
+        height: 48px;
+        line-height: 48px;
+    }
+    table.formTable tr td .selectboxLabel, table.formTable2 tr td .selectboxLabel {
+        height: 48px;
+        line-height: 82px;
+        overflow: hidden;
+        margin-right: 6%;
+    }
+    table.formTable tr th span, table.formTable2 tr th span {
+        display: inline-block;
+    }
+    table.formTable tr td .radio, table.formTable2 tr td .radio {
+        padding-left: 8px;
+    }
+    table.formTable tr td p>a, table.formTable2 tr td p>a {
+        display: inline-block;
+        line-height: 20px;
+    }
+    table.formTable tr.telRow td .inputText input, table.formTable tr td .telBlock .inputText input, table.formTable tr.emailRow td .inputText input,
+        table.formTable tr.passwordRow td .inputText input, table.formTable tr.addressRow td .inputText input, table.formTable2 tr.telRow td .inputText input,
+        table.formTable2 tr td .telBlock .inputText input, table.formTable2 tr.emailRow td .inputText input, table.formTable2 tr.passwordRow td .inputText input,
+        table.formTable2 tr.addressRow td .inputText input {
+        float: left;
+        width: 65%;
+    }
+    table.formTable tr.addressRow td .inputTextLarge input, table.formTable2 tr.addressRow td .inputTextLarge input {
+        width: 75%;
+    }
+    table.formTable tr.telRow td .inputText label, table.formTable tr td .telBlock .inputText label, table.formTable tr.emailRow td .inputText label,
+        table.formTable tr.passwordRow td .inputText label, table.formTable tr.addressRow td .inputText label, table.formTable2 tr.telRow td .inputText label,
+        table.formTable2 tr td .telBlock .inputText label, table.formTable2 tr.emailRow td .inputText label, table.formTable2 tr.passwordRow td .inputText label,
+        table.formTable2 tr.addressRow td .inputText label {
+        float: left;
+        width: auto;
+    }
+    table.formTable tr.domicileRow td .selectboxGroup, table.formTable2 tr.domicileRow td .selectboxGroup {
+        margin-left: 0;
+    }
+    table.formTable tr.domicileRow td .selectboxGroup .selectbox, table.formTable2 tr.domicileRow td .selectboxGroup .selectbox
+        {
+        width: 180px;
+        float: none;
+        display: inline-block;
+    }
+    table.formTable tr.domicileRow td .selectboxGroup .selectbox select, table.formTable2 tr.domicileRow td .selectboxGroup .selectbox select
+        {
+        width: 100%;
+        padding-left: 20px;
+        background-position: 140px center;
+    }
+    table.formTable tr.domicileRow td .selectboxLabel, table.formTable2 tr.domicileRow td .selectboxLabel {
+        line-height: 48px;
+        width: 60px;
+        margin-left: 0 !important;
+        float: none;
+        display: inline-block;
+    }
+    table.formTable tr.domicileRow td .selectboxGroup .inputTextMedium, table.formTable2 tr.domicileRow td .selectboxGroup .inputTextMedium
+        {
+        float: left;
+        width: 50%;
+    }
+    table.formTable tr.domicileRow td .selectboxGroup .inputTextMedium input, table.formTable2 tr.domicileRow td .selectboxGroup .inputTextMedium input
+        {
+        width: 100%;
+    }
+    table.formTable tr.domicileRow td .selectboxGroup span, table.formTable2 tr.domicileRow td .selectboxGroup span {
+        clear: both;
+        overflow: hidden;
+        margin-top: 14px;
+        display: block;
+    }
+    table.formTable tr td .selectboxGroup .inputTextLarge label, table.formTable2 tr td .selectboxGroup .inputTextLarge label
+        {
+        clear: both;
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    table.formTable tr td .selectboxGroup .inputTextLarge input, table.formTable2 tr td .selectboxGroup .inputTextLarge input
+        {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+    table.formTable tr.jobRow td .selectboxGroup, table.formTable2 tr.jobRow td .selectboxGroup {
+        margin-left: 0;
+    }
+    table.formTable tr td .relationshipBlock .selectbox, table.formTable2 tr td .relationshipBlock .selectbox {
+        width: 250px;
+        float: none;
+    }
+    table.formTable tr td .relationshipBlock .selectbox select, table.formTable2 tr td .relationshipBlock .selectbox select
+        {
+        width: 270px;
+        padding-left: 20px;
+        background-position: 210px center;
+    }
+    table.formTable tr td .selectboxGroup .selectboxLarge, table.formTable2 tr td .selectboxGroup .selectboxLarge {
+        width: 280px;
+        float: none;
+    }
+    table.formTable tr td .selectboxGroup .selectboxLarge select, table.formTable2 tr td .selectboxGroup .selectboxLarge select
+        {
+        width: 300px;
+        padding-left: 20px;
+        background-position: 240px center;
+    }
+    table.formTable tr td .selectboxGroup .selectboxMaxLarge, table.formTable2 tr td .selectboxGroup .selectboxMaxLarge {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    table.formTable tr td .selectboxGroup .selectboxMaxLarge select, table.formTable2 tr td .selectboxGroup .selectboxMaxLarge select
+        {
+        width: 300px;
+        padding: 0 2em 0 5px;
+        background-position: 98% center;
+        white-space: normal;
+    }
+    table.formTable tr .relationshipBlock label, table.formTable2 tr .relationshipBlock label {
+        float: none;
+        display: block;
+    }
+    table.formTable tr td .relationshipBlock .inputText, table.formTable tr td .relationshipBlock .inputText input, table.formTable2 tr td .relationshipBlock .inputText,
+        table.formTable2 tr td .relationshipBlock .inputText input {
+        float: none;
+    }
+    table.formTable tr td .relationshipBlock .selectbox, table.formTable2 tr td .relationshipBlock .selectbox {
+        margin-bottom: 15px;
+    }
+    table.formTable tr td .relationshipBlock .inputText, table.formTable2 tr td .relationshipBlock .inputText {
+        width: 100%;
+    }
+    table.formTable tr td .relationshipBlock .inputRelationship input, table.formTable2 tr td .relationshipBlock .inputRelationship input
+        {
+        width: 100%;
+    }
+    table.formTable tr td .pcText, table.formTable2 tr td .pcText {
+        display: none;
+    }
+    table.formTable tr td .telBlock label, table.formTable2 tr td .telBlock label {
+        float: none;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+    }
+    table.formTable tr.telRow td .inputText label, table.formTable tr.emailRow td .inputText label, table.formTable tr td .telBlock .inputText label,
+        table.formTable tr td .inputText label.floatLabel, table.formTable2 tr.telRow td .inputText label, table.formTable2 tr.emailRow td .inputText label,
+        table.formTable2 tr td .telBlock .inputText label, table.formTable2 tr td .inputText label.floatLabel {
+        line-height: 48px;
+    }
+    table.formTable tr.shozokuRow .inputText label, table.formTable2 tr.shozokuRow .inputText label {
+        line-height: 30px !important;
+        float: none !important;
+        padding: 0;
+    }
+    table.formTable tr.kokunaiRow .inputText input, table.formTable2 tr.kokunaiRow .inputText input {
+        float: left !important;
+    }
+    table.formTable tr.kokunaiRow .inputText label, table.formTable2 tr.kokunaiRow .inputText label {
+        float: left !important;
+    }
+    table.formTable tr.passwordRow .inputText label, table.formTable2 tr.passwordRow .inputText label {
+        line-height: 48px;
+    }
+    table.formTable tr td .smsRadioGroup .radio, table.formTable2 tr td .smsRadioGroup .radio {
+        float: none;
+    }
+    table.formTable tr td .smsRadioGroup .radio .radioTxt, table.formTable2 tr td .smsRadioGroup .radio .radioTxt {
+        display: block;
+        width: 110px;
+    }
+    table.formTable tr td .smsRadioGroup .radio .radioTxt, table.formTable tr td .smsRadioGroup .radio .circle, table.formTable2 tr td .smsRadioGroup .radio .radioTxt,
+        table.formTable2 tr td .smsRadioGroup .radio .circle {
+        float: left;
+    }
+    .zairyuSubmitForm .addButtonGroup .txt {
+        float: none;
+        line-height: 22px;
+    }
+    .zairyuSubmitForm .addButtonGroup .btn {
+        float: none;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .submitButtonGroup {
+        width: 100%;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+    .submitButtonGroup .btnClear {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .stepList li .step p span.br:before {
+        content: "\A";
+        white-space: pre;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .stepList li .step, .stepList li .arrow, .stepList li .step:after, .stepList li .step p {
+        height: 86px;
+    }
+    .stepList li .arrow, .stepList li .step:after {
+        border: 43px solid transparent;
+    }
+    .stepList li .arrow {
+        right: -51px;
+        border: 43px solid transparent;
+        border-left: 8px solid #f0f0f0;
+    }
+    .stepList li .step:after {
+        border: 43px solid transparent;
+        border-left: 8px solid #fff;
+    }
+    .stepList li .step p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .stepList li.step2 .step p {
+        padding-top: 4px;
+    }
+    .stepList li .step p .txtSmall {
+        line-height: 12px;
+    }
+    .zairyuSubmitForm .addButtonGroup .btn, .submitButtonGroup .btn {
+        font-size: 13px;
+    }
+    .stepList li.step2 .step p {
+        padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .stepList li.step2 .step p, .stepList li.step3 .step p, .stepList li.step4 .step p {
+        padding-top: 4px;
+    }
+    table.formTable tr td .inputText input.inputYear, table.formTable2 tr td .inputText input.inputYear {
+        width: 70%;
+    }
+    table.formTable tr td .relationshipBlock .selectbox, table.formTable2 tr td .relationshipBlock .selectbox {
+        width: 100%;
+    }
+    table.formTable tr td .relationshipBlock .selectbox select, table.formTable2 tr td .relationshipBlock .selectbox select
+        {
+        width: 100%;
+        padding-left: 10px;
+        background-position: 95% center;
+    }
+}
+
+/* 繝ｪ繧ｹ繝郁｡ｨ遉ｺ霑ｽ蜉� */
+.selectCountryArea {
+    display: table-cell;
+    width: 590px;
+}
+
+.resetBtn {
+    display: table-cell;
+    width: 115px;
+    height: 100%;
+    vertical-align: bottom;
+    font-size: 18px;
+}
+
+.selectCountryGroup {
+    display: table;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.selectCountryNameLabel {
+    vertical-align: middle;
+    height: 100%;
+    margin: auto 30px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.selectCountryName {
+    vertical-align: middle;
+    font-size: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.areaBtnGroup .areaName {
+    padding: 15px;
+    display: inline-block;
+    height: 40px;
+    width: 20%;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgb(107,155,206);
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    /* position: absolute; */
+    float: left;
+    margin: 3px;
+    /* vertical-align: middle; */
+    /* line-height: 40px; */
+}
+
+.areaBtnGroup {
+    height: 152px;
+    width: 720px;
+    left: 7px;
+    position: relative;
+    text-align: center;
+}
+
+.areaName .oneLineText {
+    display: block;
+    line-height: initial;
+}
+
+.areaBtnGroup .areaName.select {
+    background-color: rgb(0,51,153);
+    box-shadow: 0 0 10px grey;
+}
+
+.countryBtnGroup .countryName {
+    padding: 9px;
+    display: inline-block;
+    height: 60px;
+    width: 29%;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgb(107,155,206);
+    color: rgb(0,51,153);
+    float: left;
+    font-weight: bold;
+    margin: 4px;
+    vertical-align: middle;
+    /* line-height: 40px; */
+    box-shadow: 0 0 2px grey;
+}
+
+.countryBtnGroup {
+    width: 720px;
+    height: 250px;
+    overflow-y: scroll;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid #d8d7d7;
+}
+
+.countryBtnGroup .countryName  a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    width: 10%;
+    position: relative;
+}
+
+.countryBtnGroup .countryName  a:link,.countryBtnGroup .countryName  a:visited ,.countryBtnGroup .countryName  a:hover, .countryBtnGroup .countryName  a:active{
+    color: rgb(0,51,153);
+    text-decoration:none;
+}
+
+.countryBtnGroup .countryName.select {
+    background-color: rgb(0,51,153);
+    color: white;
+}
+
+.countryBtnGroup .countryName.select  a:link,.countryBtnGroup .countryName.select  a:visited ,.countryBtnGroup .countryName.select  a:hover, .countryBtnGroup .countryName.select  a:active{
+    color: white;
+    text-decoration:none;
+}
+
+.areaBtnGroup .areaName  a {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+    width: 20%;
+    position: relative;
+}
+
+.areaBtnGroup .areaName  a:link,.areaBtnGroup .areaName  a:visited ,.areaBtnGroup .areaName  a:hover, .areaBtnGroup .areaName  a:active{
+    color: white;
+    text-decoration:none;
+}
+.areaBtnGroup .areaName {
+    padding: 0px 11px;
+    width: initial;
+    width: auto;
+    margin: 0px -2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #d8d7d7;
+    border-bottom:1px solid rgb(107,155,206);
+    z-index: 0;
+    position: relative;
+}
+
+.areaBtnGroup {
+    height: 42px;
+    width: 724px;
+}
+
+.countryBtnGroup {
+    margin: 0;
+    margin-top: -8px;
+    z-index: 0;
+    border: 2px solid #d8d7d7;
+    border-top: none;
+    height: auto;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.areaBtnGroup .areaName.select {
+    background-color: white;
+    color: rgb(0,51,153) !important;
+    box-shadow: none;
+    border: 2px solid #d8d7d7;
+    border-bottom-color: white;
+    z-index: 2;
+}
+
+.areaBtnGroup .areaName.select a {
+    color: rgb(0,51,153) !important;
+}
+
+.areaBtnGroup:after {
+    content: "";
+    width: 100%;
+    bottom: -2px;
+    left: -7px;
+    border-bottom: 2px solid #d8d7d7;
+    z-index: 1;
+    position: absolute;
+}
+
+.areaBtnGroup:before {
+    z-index: 1;
+}
+
+.areaBtnGroup .areaName:before, .areaBtnGroup .areaName:after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    content: " ";
+    border: 1px solid #d8d7d7;
+}
+
+.areaBtnGroup .areaName:before {
+    left: -7px;
+    bottom: -1px;
+    border-bottom-right-radius: 6px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 2px 0 rgb(107,155,206);
+}
+
+.areaBtnGroup .areaName:after {
+    right: -7px;
+    border-bottom-left-radius: 6px;
+    border-width: 0 0 1px 1px;
+    box-shadow: -2px 2px 0 rgb(107,155,206);
+    bottom: -1px;
+}
+
+.areaBtnGroup .areaName.select:before {
+    left: -7px;
+    border: 1px solid #d8d7d7;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 2px 0 white;
+}
+
+.areaBtnGroup .areaName.select:after {
+    right: -7px;
+    border: 1px solid #d8d7d7;
+    border-width: 0 0 1px 1px;
+    box-shadow: -2px 2px 0 white;
+}
+
+.areaBtnGroup .areaName:first-child {
+    margin-left: 6px;
+}
+
+span.areaName {}
+
+.selectCountryArea {
+    display: table-cell;
+    width: 590px;
+}
+
+.resetBtn {
+    display: table-cell;
+    width: 120px;
+    height: 100%;
+    vertical-align: bottom;
+    font-size: 18px;
+    text-align: center;
+}
+
+.selectCountryGroup {
+    display: table;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.selectCountryNameLabel {
+    vertical-align: middle;
+    height: 100%;
+    margin: auto 30px;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.selectCountryName {
+    vertical-align: middle;
+    font-size: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.baloon {
+    width: 305px; /* 蟷� */
+    /* margin: 0 auto 40px; */ /* 荳� 蟾ｦ蜿ｳ 荳九�繝槭�繧ｸ繝ｳ */
+    padding: 7px; /* 縺ｵ縺阪□縺怜�縺ｮ菴咏區 */
+    background: #fff; /* 閭梧勹濶ｲ */
+    border: 5px solid #0964ec; /* 邱夊牡 */
+    text-align: center; /* 繝�く繧ｹ繝医�謠�∴ */
+    border-radius: 15px;
+    text-align: left;
+    /* margin-top: 200px; */
+    /* margin-left: 10px; */
+    /* height: 38px; */
+    position: absolute;
+    display: block;
+}
+
+.baloon:before, .baloon:after {
+    content: '';
+    display: block;
+    border: 14px solid transparent;
+    position: absolute;
+    /* left: 50%; */
+    margin-left: -28px;
+    /* position: relative; */
+    left: 95%;
+}
+
+.baloon:before {
+    border-top-color: #0964ec; /* 蜷ｹ縺榊�縺励�邱壹�濶ｲ縺ｨ蜷後§濶ｲ */
+    left: 12%;
+    /* top: 30.3%; */
+    /* position: absolute; */
+    height: 0;
+    width: 0;
+    top: 102%;
+}
+
+.baloon:after {
+    border-top-color: #fff; /* 蜷ｹ縺榊�縺励�閭梧勹濶ｲ縺ｨ蜷後§濶ｲ */
+    /* bottom: -33%; */
+    left: 12%;
+    top: 90%;
+}
+
+.northKorea {
+    color: red;
+    font-size: 15px;
+    /* text-align: right; */
+    padding: 8px;
+    position: relative;
+}
+
+.floatArea.inherit {
+    z-index: 50;
+    position: inherit;
+    /* height: 500px; */
+    /* padding-top: 161px; */
+    display: block;
+    /* padding-left: 107px; */
+    height: 128px;
+    /* margin-left: 10px; */
+}
+
+.floatArea {
+    z-index: 500;
+    display: block;
+    /* width: 100%; */
+    /* height: 100%; */
+    position: fixed;
+}
+
+.levelAlert.level4 {
+    background-color: #ff0000;
+    color: white;
+}
+
+span.levelAlert {
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 2px;
+    margin: 2px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+span.levelAlert.level3 {
+    background-color: #ff9900;
+}
+
+.levelAlert.infLevel3 {
+    background-color: #5e0782;
+    color: white;
+}
+
+.levelAlert.infLevel4 {
+    background-color: #231598;
+    color: white;
+}
+
+.baloonContainer {
+    /* height: 0; */
+    vertical-align: bottom;
+    position: relative;
+    z-index: 50;
+    display: block;
+}
+
+
+.countryNameContainer {
+    display: table-cell;
+    width: 420px;
+}
+
+.labelArea {
+    display: table-cell;
+    height: 100%;
+    width: 140px;
+}
+
+
+.importantNotices.passwordNotice {
+    margin-left: 40px;
+}
+
+.attenText span.oneRowText {
+    display: contents;
+}
+
+.attenText span {
+    display: block;
+}
+.submitButtonGroup.enumBoxGroup {
+    width: initial;
+    width: auto;
+}
+
+.submitButtonGroup.enumBoxGroup button {
+    margin-right: 15px;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel {
+    display: block;
+    margin: initial;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea>.selectbox {margin-left: 0;display: inline-block;float: left;/* margin-top: 10px; */margin-right: 0;}
+
+.tdright_half .selectboxDateArea{
+    height: initial;
+    height: auto;
+}
+
+
+.tdright_half .selectboxGroup .selectboxDateArea .floatLabel.labelYear, .tdright_half .selectboxDateArea .selectboxLabel{
+    margin-right: 50%;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.monthLabel, .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.dayLabel{
+    display: inline-block;
+    width: initial;
+    width: auto;
+    margin-right: 2px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea>.selectbox:first-of-type {
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+.tdright_half .calendarArea {
+    float: right;
+}
+
+.selectboxDateArea {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: block;
+    height: initial;
+    height: auto;
+    width: initial;
+    width: auto;
+}
+.selectboxDateArea .floatLabel {
+    margin-right: 10px;
+}
+.selectboxGroup .selectboxDateArea>.selectboxLabel{
+  margin-top :0;
+}
+.selectboxDateArea>.floatLabel {
+    margin-left: 0;
+    float: left;
+    margin-top: 6px;
+}
+.formTable td select{
+  font-size: 100%;
+  vertical-align: middle;
+  box-sizing:border-box;
+}
+.selectboxDateArea .selectbox {
+  margin-right: 8px;
+  margin-left: 0px;
+}
+
+.selectboxDateArea .selectboxLabel {
+  margin-right: 30px;
+}
+
+.selectboxDateArea .floatLabel.labelYear, .selectboxDateArea .floatLabel.selectboxLabel {
+    display: inline-block;
+}
+
+.calendarArea input {
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+
+.calendarArea {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.selectboxDateArea {
+    display: inline-block;
+    height: 60px;
+}
+
+.ui-datepicker-trigger {
+    margin: 0 auto;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.submitButtonGroup.lateralLengthGroup {
+    width: initial;
+    width: auto;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea> .selectbox.yearBox {
+    width: 100px;
+}
+
+.tdright_half select.year {
+    padding-left: 5px;
+    background-position: 75px center;
+    width: 100px;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea .floatLabel.labelYear, .tdright_half .selectboxDateArea .selectboxLabel {
+    margin-top: 7px;
+    margin-bottom: 21px;
+}
+
+.tdright_half select {
+    padding-left: 10px;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea>.selectbox {
+    width: 100px;
+}
+
+.tdright_half .formTable select {
+    background-position: 78px center;
+    width: 100px;
+    padding-left: 37px;
+}
+
+.tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.monthLabel, .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.dayLabel {
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .submitButtonGroup.enumBoxGroup button {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .selectboxDateArea {
+        height: 84px;
+        vertical-align: bottom;
+    }
+
+
+      table.formTable tr td .selectboxGroup {
+        overflow: hidden;
+        margin-left: 0;
+      }
+      table.formTable tr td .selectbox, table.formTable2 tr td .selectboxDateArea .selectbox {
+        display: inline-block;
+        float: none;
+        margin-left: 0;
+        width: 58px;
+        margin-right: 0;
+      }
+      table.formTable tr td .selectbox select {
+        height: 48px;
+        line-height: 48px;
+      }
+      table.formTable tr td .selectboxLabel, table.formTable2 tr td .selectboxDateArea .selectboxLabel {
+        display: inline-block;
+        float: none;
+        height: 48px;
+        line-height: 48px;
+        overflow: hidden;
+        margin-right: 2%;
+      }
+
+    .selectboxDateArea .floatLabel.labelYear, .selectboxDateArea .floatLabel.selectboxLabel {
+        float: initial;
+        height: 48px;
+        vertical-align: top;
+        margin-top: 0;
+        margin-right: 5px;
+        width: initial;
+        line-height: 48px;
+    }
+
+.tdright_half .selectboxGroup .selectboxDateArea> .selectbox.yearBox {
+        width: 65px;
+        margin-right: 0;
+}
+
+    table.formTable tr td .selectbox.yearBox select, table.formTable2 tr td .selectbox.yearBox select {
+        width: 100%;
+        position: relative;
+        background-position: 45px;
+    }
+
+    table.formTable tr td .selectbox select, table.formTable2 tr td .selectbox select {
+        padding-left: 10px;
+        background-position: 35px center;
+        width: 58px;
+    }
+
+    table.formTable tr td .selectbox select, table.formTable2 tr td .selectbox select {
+        padding-left: 10px;
+        background-position: 35px center;
+        width: 58px;
+    }
+
+    .calendarArea {
+        margin-top: 33px;
+        position: relative;
+    }
+
+    .selectboxDateArea>.floatLabel {
+        display: block;
+        width: 100%;
+    }
+
+    table.formTable tr td .selectboxLabel, table.formTable2 tr td .selectboxLabel {
+        line-height: 50px;
+    }
+
+    table.formTable tr td .selectbox, table.formTable2 tr td .selectbox {
+        margin-right: 0;
+    }
+
+    table.formTable tr td .selectbox.yearBox, table.formTable2 tr td .selectbox.yearBox {
+        width: 67px;
+    }
+
+    .selectboxDateArea .floatLabel.labelYear, .selectboxDateArea .floatLabel.selectboxLabel {
+        margin-right: 3px;
+    }
+
+    .circleSquareBlue {
+        margin-right: initial;
+        margin-right: auto;
+        margin-left: initial;
+        margin-left: auto;
+        padding: 16px 10px;
+    }
+    .selectboxGroup .selectboxDateArea>.selectboxLabel:last-child {
+        min-width: 42px;
+    }
+
+    .tdright_half .selectboxGroup .selectboxDateArea>.selectbox {
+        float: initial;
+        width: 53px;
+    }
+
+    .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.monthLabel, .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.dayLabel {
+        float: initial;
+        vertical-align: top;
+    }
+
+    .tdright_half select {
+        width: 50px;
+        background-position: 33px center;
+    }
+
+    .tdright_half .selectboxGroup .selectboxDateArea>.selectbox:first-of-type {
+        margin-bottom: 0;
+    }
+
+    .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.monthLabel, .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.dayLabel {
+        margin-top: 17px;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    .tdright_half .selectboxGroup .selectboxDateArea>.selectbox {
+        float: initial;
+        width: 53px;
+    }
+
+    .tdright_half .selectboxGroup .selectboxDateArea .floatLabel.labelYear, .tdright_half .selectboxDateArea .selectboxLabel {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+
+    .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.monthLabel, .tdright_half .selectboxGroup .selectboxDateArea>.selectboxLabel.dayLabel {
+        margin-top: 0;
+        height: 48px;
+        line-height: 49px;
+        margin-right: 10px;
+        min-width: initial;
+        min-width: auto;
+    }
+
+    .tdright_half .calendarArea {
+        margin-right: 12px;
+    }
+.baloon {
+    width: 300px; /* 蟷� */
+    /* margin: 0 auto 40px; */ /* 荳� 蟾ｦ蜿ｳ 荳九�繝槭�繧ｸ繝ｳ */
+    padding: 7px; /* 縺ｵ縺阪□縺怜�縺ｮ菴咏區 */
+    background: #fff; /* 閭梧勹濶ｲ */
+    border: 5px solid #0964ec; /* 邱夊牡 */
+    text-align: center; /* 繝�く繧ｹ繝医�謠�∴ */
+    border-radius: 15px;
+    text-align: left;
+    /* margin-top: 200px; */
+    /* margin-left: 10px; */
+    /* height: 38px; */
+    position: absolute;
+    display: block;
+}
+
+.baloon:before, .baloon:after {
+    content: '';
+    display: block;
+    border: 14px solid transparent;
+    position: absolute;
+    /* left: 50%; */
+    margin-left: -28px;
+    /* position: relative; */
+    left: 95%;
+}
+
+.baloon:before {
+    border-top-color: #0964ec; /* 蜷ｹ縺榊�縺励�邱壹�濶ｲ縺ｨ蜷後§濶ｲ */
+    left: 95%;
+    /* top: 30.3%; */
+    /* position: absolute; */
+    height: 0;
+    width: 0;
+    top: 102%;
+}
+
+.baloon:after {
+    border-top-color: #fff; /* 蜷ｹ縺榊�縺励�閭梧勹濶ｲ縺ｨ蜷後§濶ｲ */
+    /* bottom: -33%; */
+    /* left: 95%; */
+    top: 90%;
+}
+
+.northKorea {
+    color: red;
+    font-size: 15px;
+    text-align: right;
+    padding: 8px;
+    position: relative;
+}
+
+.floatArea.inherit {
+    z-index: 50;
+    position: inherit;
+    /* height: 500px; */
+    /* padding-top: 161px; */
+    display: block;
+    padding-left: 107px;
+    margin-top: 200px;
+    /* margin-left: 10px; */
+}
+
+.floatArea {
+    z-index: 500;
+    display: block;
+    /* width: 100%; */
+    /* height: 100%; */
+    position: fixed;
+}
+
+.levelAlert.level4 {
+    background-color: #ff0000;
+    color: white;
+}
+
+span.levelAlert {
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 2px;
+    margin: 2px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+span.levelAlert.level3 {
+    background-color: #ff9900;
+}
+
+.levelAlert.infLevel3 {
+    background-color: #5e0782;
+    color: white;
+}
+
+.levelAlert.infLevel4 {
+    background-color: #231598;
+    color: white;
+}
+
+.baloonContainer {
+    /* height: 0; */
+    vertical-align: bottom;
+    position: relative;
+    z-index: 50;
+    display: block;
+}
+
+.selectCountryArea {
+    display: table-cell;
+    width: 590px;
+}
+
+.resetBtn {
+    display: table-cell;
+    width: 115px;
+    height: 100%;
+    vertical-align: bottom;
+    font-size: 18px;
+}
+
+.selectCountryGroup {
+    display: table;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.selectCountryNameLabel {
+    vertical-align: middle;
+    height: 100%;
+    margin: auto 30px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.selectCountryName {
+    vertical-align: middle;
+    font-size: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.areaBtnGroup {
+    width: 100%;
+}
+
+.countryBtnGroup {
+    width: 99%;
+    margin-right: 0;
+    margin-top: -1px;
+    position: relative;
+    overflow-y: hidden;
+    height: auto;
+    text-align: center;
+    border: 1px solid #d8d7d7;
+    padding-right: 1;
+    border-top: none;
+}
+
+.countryBtnGroup .countryName {
+    width: 25%;
+    height: 130px;
+    margin: 6px;
+}
+
+.countryBtnGroup .countryName a {
+    height: 130px;
+    font-size: 16px;
+}
+
+
+.countryBtnGroup .countryName {
+    width: 22%;
+    height: 90px;
+}
+.countryBtnGroup .countryName a {
+    height: 90px;
+}
+
+
+.countryBtnGroup .countryName.largeButton {
+    width: 53.5%;
+}
+
+
+
+
+    .selectCountryNameLabel {
+        height: auto;
+        display: block;
+        width: auto;
+        margin: auto;
+    }
+
+    .selectCountryGroup {
+        display: block;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    span.selectCountryName {
+        display: block;
+        width: 95%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .resetBtn {
+        display: block;
+        text-align: right;
+        margin-left: auto;
+    }
+
+    .selectCountryArea {
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .areaBtnGroup.hide {
+        display: none !important;
+    }
+
+    .countryBtnGroup.hide {
+        display: none !important;
+
+    }
+    .areaBtnGroup .areaName {
+        padding: 0px 11px;
+        width: initial;
+        width: auto;
+        margin: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 1px solid #d8d7d7;
+        border-bottom:1px solid rgb(107,155,206);
+        z-index: 0;
+        position: relative;
+        display: inline-block;
+    }
+
+    .areaBtnGroup {
+        height: 42px;
+        left: 2px;
+        width: 92vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        display: -ms-flex;
+        transform: translateZ(0);
+    }
+
+
+    .areaBtnGroup .areaName.select {
+        background-color: white;
+        color: rgb(0,51,153) !important;
+        box-shadow: none;
+        border: 2px solid #d8d7d7;
+        border-bottom-color: white;
+        z-index: 2;
+    }
+
+    .areaBtnGroup .areaName.select a {
+        color: rgb(0,51,153) !important;
+    }
+
+    .areaBtnGroup:after {
+        content: "";
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        border-bottom: 2px solid #d8d7d7;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .areaBtnGroup:before {
+        z-index: 1;
+    }
+
+    .areaBtnGroup .areaName:before, .areaBtnGroup .areaName:after {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        content: " ";
+        border: 1px solid #d8d7d7;
+    }
+
+    .areaBtnGroup .areaName:before {
+        left: -7px;
+        bottom: -1px;
+        border-bottom-right-radius: 6px;
+        border-width: 0 1px 1px 0;
+        box-shadow: 2px 2px 0 rgb(107,155,206);
+    }
+
+    .areaBtnGroup .areaName:after {
+        right: -7px;
+        border-bottom-left-radius: 6px;
+        border-width: 0 0 1px 1px;
+        box-shadow: -2px 2px 0 rgb(107,155,206);
+        bottom: -1px;
+    }
+
+    .areaBtnGroup .areaName.select:before {
+        left: -7px;
+        border: 1px solid #d8d7d7;
+        border-width: 0 1px 1px 0;
+        box-shadow: 2px 2px 0 white;
+    }
+
+    .areaBtnGroup .areaName.select:after {
+        right: -7px;
+        border: 1px solid #d8d7d7;
+        border-width: 0 0 1px 1px;
+        box-shadow: -2px 2px 0 white;
+    }
+
+    .areaBtnGroup .areaName:first-child {
+        margin-left: 6px;
+    }
+
+    .areaBtnShadow {
+        height: 47px;
+        width: 5px;
+        text-align: right;
+        margin-right: 0;
+        margin-left: 91vw;
+        z-index: 3;
+        position: absolute;
+        /* left: 95%; */
+        width: 10px;
+        margin-top: 41px;
+        overflow-x: hidden;
+    }
+    .areaBtnShadow:before {
+        -moz-box-shadow: 0px 10px 11px 4px #f4f4f7;
+        -webkit-box-shadow: 0px 10px 11px 4px #f4f4f7;
+        content: '';
+        width: 6px;
+        box-shadow: 0px 10px 11px 4px #f4f4f7;
+        height: 45px;
+        border-right: 1px solid rgba(69, 70, 72, 0.2);
+        position: relative;
+        left: 0;
+        top: 2px;
+    }}
+
+@media screen and (max-width: 375px) {
+    .selectboxGroup.twoLine .selectboxDateArea {
+        width: 100%;
+    }
+
+    .selectboxDateArea {
+        width: 85%;
+    }
+
+        .selectboxDateArea .floatLabel.labelYear, .selectboxDateArea .floatLabel.selectboxLabel {
+        margin-right: 0;
+    }
+
+    .selectboxGroup .selectboxDateArea>.selectboxLabel {
+        margin-right: 0;
+    }
+    .selectboxGroup .selectboxDateArea>.selectboxLabel:last-child {
+        min-width: initial;
+        min-width: auto;
+    }
+
+table.formTable2 tr td .selectboxDateArea .selectboxLabel {
+    margin-right: 0;
+}
+    .selectboxGroup .calendarArea {
+        text-align: right;
+        margin-top: 0;
+        width: 13%;
+        height: 84px;
+        line-height: 98px;
+    }
+    .selectboxGroup.twoLine .calendarArea {
+        margin-top: 0;
+        display: block;
+        width: 100%;
+        text-align: right;
+        height: 30px;
+        line-height: initial;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .attenText span.oneRowText {
+        display: inline-block;
+    }
+
+
+}

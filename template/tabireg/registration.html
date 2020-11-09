@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="content-language" content="ja">
+    <meta property="fb:app_id" content="621416251289480" />
+    <meta property="og:title" content="外務省海外旅行登録「たびレジ」" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/" />
+    <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png" />
+    <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png" />
+    <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！" />
+    <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」" />
+    <title>たびレジ - 外務省 海外安全情報配信サービス</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/common.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49881348-4');
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        var headerHight = $("#header").height();
+        $('a[href^="#"]').click(function() {
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top - headerHight;
+            $("html, body").animate({ scrollTop: position }, 550, "swing");
+            return false;
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper" class="popup">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
+                    <p>外務省 海外安全情報配信サービス</p>
+                </div>
+                <div class="h_pasopo">
+                    <p>登録はカンタン！<br>ボクが説明するよ！！</p>
+                    <img src="img/img_paspo_solo.png" alt="パスポくん">
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="contentsInner">
+                <div class="registration_container">
+                    <div class="contents_area">
+                        <p class="title">登録方法</p>
+                        <div class="container regi_area">
+                            <div class="regi_container">
+                                <div class="regi_inner">
+                                    <div class="regi_main">
+                                        <div class="regi_num">1.</div>
+                                        <div class="regi_text">
+                                            <p><span class="display_txt">トップページ</span>の「新規利用者登録をする」のボタンをクリック！<br><br>
+                                                ※利用者IDを持っている方の2回目以降のログインは、「登録済の渡航予定を変更する」のボタンをクリック！</p>
+                                        </div>
+                                    </div>
+                                    <div class="regi_cap">
+                                        <a href="img/regi/cap_n_01_a.png" target="blank"><img src="img/regi/cap_n_01_a.png" class="img-responsive" alt="新規登録：STEP1"></a>
+                                    </div>
+                                </div>
+                                <div class="regi_inner">
+                                    <div class="regi_main">
+                                        <div class="regi_num">2.</div>
+                                        <div class="regi_text">
+                                            <p><span class="display_txt">プライバシーポリシー同意のページ</span>で「プライバシーポリシー」内容を確認して、<span class="display_txt">メールアドレス登録のページ</span>に進もう！</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regi_inner">
+                                    <div class="regi_main">
+                                        <div class="regi_num">3.</div>
+                                        <div class="regi_text">
+                                            <p>登録したメールアドレスに【登録手続きの御案内】のメールが送信されるので、メール内の「●旅行情報登録用URL」をクリックしてね。<span class="caution_txt">まだ登録は完了していないので、必ず24時間以内に旅行情報の登録をお願いします！</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="regi_inner">
+                                    <div class="regi_main">
+                                        <div class="regi_num">4.</div>
+                                        <div class="regi_text">
+                                            <p>パスワードを入力後、<span class="display_txt">旅行登録画面</span>から滞在先、期間を入力してね。<br><br>他に旅行の予定がある場合は「旅行日程を追加」ボタンを押すと滞在先、期間が入力できるよ。全ての旅行日程が入力できたら、「旅行情報追加・変更」ボタンを押してね。</p>
+                                        </div>
+                                    </div>
+                                    <div class="regi_cap">
+                                        <a href="img/regi/cap_n_04_a.png" target="blank"><img src="img/regi/cap_n_04_a.png" class="img-responsive" alt="新規登録：STEP4"></a>
+                                    </div>
+                                </div>
+                                <div class="regi_inner">
+                                    <div class="regi_main">
+                                        <div class="regi_num">5.</div>
+                                        <div class="regi_text">
+                                            <p>最後に<span class="display_txt">旅行者登録画面</span>で、旅行者情報・同行者情報を入力し「入力した内容を確認」ボタンを押すと、【登録完了のお知らせ】メールが届き、登録が完了！<br><br>これで、旅先でいざというときも安心できるね。</p>
+                                        </div>
+                                    </div>
+                                    <div class="regi_cap">
+                                        <a href="img/regi/cap_n_05_a.png" target="blank"><img src="img/regi/cap_n_05_a.png" class="img-responsive" alt="新規登録：STEP5"></a>
+                                    </div>
+                                </div>
+                                <div class="c_pasopo">
+                                    <img class="img-responsive" src="img/regi/regi_pasopo_01.png" alt="パスポくん">
+                                </div>
+                            </div>
+                            <div class="addButtonGroup">
+                                <a href="#" onClick="window.close(); return false;" class="btn btnBack sp_btnMargin mb40">閉じる</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="contentsInner">
+                    <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

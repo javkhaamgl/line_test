@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Cache-Control" content="private">
+        <meta name="content-language" content="ja">
+        <meta http-equiv="content-style-type" content="text/css">
+        <meta http-equiv="content-script-type" content="text/javascript">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="google-site-verification" content="N0I7Gn7tk6h1v2Q-qlCJqWOkGAi4X4FP06SXTddKtb8" />
+        <meta name="format-detection" content="telephone=no,email=no">
+        <title>在留届 - 在留届を提出する方</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/common.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='RRnet/js/application.js') }}"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-49881348-4');
+          agreejson();
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+
+                <div class="headerInner">
+                    <div class="logo">
+                        <a href="index.html" class="layout_pc"><img src="img/logo_orrnet.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                        <a href="index.html" class="layout_sp"><img src="img/sp/logo_orrnet_sp.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                    </div>
+                    <nav id="nav">
+                        <ul class="headerMenu">
+                            <li>
+                                <a href="agree.html">在留届を提出</a>
+                            </li>
+                            <li>
+                                <a href="residencereport/login">変更届・帰国届を提出</a>
+                            </li>
+                        </ul>
+                        <ul class="headerIconMenu">
+                            <li class="faq">
+                                <a href="faq.html">よくある質問</a>
+                            </li>
+                            <li class="inquiry">
+                                <a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="headerBnr">
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_pc"><img src="img/logo_mofa.png" alt="外務省"></a>
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_sp"><img src="img/sp/logo_mofa_sp.png" alt="外務省"></a>
+                    </div>
+                    <div class="menuBtn" id="menuBtn">
+                        <img src="img/sp/icon_menu.png" alt="MENU" id="menuIcon">
+                        <img src="img/sp/icon_close_menu.png" alt="MENU" id="closeMenuIcon">
+                    </div>
+                </div>
+                <div class="dropdownMenu" id="dropdownMenu">
+                    <div class="dropdownInner">
+                        <ul class="listNav">
+                            <li>
+                                <a href="agree.html">在留届を提出する方</a>
+                            </li>
+                            <li>
+                                <a href="residencereport/login">変更届・帰国届を提出する方</a>
+                            </li>
+                        </ul>
+                        <div class="halfColListBlock">
+                            <ul class="listNav">
+                                <li>
+                                    <a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a>
+                                </li>
+                            </ul>
+                            <ul class="listNav">
+                                <li>
+                                    <a href="faq.html">よくあるご質問</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div id="">
+                <div class="pageTitleArea">
+                    <div class="contentsInner">
+                        <h1><label>在留届の提出</label></h1>
+                    </div>
+                </div>
+                <div class="contentsInner">
+                    <p class="txt_r"><a href="index.html">トップページ</a>＞ まずお読み下さい</p>
+                </div>
+                <div class="contentTitleArea">
+                    <div class="contentsInner">
+                        <h2 class="txt_c keyColor fs120p mt15 mb10"><strong>在留届を提出する方へ（はじめにお読みください）</strong></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="contentsInner">
+                        <p class="txt_c keyColor fs120p mb15">
+                            新たに在留届を提出する方は以下のプライバシーポリシー及び注意書をお読みいただき、<br>同意される場合は「同意する」ボタンを押してください。
+                        </p>
+                        <div class="contentsInner">
+                            <h2 class="txt_c keyColor fs120p mt15 mb10"><strong>【プライバシーポリシー】</strong></h2>
+                        </div>
+                        <table class="agreeTable border_gray_dashed mt15 mb15" id="agreetable">
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div class="contentsInner">
+                            <h2 class="txt_c keyColor fs120p mt15 mb10"><strong>【注意書】</strong></h2>
+                        </div>
+                        <table class="agreeTable border_gray_dashed mt15 mb15">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1．</th>
+                                    <td>
+                                        既に在留届を書面やＦＡＸで提出している方は、このシステムを利用した変更届等はできませんので、届出先在外公館に連絡してください。<br>
+                                        または、本システムにて新規登録してください。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2．</th>
+                                    <td>
+                                        内容に誤りのある在留届が提出されると、在外公館では迅速な邦人援護や在留邦人への行政サービスの提供ができませんので、正確な内容を記載してください。殊更に虚偽の内容を届出た場合は、法律により処罰されることがあります。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3．</th>
+                                    <td>
+                                        あなたが、他人になりすまして在留届を提出したり、サーバ等に不正に侵入し、個人のデータを盗んだり改ざんしたりする行為は、法律により処罰されます。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4．</th>
+                                    <td>
+                                        平成２６年４月１日より、以下の方は当該在外公館の管轄地域から転出したものと見なされることがありますので注意してください。<br>
+                                        <ul class="mt10">
+                                            <li>●「滞在予定」欄記載の滞在終了予定日を経過した後、特段のご連絡を頂いておらず、更にその後１年間、当該の在外公館において在留が確認できない方</li>
+                                            <li>●「滞在予定」欄記載の滞在終了予定日が到来していない方のうち、１年間にわたり、当該の在外公館より連絡のつかない方</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5．</th>
+                                    <td>
+                                        当サイトでは、最初に電子メールアドレスを利用者IDとして登録していただき、そこに登録画面リンク情報を送るので、電子メールアドレスの間違いには注意してください。なお、現地インターネット事情等によりメールが届かない場合は、管轄在外公館へ書面や<strong>FAX</strong>で届出してください。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6．</th>
+                                    <td>
+                                        当サイトでは、セキュリティ上の理由から登録操作の途中で３０分以上何も送信されないと登録サービスを遮断します。その場合、再度入力が必要となるので注意してください。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7．</th>
+                                    <td>
+                                        登録された携帯電話番号は、事件・事故や災害時の安否確認、救援活動、ショートメッセージサービス（ＳＭＳ）を用いた緊急情報の発信に使用します。米国の携帯電話番号を登録した場合、54120の番号に宛てて「ＳＴＯＰ」という本文をＳＭＳ送信することにより、いつでもＳＭＳの受信を停止することができます。また、54120の番号に宛てて「ＨＥＬＰ」という本文をＳＭＳ送信することにより、本ＳＭＳに関する概要説明をＳＭＳで受信できます。詳細についてはmofasms@mofa.go.jpまでご連絡ください。ＳＭＳの送受信に当たっては、契約プランに基づいて課金されることがあります。詳細は下記をご確認ください。<br>
+                                        <a href="https://www.anzen.mofa.go.jp/c_info/sms_compliance.html"><span class="txtUnderline">https://www.anzen.mofa.go.jp/c_info/sms_compliance.html</span></a>（英語のみ）
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="submitButtonGroup txt_c p30">
+                            <a href="residencereport/mail/conf" class="btn btnPrimary w192_p txt_block limit_dual_submit">同意する</a>
+                            <a href="index.html" class="btn btnPrimary w192_p txt_block limit_dual_submit btncolor_not">同意しない</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+
+            <div class="contentsInner">
+                <ul class="footerMenu layout_pc">
+                    <li>
+                        <a href="index.html">TOP</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">よくある質問</a>
+                    </li>
+                    <li>
+                        <a href="legalmatters.html">法的事項</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">プライバシーポリシー</a>
+                    </li>
+                    <li>
+                        <a href="accessibility.html">アクセシビリティ</a>
+                    </li>
+                    <li>
+                        <a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="layout_sp">
+                    <ul class="listNav">
+                        <li>
+                            <a href="index.html">TOP</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">よくある質問</a>
+                        </li>
+                        <li>
+                            <a href="legalmatters.html">法的事項</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">プライバシーポリシー</a>
+                        </li>
+                        <li>
+                            <a href="accessibility.html">アクセシビリティ</a>
+                        </li>
+                        <li>
+                            <a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a>
+                        </li>
+                    </ul>
+                    <div class="footerBottomBar">
+                        <div id="pageTop"><img src="img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    Copyright &copy; Ministry of Foreign Affairs of Japan
+                </div>
+            </div>
+
+            <div class="addressArea">
+                <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                    <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                    <br class="contact">
+                        電話（代表）03-3580-3311　法人番号　9000012040001
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

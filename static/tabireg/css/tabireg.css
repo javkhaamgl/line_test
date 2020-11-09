@@ -1,0 +1,521 @@
+.btnUserDetail {
+    padding: 0;
+    width: 350px;
+    height: 49px;
+    line-height: 49px;
+    color: #fff;
+    background-color: #ce4040;
+    border-bottom: 4px solid #af3636;
+    text-align: center;
+    font-size: 11.3px;
+}
+
+.btnAddTravel {
+    padding: 0;
+    width: 350px;
+    height: 49px;
+    color: #822020;
+    background: #FFC34C;
+    border-bottom: 4px solid #822020;
+    text-align: center;
+    font-size: 11.3px;
+}
+
+
+.breadcrumbs li a {
+    cursor: default;
+    color: #000000;
+}
+
+.inputBox .inputBox td span {
+    white-space: nowrap;
+}
+
+.inputBox td p:first-child {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.accordion-head {
+    margin-bottom: 15px;
+}
+
+input[type=checkbox].allArea {
+    display: none;
+}
+
+.all-area-check {
+    margin-bottom: 10px;
+}
+
+.all-check {
+    margin: 10px 0 10px 0;
+}
+
+.allArea-item {
+    transition: background-color 0.2s linear;
+    position: relative;
+    padding: 0 0 0 45px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 55px;
+}
+
+.allArea-item:after {
+    transition: border-color 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b8b8b8;
+    content: '';
+}
+
+.allArea-item:before {
+    content: ' ';
+    transition: opacity 0.2s linear;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    display: block;
+    margin-top: -7px;
+    width: 30px;
+    height: 20px;
+    opacity: 0;
+    background: url('../img/check.png') no-repeat;
+}
+
+input[type=checkbox]:checked+.allArea-item:before {
+    opacity: 1;
+}
+
+.all {
+    display: none; /* checkboxを非表示にする */
+}
+
+.area-label {
+    transition: background-color 0.2s linear;
+    position: relative;
+    padding: 0 0 0 45px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 55px;
+}
+
+.area-label:after {
+    transition: border-color 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b8b8b8;
+    content: '';
+}
+
+.area-label:before {
+    content: ' ';
+    transition: opacity 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 30px;
+    height: 20px;
+    opacity: 0;
+    background: url('../img/check.png') no-repeat;
+}
+
+.all:checked+.area-label:before {
+    opacity: 1; /* 要素を表示する */
+}
+
+.area_item {
+    width: 33.3333%;
+    float: left;
+    height: 60px;
+}
+
+.area_item input {
+    display: none;
+}
+
+.country-item {
+    transition: background-color 0.2s linear;
+    position: relative;
+    padding: 0 0 0 45px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 55px;
+    display: block;
+}
+
+.small-item {
+    line-height: 55px;
+}
+
+.country-item:after {
+    content: '';
+    transition: border-color 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b8b8b8;
+}
+
+.country-item:before {
+    transition: opacity 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 30px;
+    height: 20px;
+    content: ' ';
+    opacity: 0;
+    background: url('../img/check.png') no-repeat;
+}
+
+.area_item input:checked+.country-item:before {
+    opacity: 1;
+}
+
+.inputBox .mailMag_area_container .accordion-container .area_item span {
+    white-space: normal;
+}
+
+.area_item span {
+    height: 60px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+td.mailMag_area_container {
+    padding: 0px !important;
+}
+
+.mailMag_area_list dt {
+    background-color: #dceef3;
+    padding: 10px 12px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #383838;
+}
+
+select:disabled, input:disabled, .checkbox.check, .checkDisabled {
+    background-color: rgb(235, 235, 228);
+}
+
+.notActive {
+    opacity: 0.55;
+}
+
+.infoTxt span {
+    margin-left: 1em;
+    text-indent: 0;
+    display: block;
+}
+
+@media screen and (max-width:880px) {
+    .inputBox td span.name_sp {
+        display: block;
+        margin-left: 31px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .area_item label {
+        font-size: 97% !important;
+    }
+    .radio {
+        margin-right: 30px !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .radio {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .bg_3col {
+        background-color: #f6fbfc;
+    }
+}
+
+@media screen and (max-width:768px) {
+    table.formTable tr td .mailAddress input {
+        width: 70% !important;
+    }
+    .bg_3col {
+        background-color: #f6fbfc;
+    }
+    .area_item label {
+        font-size: 100% !important;
+    }
+    .inputBox td, .inputBox th {
+        max-width: 100%;
+        min-width: 180px;
+        display: block;
+    }
+    .inputBox td {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        font-size: 14px;
+        padding: 5px 10px 13px;
+        width: 100%;
+        border-bottom: 1px solid #CFCFCF
+    }
+    .inputBox td p:first-child {
+        padding: 5px 0 0;
+    }
+    .inputBox td label {
+        margin-right: 2px;
+    }
+    .inputBox td span {
+        display: none;
+        white-space: normal;
+    }
+    .all-check{
+        display: table;
+        position: relative;
+    }
+    .area-label{
+        display: table-cell;
+        position: static;
+    }
+    .area_item {
+        display: table;
+        position: relative;
+        margin-bottom: 1em;
+        width: 50%;
+    }
+    .bg_2col {
+        background-color: #f6fbfc;
+    }
+    .accordion-hide {
+        display: none;
+    }
+    .icon-arrow {
+        position: relative;
+    }
+    .icon-arrow-02-t:after {
+        background-position: -20px 0;
+    }
+    .icon-arrow-02-r:after {
+        background-position: -20px -20px;
+    }
+    .icon-arrow-02-b:after {
+        background-position: -20px -40px;
+    }
+    .icon-arrow-02-l:after {
+        background-position: -20px -60px;
+    }
+    .area_item input {
+        margin-left: 14px;
+    }
+    .inputBox  .area_item label {
+        display: table-cell;
+        position: static;
+        width: 80%;
+        width: calc(100% - 45px);
+    }
+    .small-item {
+        line-height: normal;
+    }
+    .mb15 {
+        margin-bottom: 1px !important;
+    }
+}
+
+@media screen and (max-width:560px) {
+    table.formTable tr td .mailAddress input {
+        width: 60% !important;
+    }
+    #deliveryEndFlagNonItem1, #deliveryEndFlagNonItem2 {
+        padding-bottom: 30px ! important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .area_item input {
+        display: none;
+        position: static;
+        top: 0;
+    }
+    .area_item span {
+        width: 77%;
+    }
+    table.formTable tr td.mailAddress label {
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .area_item input {
+        display: none;
+        position: relative;
+    }
+    .area_item span {
+        width: 77%;
+    }
+    table.formTable tr td .mailAddress input {
+        width: 160px ! important;
+    }
+    img.fLeft {
+        width: 60px;
+    }
+    button.txt_vm {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .area_item input {
+        display: none;
+        position: static;
+        top: 0;
+    }
+    .area_item span {
+        width: 77%
+    }
+}
+
+@media screen and (max-width:320px) {
+    .area_item input {
+        display: none;
+        position: relative;
+        top: 16.5px;
+    }
+    .area_item span {
+        width: 77%;
+    }
+}
+
+@media print{
+    #header{
+        position: absolute;
+    }
+}
+
+#delete-button {
+    display: inline-block;
+    min-height: 62px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #404040;
+    text-align: center;
+    font-size: 120%;
+}
+
+.btnTabiregLogin {
+  padding: 0;
+  width: 256px;
+  height: 49px;
+  line-height: 49px;
+  color:#000;
+  background-color: #ffd464;
+  border-bottom: 4px solid #d3a632;
+  text-align: center;
+  font-size: 15.3px;
+  display: block;
+  margin:0 auto 10px;
+}
+  .btnPasswordReset {
+  display: inline-block;
+  padding: 0;
+  width: 256px;
+  height: 49px;
+  line-height: 49px;
+  color: #fff;
+  background-color: #4B5A66;
+  border-bottom: 4px solid #4C4C4C;
+  text-align: center;
+  font-size: 15.3px;
+  margin:0 auto 10px;
+}
+
+.btnTopPage {
+  display: inline-block;
+  padding: 0;
+  width: 256px;
+  height: 49px;
+  line-height: 49px;
+  color: #fff;
+  background-color: #ce4040;
+  border-bottom: 4px solid #af3636;
+  text-align: center;
+  font-size: 15.3px;
+  margin:0 auto 10px;
+}
+
+@media screen and (max-width:768px) {
+    .simpleForm table.formTable tr.mailAddress td .txt, .simpleForm table.formTable tr.mailAddress td p.txt {
+        text-indent: 0;
+        margin: 0 auto !important;
+        line-height: 1.6em;
+    }
+    .simpleForm table.formTable tr td .inputText, table.formTable tr td .inputTextMedium {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .simpleForm table.formTable tr.mailAddress td .txt, .simpleForm table.formTable tr.mailAddress td p.txt.attenText {
+        margin-left: 1em !important;
+        text-indent: -1em;
+        overflow: visible;
+    }
+    .simpleForm table.formTable tr td .inputText label, .simpleForm table.formTable tr td .inputTextMedium label,
+        .simpleForm table.formTable tr td .inputTextLarge label {
+        margin-left: 0;
+    }
+    .simpleForm .txt_vm.limit_dual_submit, .simpleForm .txt_vm.limit_dual_submit img.fLeft {
+        width: 72px;
+    }
+    .zairyuSubmitForm.simpleForm .addButtonGroup {
+        margin-top: 0;
+    }
+    .simpleForm .destinationArea .checkbox label {
+        padding-left: 30px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .simpleForm .destinationArea .checkbox .check {
+        display: inline-block;
+        position: inherit;
+        float: left;
+        margin-left: -30px !important;
+    }
+    .simpleForm .destinationArea .clearfix {
+        margin-bottom: 0 !important;
+    }
+    .simpleForm table.formTable tr td .mailAddress input {
+        width: 70% !important;
+    }
+    .simpleForm .grouping label {
+        margin-right: 30px;
+    }
+    .area_item {
+        margin-bottom: 30px;
+    }
+    .bg_2col label {
+        background-color: #f6fbfc;
+    }
+    .area_item, .area-label {
+        font-size: 15px;
+    }
+}
