@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<title>利用者情報 - 外務省 海外安全情報配信サービス</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
+<noscript>
+    <label>&lt;img src="/js/awstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"&gt;</label>
+</noscript>
+
+<script type="text/javascript" src="{{ url_for('static',filename='js/common.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/checked.js') }}"></script>
+/*<![CDATA[*/
+    var common_contextPath="";
+    var common_errorPath="\/error";
+/*]]>*/
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49881348-4');
+</script>
+
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/tabireg.css') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/pst.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/inputlimit.js') }}"></script>
+</head>
+<body class="backok">
+    <div id="wrapper">
+        <header id="header">
+            <body>
+    <div class="headerInner">
+        <div class="logo">
+            <a href="/tabireg/index.html"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
+                <p>外務省 海外安全情報配信サービス</p>
+            </a>
+        </div>
+        <nav id="nav">
+            <ul class="headerMenu">
+                <li class="registerMenu">
+                    <a href="tabireg/agree"><span class="redColor">新規利用者登録をする</span></a>
+                    <a href="tabireg/login">
+                        <span class="subtxt2">追加・変更・削除</span><div class="icon">
+                            <div class="pencil"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="instantRegisterMenu">
+                    <a href="tabireg/simple/register">
+                        <span class="blueColor">利用者登録をせずに利用する</span>
+                    </a>
+                    <a href="tabireg/simple/auth">
+                        <span class="subtxt2">追加・変更・削除</span><div class="icon">
+                            <div class="pencil"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="headerIconMenuArea">
+                <ul class="headerIconMenu">
+                    <li class="guidance"><a href="tabireg/registration"  onclick="var res = window.open(this.getAttribute('href'),'登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);"   target="_blank">登録方法</a></li>
+                    <li class="faq"><a href="tabireg/faq">よくある質問</a></li>
+                    <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                </ul>
+                <div id="logstatus">
+                    <ul class="headerIconMenu">
+                        <li class="corp"><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="headerBnr">
+            <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc">
+                <img src="https://www.ezairyu.mofa.go.jp//tabireg/img/logo_mofa.png" alt="PC 外務省">
+            </a>
+            <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp">
+                <img src="https://www.ezairyu.mofa.go.jp//tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省">
+            </a>
+        </div>
+        <div class="menuBtn" id="menuBtn">
+            <img src="https://www.ezairyu.mofa.go.jp//tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
+            <img src="https://www.ezairyu.mofa.go.jp//tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon" id="closeMenuIcon">
+        </div>
+    </div>
+    <div class="dropdownMenu" id="dropdownMenu">
+        <div class="dropdownInner">
+            <ul class="listNav">
+                <li>
+                    <a href="tabireg/agree" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a>
+                    <a href="tabireg/login" class="submenu submenu1">追加・変更・削除</a>
+                </li>
+                <li>
+                    <a href="tabireg/simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a>
+                    <a href="tabireg/simple/auth" class="submenu submenu2">追加・変更・削除</a>
+                </li>
+            </ul>
+            <div class="halfColListBlock">
+                <ul class="listNav">
+                    <li><a href="tabireg/registration" onclick="var res = window.open(this.getAttribute('href'),'登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);"  target="_blank">登録方法</a></li>
+                </ul>
+                <ul class="listNav">
+                    <li><a href="tabireg/faq">よくある質問</a></li>
+                </ul>
+                <ul class="listNav">
+                    <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                </ul>
+                <ul class="listNav">
+                    <li><a href="tabireg/companylist">企業・法人の方へ</a></li>
+                </ul>
+                <ul class="listNav">
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+        </header>
+        <div id="contents">
+            <div class="breadcrumbs">
+                <div class="breadcrumbsInner">
+                    <ol class="clearfix">
+                        <li class="first"><a>利用者情報確認・変更</a><span></span></li>
+                        <li class="last current"><a>パスワード再登録</a></li>
+                    </ol>
+                </div>
+            </div>
+            <form class="check_inputs" action="/tabireg/user/password/reset" method="POST"><input type="hidden" name="_csrf" value="b69a7289-f22b-4cbe-bb65-8181e94fc149"/>
+                <fieldset>
+                    <div class="zairyuSubmitForm">
+                        <div class="contentsInner">
+                            <div class="mb30">
+                                <p class="txt">
+                                    <label>利用者ID（メールアドレス）を入力して、メールを送信するボタンを押してください。</label> <br> <label>このメールアドレスに、パスワード変更案内メールを送付します。</label>
+                                </p>
+                                <p class="txt mt6">
+                                    <span class="requiredLabel">必須</span>必須項目は必ず入力してください。
+                                </p>
+                                <div>
+    
+        <div class="box_inner">
+            
+        </div>
+    
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentsInner mb30">
+                        <table class="formTable">
+                            <tbody>
+                                <tr class="domicileRow">
+                                    <th class="txt_vm"><label> <span class="txt_block">利用者ID</span> <span
+                                            class="txt_block">（メールアドレス）</span> <span class="requiredLabel">必須</span>
+                                    </label></th>
+                                    <td>
+                                        <div class="inputTextLarge fLeft">
+                                            <div style="display: none;" class="checkedArea"><span style="display: none;" class="mailaddress">形式が不正です。</span><span style="display: none;" class="notblank">入力は必須です。</span></div><input type="email" name="userMailAddress" id="userMailAddress" size="32" maxlength="254" value="" with="mail" placeholder="" class="checked" rule="mailaddress notblank"></input>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="addButtonGroup">
+                        <button type="button" name="backUserTop" class="btn btnBack txt_inline check_buttons"
+                            onclick="javascript:history.back();">前の画面へ戻る</button>
+                        <button type="submit" name="resetPassword" class="btn btnPrimary txt_inline mb20 limit_eternal_submit">
+                            メールを送信する</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <footer id="footer">
+            <body>
+    <div class="contentsInner">
+        <ul class="footerMenu layout_pc">
+            <li><a href="/tabireg">TOP</a></li>
+            <li><a href="/tabireg/faq.html">よくある質問</a></li>
+            <li><a href="/tabireg/legalmatters.html">法的事項</a></li>
+            <li><a href="/tabireg/privacy.html">プライバシーポリシー</a></li>
+            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+        </ul>
+        <div class="layout_sp">
+            <ul class="listNav">
+                <li><a href="/tabireg">TOP</a></li>
+                <li><a href="/tabireg/faq.html">よくある質問</a></li>
+                <li><a href="/tabireg/faq.html">法的事項</a></li>
+                <li><a href="/tabireg/legalmatters.html">法的事項</a></li>
+                <li><a href="/tabireg/privacy.html">プライバシーポリシー</a></li>
+                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+            </ul>
+            <div class="footerBottomBar">
+                <div id="pageTop">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+        <ul class="socialBtns">
+            <li>
+                <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
+                </a>
+            </li>
+            <li>
+                <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="addressArea">
+        <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+            <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+            <br class="contact">
+                電話（代表）03-3580-3311　法人番号　9000012040001
+        </p>
+    </div>
+</body>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1003 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="content-language" content="ja">
+        <meta property="fb:app_id" content="621416251289480"/>
+        <meta property="og:title" content="外務省海外旅行登録「たびレジ」"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/"/>
+        <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
+        <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
+        <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！"/>
+        <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」"/>
+        <meta name="format-detection" content="telephone=no,email=no">
+        <title>たびレジ - 外務省 海外安全情報配信サービス</title>
+
+        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/application.js') }}"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-49881348-4');
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                var headerHight = $("#header").height();
+                $('a[href^="#"]').click(function(){
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top-headerHight;
+                    $("html, body").animate({scrollTop:position}, 550, "swing");
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+
+                <div class="headerInner">
+                    <div class="logo">
+                        <a href="/"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
+                            <p>外務省 海外安全情報配信サービス</p></a>
+                    </div>
+                   
+                    <div class="headerBnr">
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_pc" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png" alt="PC 外務省"></a>
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_sp" target="_blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
+                    </div>
+                    <div class="menuBtn" id="menuBtn">
+                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
+                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon" id="closeMenuIcon">
+                    </div>
+                </div>
+                <div class="dropdownMenu" id="dropdownMenu">
+                    <div class="dropdownInner">
+                        <ul class="listNav">
+                            <li><a href="/tabireg/agree" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="/tabireg/login"
+                                class="submenu submenu1">追加・変更・削除</a></li>
+                            <li><a href="/tabireg/simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a
+                                href="/tabireg/simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
+                        </ul>
+
+                        <div class="halfColListBlock">
+                            <ul class="listNav">
+                                <li><a href="/tabireg/registration" target="_blank" onclick="var res = window.open('/tabireg/registration','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                            </ul>
+                            <ul class="listNav">
+                                <li><a href="/tabireg/faq">よくある質問</a></li>
+                            </ul>
+                            <ul class="listNav">
+                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                            </ul>
+                            <ul class="listNav">
+                                <li><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div class="contents">
+                <div class="contentsInner">
+                    <div class="faq_container">
+                        <div class="contents_area">
+                            <h1 class="page_title mt20 mb20">ＦＡＱ（よくあるご質問）</h1>
+                            <div class="container3 question_list_area">
+                                <ul class="q_list_ul">
+                                    <li class="q_list_01"><span class="white">Q1</span><a href="#q1">「たびレジ」登録は必ず行うべきですか？</a></li>
+                                    <li class="q_list_02"><span class="white">Q2</span><a href="#q2">いつ登録すればいいのですか？</a></li>
+                                    <li class="q_list_03"><span class="white">Q3</span><a href="#q3">本人以外にも追加で登録できますか？</a></li>
+                                    <li class="q_list_04"><span class="white">Q4</span><a href="#q4">登録内容はどのように修正できますか？</a></li>
+                                    <li class="q_list_05"><span class="white">Q5</span><a href="#q5">よく海外に行くのですが、利用者ＩＤを延長登録することはできますか？</a></li>
+                                    <li class="q_list_06"><span class="white">Q6</span><a href="#q6">海外に３ヶ月以上滞在する予定ですが、登録は必要ですか？</a></li>
+                                    <li class="q_list_07"><span class="white">Q7</span><a href="#q7">登録した情報はどのように利用するのですか？</a></li>
+                                    <li class="q_list_08"><span class="white">Q8</span><a href="#q8">大使館・総領事館の連絡先を知ることが出来ますか？</a></li>
+                                    <li class="q_list_09"><span class="white">Q9</span><a href="#q9">「たびレジ」に登録すれば、いざというときに大使館・総領事館から連絡してもらえるのですか？</a></li>
+                                    <li class="q_list_10"><span class="white">Q10</span><a href="#q10">海外で携帯電話を使って登録したり、メールを受け取ることはできますか？</a></li>
+                                    <li class="q_list_11"><span class="white">Q11</span><a href="#q11">フィーチャーフォン（従来型携帯電話）で登録が出来ますか？また、どのようなブラウザに対応していますか？</a></li>
+                                    <li class="q_list_12"><span class="white">Q12</span><a href="#q12">「たびレジ」に登録するとどのような情報が受け取れますか？</a></li>
+                                    <li class="q_list_13"><span class="white">Q13</span><a href="#q13">「たびレジ」が正常に動作しません。</a></li>
+                                    <li class="q_list_14"><span class="white">Q14</span><a href="#q14">ワンタイムURLを押してもリンク先が表示されません。</a></li>
+                                    <li class="q_list_15"><span class="white">Q15</span><a href="#q15">メールが受け取れません。</a></li>
+                                    <li class="q_list_16"><span class="white">Q16</span><a href="#q16">旅行者情報登録の氏名(ローマ字)は、どのように入力すれば良いですか？</a></li>
+                                    <li class="q_list_17"><span class="white">Q17</span><a href="#q17">「たびレジ」登録時点で現地で使用する携帯電話番号が分かりません。</a></li>
+                                    <li class="q_list_18"><span class="white">Q18</span><a href="#q18">パスワードを忘れた場合にはどうすれば良いですか？</a></li>
+                                    <li class="q_list_19"><span class="white">Q19</span><a href="#q19">アカウントロックを解除したいのですがどうすれば良いですか？</a></li>
+                                    <li class="q_list_20"><span class="white">Q20</span><a href="#q20">メールアドレス（利用者ID）を変更することはできますか？</a></li>
+                                    <li class="q_list_21"><span class="white">Q21</span><a href="#q21">文字の大きさを変更することはできますか？</a></li>
+                                    <li class="q_list_22"><span class="white">Q22</span><a href="#q22">旅行が中止になった場合、どのような手続きが必要ですか？</a></li>
+                                    <li class="q_list_23"><span class="white">Q23</span><a href="#q23">問い合わせを送信したのに、回答が返ってきません。</a></li>
+                                    <li class="q_list_24"><span class="white">Q24</span><a href="#q24">「たびレジ」の広報資料はありますか？</a></li>
+                                    <li class="q_list_25"><span class="white">Q25</span><a href="#q25">このサイトは安全なサイトですか？</a></li>
+                                    <li class="q_list_26"><span class="white">Q26</span><a href="#q26">「たびレジ」簡易登録とはなんですか？</a></li>
+                                    <li class="q_list_27"><span class="white">Q27</span><a href="#q27">「たびレジ」連携インターフェイスとはなんですか？</a></li>
+                                    <li class="q_list_28"><span class="white">Q28</span><a href="#q28">たびレジ入力項目の簡素化とはなんですか？</a></li>
+                                    <li class="q_list_29"><span class="white">Q29</span><a href="#q29">滞在先欄の都市名で「未定」を選択したときの注意点とはなんですか？</a></li>
+                                    <li class="q_list_30 last"><span class="white">Q30</span><a href="#q30">「たびレジ」は有料ですか？</a></li>
+                                </ul>
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/paspokun.png" class="faq_paspokun" alt="パスポくん">
+                            </div>
+                            <div class="container4 answer_area">
+                                <div class="faq_answer_container">
+                                    <h3 id="q1">Q1&nbsp;「たびレジ」登録は必ず行うべきですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A1</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">登録は任意ですが、あなたの旅の安全にとても役立つメールサービスですので、是非登録することをお薦めします。<br>
+                                                「たびレジ」に登録すると現地の大使館・総領事館から、日本語で最新の安全情報がメールで届きます。また、大規模な事件・事故、テロ、自然災害等緊急事態が発生した場合、被害の状況によっては、現地の大使館・総領事館から、緊急連絡のメールが届き、安否の確認や必要な支援などを受けることができます。</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q2">Q2&nbsp;いつ登録すればいいのですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A2</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">登録はいつでもできます。旅行することが決まったら、速やかに登録することをお薦めします。また、簡易登録をすれば、日頃から安全情報を得ることができます。</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q3">Q3&nbsp;本人以外にも追加で登録できますか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A3</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">ご本人以外にもご家族や職場の方などを追加登録できます。その場合は、事前にメールアドレス所有者から同意を得てください。</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q4">Q4&nbsp;登録内容はどのように修正できますか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A4</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">登録時の利用者ＩＤ（メールアドレス）、パスワードを入力していただけば、登録内容の変更や、新たな旅行日程を追加登録できます。</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q5">Q5&nbsp;よく海外に行くのですが、利用者ＩＤを延長して登録することはできますか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A5</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">初回登録時または利用者情報確認・変更画面から、利用者ＩＤの有効期間を1年に延長することができます。</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q6">Q6&nbsp;海外に３ヶ月以上滞在する予定ですが、登録は必要ですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A6</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">ひとつの国や都市に３ヶ月以上滞在する場合は、在留届を届出してください。<a href="https://www.ezairyu.mofa.go.jp/RRnet/index.html" target="_blank">オンライン在留届（ORRネット）</a>から電子届出することができます。<br>
+                                                        在留届を提出することで、「たびレジ」登録者と同じ情報を受け取ることができます。<br>
+                                                        現在外国にお住まいで、既に在留届を提出された方も、別の国へ旅行や出張する際（同じ国の中でも在留届提出先大使館・総領事館の管轄区域外の地域への旅行や出張の場合を含みます）には、「たびレジ」をご利用ください。<br>
+                                                        また、外国での住所・居所を定めず3ヶ月以上渡航する場合にも、「たびレジ」をご利用下さい。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q7">Q7&nbsp;登録した情報はどのように利用するのですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A7</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">皆様に登録していただいた情報は、渡航先の国・地域で事故や事件が発生した場合の緊急連絡先や、大使館・総領事館が発出する安全情報等に関するメールの送信先として活用します。<br>
+                                                また、登録情報は旅行終了から30日間、個人情報として大切に保管し、その後は個人情報を消去した上で統計情報として利用します。詳しくは、<a
+                                                        href="privacy.html">プライバシーポリシー</a>を参照してください。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q8">
+                                        <span class="orangeLast">Q8</span>&nbsp;大使館・総領事館の連絡先を知ることが出来ますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A8</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">登録が完了した方に送付する「登録完了お知らせメール」にて、渡航先の国・地域の大使館・総領事館の連絡先やホームページへのリンク情報をお知らせしています。</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q9">
+                                        <span class="orangeLast">Q9</span>&nbsp;「たびレジ」に登録すれば、いざというときに大使館・総領事館から連絡してもらえるのですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A9</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">滞在国・地域での大規模な事件・事故、テロ、自然災害等緊急事態が発生した場合、現地の大使館・総領事館から、緊急事態の発生をメールでおしらせし、注意を呼びかけます。また、被害の状況によっては、安否確認等のために登録した連絡先に連絡することがあります。ただし、海外では「自分の身は自分で守る」という心構えをもって、滞在中は自ら現地の最新の治安情報を入手し、安全対策に努めてください。 </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q10" class="indent3">
+                                        <span class="orangeLast">Q10</span>&nbsp;海外で携帯電話を使って登録したり、メールを受け取ることはできますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A10</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">携帯電話の機種によっては、海外で使用できない場合や海外で使用するために設定が必要な場合があります。また、海外での携帯電話の通信は日本国内の定額サービスの対象外であるため、通信料が高額になる場合があります。海外で携帯電話を使用するためのサービス・設定等につきましては、各携帯会社のサイトをご確認してください。 </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a_number_cell"></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto"> NTTドコモ<br> <a
+                                                        href="https://www.nttdocomo.co.jp/service/world/" target="_blank">https://www.nttdocomo.co.jp/service/world/</a><br>
+                                                        <br> au<br> <a
+                                                        href="http://www.au.kddi.com/mobile/service/global/" target="_blank">http://www.au.kddi.com/mobile/service/global/</a><br>
+                                                        <br> ソフトバンク<br> <a
+                                                        href="http://www.softbank.jp/mobile/service/global/" target="_blank">http://www.softbank.jp/mobile/service/global/</a><br>
+                                                        <br> Y!mobile<br> <a href="http://ymobile.jp/" target="_blank">http://ymobile.jp/</a>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q11" class="indent3">
+                                        <span class="orangeLast">Q11</span>&nbsp;フィーチャーフォン（従来型携帯電話）で登録が出来ますか？また、どのようなブラウザに対応していますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A11</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                        フィーチャーフォン（スマートフォン以外の従来型携帯電話）は、機種により登録手続を行えない場合がありますが、メールの受信は可能です。<br>
+                                                        外務省からの情報をフィーチャーフォンのメールアドレスで受信することを希望される方は、「メールアドレス」欄にパソコンやスマートフォン等で利用できるメールアドレスを入力して登録手続を始め、 「旅行者情報」登録画面に進んだところで「追加メールアドレス」項目にフィーチャーフォンのメールアドレスを入力して下さい。<br>
+                                                        また、本システムで提供する画面に対応したブラウザは以下のとおりです。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a_number_cell"></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto"> Windows 7、8.1、10環境<br>
+                                                        ブラウザ<br> ・Internet Explorer<br> Windows 7をお使いのお客様：Internet
+                                                        Explorer Ver.11<br> Windows 8.1をお使いのお客様：Internet Explorer
+                                                        Ver.11<br> Windows 10をお使いのお客様：Internet Explorer Ver.11,Edge<br>
+                                                        <br> ・Firefox<br> ・Google Chrome<br> <br> Mac環境<br>
+                                                        ・Safari6以上<br> <br> スマートフォン環境<br> ・Android 4.4.2以上<br>
+                                                        Google Chrome<br> Androidブラウザ<br> <br> ・iOS 7.0以上<br>
+                                                        Google Chrome<br> Safari6以上<br>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q12" class="indent3">
+                                        <span class="orangeLast">Q12</span>&nbsp;「たびレジ」に登録するとどのような情報が受け取れますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A12</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                        現地の大使館・総領事館から、日本語で最新の安全情報がメールで届きます。また、現地の大使館・総領事館では、大規模な事件・事故、テロ、自然災害等緊急事態が発生した場合、緊急事態の発生をメールでお知らせし、注意を呼びかけます。さらに、外務省海外安全ホームページに掲載されている危険情報・スポット情報・広域情報が更新されるごとにメールでお知らせします。<br>
+                                                        メールの例を以下に示します。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="a_number_cell"></td>
+                                                <td class="answer_cell"><span class="bunner sp_m_auto"> <b>例１）</b><br>
+                                                    <table class="mail_table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>差出人：在デトロイト日本国総領事館<br>
+                                                                    件名：【緊急】 ○○○○大学内における銃撃事件の発生</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>○詳細は不明なるも、×日午前９時過ぎ、○○○○大学内で銃撃が発生した模様です。</p>
+                                                                    <p>○最新情報の入手に努め、付近には近づかないよう注意して下さい。 </p>
+                                                                    <p>○本件に関して、邦人が被害に遭ったとの情報がある場合は、在デトロイト総領事館までご連絡下さい。 </p>
+                                                                    <p>
+                                                                        <br>
+                                                                    </p>
+                                                                    <p>（問い合わせ窓口） </p>
+                                                                    <p>在デトロイト日本国総領事館</p>
+                                                                    <p>電話：△△△－△△△△</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> <br>
+                                                    <br> <b>例２）</b>
+                                                    <table class="mail_table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>差出人：イタリア日本国大使館<br>
+                                                                    件名：ローマ市中心部におけるデモ行進及び集会（×月××日午後）</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <p>○×月××日（土）午後、ローマ市中心部において、デモ及び集会が行われます。身の安全を優先し、その付近にはできるだけ近づかないようにしてください。</p>
+                                                                    <p>○&nbsp;デモ隊が通過する周辺道路において通行規制が実施されるため、渋滞が発生する可能性があります。集会の周辺道路にも、通行規制が実施される可能性があります。</p>
+                                                                    <p>
+                                                                        <br>
+                                                                    </p>
+                                                                    <p>１&nbsp;デモ及び集会情報</p>
+                                                                    <p>イタリアでの諸情勢に関連し、×月××日（土）午後、ローマ市中心部において、以下のとおりデモ及び集会が予定されています。</p>
+                                                                    <p>（１）デモ行進</p>
+                                                                    <p>ア&nbsp;１３時～１７時の間、参加者約２０、０００人</p>
+                                                                    <p>Piazza della Repubblica ～ Via Barberini ～ Via Sistina ～ Viale della Trinità dei Monti ～ Piazza del Popolo</p>
+                                                                    <p>イ&nbsp;１４時～１９時の間、参加者約４、５００人</p>
+                                                                    <p>Santa Maria Maggiore ～ Via Cavour ～ Via dei Fori Imperiali ～ Piazza Venezia</p>
+                                                                    <p>（２）集会</p>
+                                                                    <p>１４時～１８時の間、参加者約１０、０００人</p>
+                                                                    <p>Piazza di Porta San Giovanni</p>
+                                                                    <p>
+                                                                        <br>
+                                                                    </p>
+                                                                    <p>×月×日の上下両院選挙を前に、一部勢力間の事件及びデモ参加者の一部と治安当局の衝突が発生しています。××日のデモ行進においても、参加者の一部が暴徒化し、警戒にあたっている治安当局等と衝突する可能性があります。デモの参加者がガラス瓶、爆発物等を使用する場合もありますので、身体の保護及び各種トラブル防止のため、該当するエリアにはできるだけ近づかないようにしてください。</p>
+                                                                    <p>デモ隊が通過する周辺道路において通行規制が実施されるため、渋滞が発生する可能性があります。また、集会の実施場所付近においても、場合によって、同様に通行規制が実施される可能性があります。</p>
+                                                                    <p>
+                                                                        <br>
+                                                                    </p>
+                                                                    <p>２&nbsp;問い合わせ先</p>
+                                                                    <p>在イタリア日本国大使館　領事・警備班</p>
+                                                                    <p>電話：△△△－△△△△</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q13" class="indent3">
+                                        <span class="orangeLast">Q13</span>&nbsp;「たびレジ」が正常に動作しません。
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A13</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">ご利用のブラウザがサポート対象か確認してください。<br>
+                                                サポート対象の場合は、ブラウザの設定を確認してください。<br>
+                                                <p>・JavaScriptを有効にしてください。</p>
+                                                <p>・Cookieを有効にしてください。</p>
+                                                <p>・iPhoneやiPadの場合、プライベートブラウズ機能をオフにしてください。</p>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q14" class="indent3">
+                                        <span class="orangeLast">Q14</span>&nbsp;ワンタイムURLを押してもリンク先が表示されません。
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A14</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">以下の内容をご確認ください。
+                                                <p>・ワンタイムURLのクリックは1度のみ有効であり、2回目以降はエラーとなります。既に一度押された方は、トップページの「追加・変更・削除」からログインを行って下さい。</p>
+                                                <p>・ご利用のメーラーによってはURLをダブルクリックすると、URLが2回押されたと判定される可能性があります。</p>
+                                                <p>・ご利用のメーラーによってはURLが改行され、正常なURLでない可能性があります。お手数ですが、URL全文をコピーして再度アクセスをお願いします。</p>
+                                                </span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q15" class="indent3">
+                                        <span class="orangeLast">Q15</span>&nbsp;メールが受け取れません。
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A15</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    ご利用されている携帯会社もしくはメールサービスプロバイダの設定が原因の可能性があります。<br>
+                                                    ドメイン指定受信設定や迷惑メール対策をされている方は、<br> 以下のドメインからのメールを受信可能な設定に変更してください。<br>
+                                                    <br> 1)たびレジからのお知らせ<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;@ezairyu.mofa.go.jp<br> <br>
+                                                    2)緊急一斉通報<br> &nbsp;&nbsp;&nbsp;&nbsp;@mailmz.emb-japan.go.jp<br>
+                                                    <br> 3)最新海外安全情報、たびレジサポート、等<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;@mofa.go.jp<br> <br>
+                                                    設定方法については、各社の携帯会社もしくはメールサービスプロバイダにお問い合わせください。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q16" class="indent3">
+                                        <span class="orangeLast">Q16</span>&nbsp;旅行者情報登録の氏名(ローマ字)は、どのように入力すれば良いですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A16</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto"> 氏名(ローマ字)は、日本国旅券（パスポート）の氏名と同じ表記で入力してください。
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q17" class="indent3">
+                                        <span class="orangeLast">Q17</span>&nbsp;「たびレジ」登録時点で現地で使用する携帯電話番号が分かりません。
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A17</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                        プリペイド式やレンタルの携帯電話を使用するなど、登録時点で現地で使用する携帯電話番号が分からない場合は、まず、旅行者情報の携帯電話項目で「携帯しない」にチェックをいれて登録していただき、携帯電話の番号が判明した時点で、登録内容を変更してください。<br>
+                                                        登録内容の変更は以下の手順で行うことができます。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q18" class="indent3">
+                                        <span class="orangeLast">Q18</span>&nbsp;パスワードを忘れた場合にはどうすれば良いですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A18</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                        登録済みの利用者ＩＤ（メールアドレス）にパスワード再登録用のワンタイムURL付きのメールを送るので、その画面から再登録してください。<br>
+                                                        <a href="../tabireg/user/password/reset">こちらから</a>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q19" class="indent3">
+                                        <span class="orangeLast">Q19</span>&nbsp;アカウントロックを解除したいのですがどうすれば良いですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A19</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    「たびレジ」では、パスワード入力を一定回数以上間違えるとアカウントがロックされ、ログイン及びパスワード再登録ができなくなります。 2時間後に、再度ログインあるいはパスワード再登録を行ってください。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q20" class="indent3">
+                                        <span class="orangeLast">Q20</span>&nbsp;メールアドレス（利用者ID）を変更することはできますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A20</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    たびレジでは、登録者のメールアドレスが利用者IDとなるので、メールアドレスを変更することはできません。（同行者等のメールアドレスは変更できます。）<br>
+                                                    <br>
+                                                    1)旅行情報を残したい場合は、「追加メールアドレス」に新しいメールアドレスを追加してください。<br>
+                                                    2)新たに「たびレジ」登録をしたい場合は、以下の手順で旅行情報を削除した上で、「利用者登録をする」より、新たなメールアドレスで登録をお願いいたします。<br>
+                                                    <br>
+                                                    1.トップページの「追加・変更・削除」からログインを行ってください。<br>
+                                                    2.旅行情報一覧画面が表示されますので、中止になった旅行情報の下の削除ボタンを押してください。<br>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q21" class="indent3">
+                                        <span class="orangeLast">Q21</span>&nbsp;文字の大きさを変更することはできますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A21</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">各ブラウザの設定により表示サイズを変更することができます。<br>
+                                                    変更方法は以下のとおりです。<br>
+                                                    <br>
+                                                    Windows 7、8.1、10環境
+                                                    <br>
+                                                    ・Internet Explorer
+                                                    <br>
+                                                    　Internet Explorer Ver.8<br>
+                                                    　　1.Internet Explorerを起動してください。<br>
+                                                    　　2.キーボードの「Alt」キーを押してください。<br>
+                                                    　　3.画面上部にメニューバーが表示されますので、「ページ」ボタンを押してください。<br>
+                                                    　　4.「ページ」リストが表示されますので、「拡大」ボタンを押してください。<br>
+                                                    　　5.「拡大」リストが表示されますので、拡大したいサイズを選択してください。<br>
+                                                    <br>
+                                                    　Internet Explorer Ver.9、10、11<br>
+                                                    　　1.Internet Explorerを起動してください。<br>
+                                                    　　2.画面右上の「歯車」ボタン（ツールボタン）を押してください。<br>
+                                                    　　3.「ツール」リストが表示されますので、「拡大」ボタンを押してください。<br>
+                                                    　　4.「拡大」リストが表示されますので、拡大したいサイズを選択してください。<br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_1.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_1.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                                    <br>
+                                                    ・Microsoft Edge<br>
+                                                    　1.Microsoft Edgeを起動してください。<br>
+                                                    　2.画面右上の「…」ボタン（詳細ボタン）を押してください。<br>
+                                                    　3.「詳細」リストが表示されますので、「+」（拡大）または「-」（縮小）で、サイズを変更してください。<br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_2.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_2.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                                    <br>
+                                                    ・Firefox<br>
+                                                    　1.Firefoxを起動してください。<br>
+                                                    　2.画面右上の「≡」ボタン（メニューボタン）を押してください。<br>
+                                                    　3.「メニュー」リストが表示されますので、「+」（拡大）または「-」（縮小）で、サイズを変更してください。<br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_3.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_3.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                                    <br>
+                                                    ・Google Chrome<br>
+                                                    　1.Google Chromeを起動してください。<br>
+                                                    　2.画面右上の「︙」ボタン（設定ボタン）を押してください。<br>
+                                                    　3.「設定」リストが表示されますので、「拡大/縮小」の「+」（拡大）または「-」（縮小）で、サイズを変更してください。<br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_4.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq27_4.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                                    <br>
+                                                    Mac環境 <br>
+                                                     <br>
+                                                    ・Safari
+                                                    　1.Safariを起動してください。<br>
+                                                    　2.画面上部のメニューバーの「表示」ボタンを押してください。<br>
+                                                    　3.「表示」リストが表示されますので、「拡大」または「縮小」で、サイズを変更してください。<br>
+                                                    <br>
+                                                    スマートフォン環境<br>
+                                                     <br>
+                                                    ・Android4.1以上<br>
+                                                     <br>
+                                                    　Google Chrome<br>
+                                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                                    <br>
+                                                    　Androidブラウザ<br>
+                                                    　　以下のいずれかの方法でサイズを変更することができます。<br>
+                                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                                    　　2.ピンチズーム（※）で拡大してください。<br>
+                                                    <br>
+                                                    ・iOS 7.0以上<br>
+                                                    <br>
+                                                    　Google Chrome<br>
+                                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                                    <br>
+                                                    　Safari
+                                                    　以下のいずれかの方法でサイズを変更することができます。<br>
+                                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                                    　　2.ピンチズーム（※）で拡大してください。<br>
+                                                    <br>
+                                                    ※ピンチズーム…2本の指を画面に当てたまま広げるように動かすと、画面が拡大します。<br>
+                                                    　縮小したいときは、2本の指を閉じるように動かします。<br>
+                                                    <br>
+                                                    スマートフォンの場合は、お使いの機種や設定により、文字の大きさを変更できない可能性があります。<br>
+                                                    変更できない場合は、メーカー各社にお問い合わせください。<br>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q22" class="indent3">
+                                        <span class="orangeLast">Q22</span>&nbsp;旅行が中止になった場合、どのような手続きが必要ですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A22</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    旅行が中止になった場合、登録した旅行情報の削除をお願いします。 旅行情報の削除は以下の手順で行うことができます。 <br>
+                                                    <br>
+                                                    1.トップページの「追加・変更・削除」からログインを行ってください。<br>
+                                                    2.旅行情報一覧画面が表示されますので、中止になった旅行情報の下の削除ボタンを押してください。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q23" class="indent3">
+                                        <span class="orangeLast">Q23</span>&nbsp;問い合わせを送信したのに、回答が返ってきません。
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A23</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    ご利用されている携帯会社もしくはメールサービスプロバイダの設定が原因の可能性がございます。<br>
+                                                    <a href="faq.html#q15">Q15</a>を確認してください。<br>
+                                                    <br>
+                                                    また、下記の様なメールアドレスに対しては回答のメールを送信することができませんので、他のメールアドレスをご利用ください。 なお、「たびレジ」からのメールは受け取ることができます。 <br>
+                                                    <br>
+                                                    ・「＠」の直前に「.」が付いているメールアドレス<br>
+                                                    例)taro.gaimu.@mofa.go.jp<br>
+                                                    <br>
+                                                    ・「.」が連続しているメールアドレス<br>
+                                                    例)taro..gaimu@mofa.go.jp
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q24" class="indent3">
+                                        <span class="orangeLast">Q24</span>&nbsp;「たびレジ」の広報資料はありますか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A24</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    ●<a href="http://www.mofa.go.jp/mofaj/press/release/press4_000988.html" target="_blank">外務省海外旅行登録「たびレジ」の開始（7月1日）</a>(報道発表)<br>
+                                                    ●<a href="pdf/tabireg_koho_001.pdf" target="_blank">たびレジ広報カード(たびレジ・海外安全アプリ)(pdf)</a><br>
+                                                    ●<a href="pdf/tabireg_koho_002.pdf" target="_blank">学生の皆様へ（広報用チラシ）(pdf)</a><br>
+                                                    ●<a href="pdf/tabireg_ANNAI_001.pdf" target="_blank">「たびレジ」連携インターフェイスの利用案内(パンフレット)(pdf)</a>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q25" class="indent3">
+                                        <span class="orangeLast">Q25</span>&nbsp;このサイトは安全なサイトですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A25</span></td>
+                                                <td class="answer_cell"><span class="answer">
+                                                    本サイトはSSL通信により通信内容を暗号化し「なりすまし」「盗聴」「改ざん」に対する安全性を高めています。 <br>
+                                                    この通信内容の暗号化にあたっては「サーバ証明書」を使用しており、 この安全な通信が行われていることは、ブラウザ画面に「鍵マーク」が表示されることで確認できます。 <br>
+                                                    <br>
+                                                    Internet Explorerでの証明書情報の見方 <br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq28_1.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq28_1.png" class="faq30 img-responsive" alt="faq説明"></a><br>
+                                                    　1.Internet Explorerを起動してください。<br>
+                                                    　2.アドレスバーの「鍵マーク」を押してください。<br>
+                                                    　3.ダイアログが表示されますので、「証明書の表示」を押してください。<br>
+                                                    <br>
+                                                    FireFoxでの証明書情報の見方 <br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq28_2.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq28_2.png" class="faq30 img-responsive" alt="faq説明"></a><br>
+                                                    　1.Firefoxを起動してください。<br>
+                                                    　2.アドレスバーの「鍵マーク」を押してください。<br>
+                                                    　3.ダイアログが表示されますので、「＞」を押してください。<br>
+                                                    　4.「詳細を表示」を押してください。<br>
+                                                    <br>
+                                                    Google Chromeでの証明書情報の見方 <br>
+                                                    <a href="https://www.ezairyu.mofa.go.jp/tabireg/img/faq28_3.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq28_3.png" class="faq30 img-responsive" alt="faq説明"></a><br>
+                                                    　1.Google Chromeを起動してください。<br>
+                                                    　2.アドレスバーの「鍵マーク」を押してください。<br>
+                                                    　3.ダイアログが表示されますので、「有効」を押してください。<br>
+                                                    <br>
+                                                    証明書情報に含まれる情報 <br>
+                                                    サブジェクト<br>
+                                                    CN = www.ezairyu.mofa.go.jp<br>
+                                                    OU = The Ministry of Foreign Affairs (外務省)<br>
+                                                    O = The Ministry of Foreign Affairs (外務省)<br>
+                                                    L = CHIYODA-KU (千代田区)<br>
+                                                    S = TOKYO (東京都)<br>
+                                                    C = JP (日本)<br>
+                                                    発行者コモンネーム（CN）: Symantec Class 3 Secure Server CA - G4<br>
+                                                    <br>
+                                                    ※ SSL（Secure Socket Layer）通信とは、インターネット上でデータを暗号化して送受信する仕組みのひとつです。 <br>
+                                                    クレジットカード番号や、一般に秘匿すべきとされる個人に関する情報を取り扱うWebサイトで、これらの情報が盗み取られるのを防止するため、広く利用されています。 <br>
+                                                    また、SSLは暗号化に加え、電子証明書により通信相手の本人性を証明し、なりすましを防止するなど、今日のインターネットの安心・安全を支えています。 <br>
+                                                    （総務省「国見のための情報セキュリティサイト」(<a href="http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/structure/03.html">http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/structure/03.html</a>)より）<br>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="faq_answer_container">
+                                    <h3 id="q26" class="indent3">
+                                        <span class="orangeLast">Q26</span>&nbsp;「たびレジ」簡易登録とはなんですか？
+                                    </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A26</span></td>
+                                                <td class="answer_cell"><span class="answer sp_m_auto">
+                                                    「たびレジ」簡易登録は、具体的な旅行予定はないが海外の安全情報は入手したいという方や、出張者や駐在員のために常に情報を収集したいという企業・団体向けに、メールアドレス（複数アドレス登録可能）と国・地域（複数指定可能）を登録するだけで、現地の大使館・総領事館から、日本語で最新の安全情報がメールで届きます（利用者登録をせずに利用する）。また、現地の大使館・総領事館では、大規模な事件・事故、テロ、自然災害等緊急事態が発生した場合、緊急事態の発生をメールでお知らせし、注意を呼びかけます。さらに、外務省海外安全ホームページに掲載されている危険情報・スポット情報・広域情報が更新されるごとに発出するメールを受け取ることができます。 <br>
+                                                    なお、簡易登録された方には、緊急時の電話連絡はできませんので、具体的な旅行予定がある方は、「たびレジ」登録をお願いします。<br>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><div id="pagetop" class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class=" faq_answer_container">
+                                    <h3 id="q27" class="indent3"><span class="orangeLast">Q27</span>&nbsp;「たびレジ」連携インターフェイスとはなんですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A27</span></td>
+                                                <td class="answer_cell"><span class="answer">
+                                                   「たびレジ」では、海外旅行関連業者の皆様向けに海外渡航者のデータを一括で登録することができるインターフェイスを提供しています。<br>
+                                                    所定のフォーマットの旅行情報ファイルを「たびレジ」システムにアップロードすることで海外旅行申込者の情報を「たびレジ」に登録することができます。<br>
+                                                    「たびレジ」へ旅行情報を連携することにより、海外旅行者には外務省から日本語で最新の安全情報がメールで届きます。<br>
+                                                    また緊急時には外務省から直接、安否確認を実施いたします。海外旅行者の安全な旅行を手助けするメリットがございますので、海外旅行・海外留学生関連機関等の皆様は「たびレジ」インターフェイスのご利用をご検討ください。詳しい内容については<a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact-company">こちら</a>にお問い合わせください。<br>
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                <div  class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class=" faq_answer_container">
+                                    <h3 id="q28" class="indent3"><span class="orangeLast">Q28</span>&nbsp;「たびレジ」入力項目の簡素化とはなんですか？ </h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A28</span></td>
+                                                <td class="answer_cell"><span class="answer">
+                                                   「たびレジ」をより手軽にご利用頂くために、2017年5月1日より入力項目を簡素化しました。<br>
+                                                    入力不要となった項目は以下のとおりです。 <br>
+                                                    <br>
+                                                    ・日本国旅券番号 ※旅行者、同行者ともに入力不要。<br>
+                                                    ・姓名（漢字）<br>
+                                                    ・宿泊先<br>
+                                                    ・目的地
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                <div  class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class=" faq_answer_container">
+                                    <h3 id="q29" class="indent3"><span class="orangeLast">Q29</span>&nbsp;滞在先欄の都市名で「未定」を選択したときの注意点とはなんですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A29</span></td>
+                                                <td class="answer_cell"><span class="answer">
+                                                   都市名で「未定」を選択した場合、滞在する国のすべての大使館・総領事館からメールが配信されます。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                <div  class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class=" faq_answer_container">
+                                    <h3 id="q30" class="indent3"><span class="orangeLast">Q30</span>&nbsp;「たびレジ」は有料ですか？</h3>
+                                    <table class="answer_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="a_number_cell"><span class="a_number">A30</span></td>
+                                                <td class="answer_cell"><span class="answer">
+                                                   「たびレジ」は無料で使用することができます。
+                                                </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                <div  class="link_pagetop">
+                                                    <a href="faq#top">このページのトップへ戻る</a>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer id="footer">
+
+                    <div class="contentsInner">
+                        <ul class="footerMenu layout_pc">
+                            <li><a href="index.html">TOP</a></li>
+                            <li><a href="faq.html">よくある質問</a></li>
+                            <li>
+                                <a href="legalmatters.html">法的事項</a>
+                            </li>
+                            <li><a href="privacy.html">プライバシーポリシー</a></li>
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <div class="layout_sp">
+                            <ul class="listNav">
+                                <li><a href="index.html">TOP</a></li>
+                                <li><a href="faq.html">よくある質問</a></li>
+                                <li>
+                                    <a href="legalmatters.html">法的事項</a>
+                                </li>
+                                <li><a href="privacy.html">プライバシーポリシー</a></li>
+                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact"
+                                    target="_blank">お問い合わせ</a></li>
+                            </ul>
+                            <div class="footerBottomBar">
+                                <div id="pageTop">
+                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+                        <ul class="socialBtns">
+                            <li>
+                                <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
+                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
+                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="addressArea">
+                        <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                            <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                            <br class="contact">
+                                電話（代表）03-3580-3311　法人番号　9000012040001
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
