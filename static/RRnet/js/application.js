@@ -155,7 +155,7 @@ function newsjson() {
     $.ajax({
             type: "GET",
             dataType: "json",
-            url: "static/html/news.json"
+            url: "/static/html/news.json"
         })
         .then(
             function(data) {
