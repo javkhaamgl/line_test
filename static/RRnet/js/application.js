@@ -155,7 +155,7 @@ function newsjson() {
     $.ajax({
             type: "GET",
             dataType: "json",
-            url: "/html/news.json"
+            url: "static/html/news.json"
         })
         .then(
             function(data) {
@@ -182,7 +182,7 @@ function noticejson() {
     $.ajax({
             type: "GET",
             dataType: "json",
-            url: "/html/notice_orr.json"
+            url: "/static/html/notice_orr.json"
         })
         .then(
             function(data) {
@@ -207,7 +207,7 @@ function agreejson() {
     $.ajax({
             type: "GET",
             dataType: "json",
-            url: "/html/agree_orr.json"
+            url: "/static/html/agree_orr.json"
         })
         .then(
             function(data) {

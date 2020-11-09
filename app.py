@@ -15,7 +15,11 @@ def do_get():
 
 @app.route('/RRnet')
 def RRnet():
-    return render_template('/RRnet/index.html')   
+    return render_template('/RRnet/index.html')  
+
+@app.route('/RRnet/agree')
+def RRnet_agree():
+    return render_template('/RRnet/agree.html')   
 
 @app.route('/tabireg')
 def tabireg():
