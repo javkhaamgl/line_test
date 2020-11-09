@@ -190,7 +190,7 @@ function newsjson(){
   $.ajax({
     type: "GET",
     dataType: "json",
-    url: "https://www.ezairyu.mofa.go.jp/html/news.json"
+    url: "static/html/news.json"
   })
   .then(
     function (data) {
@@ -216,7 +216,7 @@ function noticejson(){
   $.ajax({
     type: "GET",
     dataType: "json",
-    url: "https://www.ezairyu.mofa.go.jp/html/notice_tabireg.json"
+    url: "static/html/notice_tabireg.json"
   })
   .then(
     function (data) {
