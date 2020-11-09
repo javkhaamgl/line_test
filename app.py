@@ -49,7 +49,14 @@ def delete():
 def mail():
     return render_template('/tabireg/mail.html')   
    
+@app.route('/tabireg/user/password/reset')
+def reset():
+    return render_template('/tabireg/user/password/reset.html')  
 
+@app.route('/tabireg/faq')
+def faq():
+    return render_template('/tabireg/faq.html')       
+   
 if __name__ == '__main__':
     app.debug = True
     app.run()

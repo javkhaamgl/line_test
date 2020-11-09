@@ -240,7 +240,7 @@ function agreejson(){
   $.ajax({
     type: "GET",
     dataType: "json",
-    url: "static/tabireg/json/agree_tabireg.json"
+    url: "/static/tabireg/json/agree_tabireg.json"
   })
   .then(
     function (data) {
