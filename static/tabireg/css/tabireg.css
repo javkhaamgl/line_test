@@ -85,7 +85,7 @@ input[type=checkbox].allArea {
     width: 30px;
     height: 20px;
     opacity: 0;
-    background: url('../img/check.png') no-repeat;
+    background: url('https://www.ezairyu.mofa.go.jp/img/check.png') no-repeat;
 }
 
 input[type=checkbox]:checked+.allArea-item:before {
@@ -129,7 +129,7 @@ input[type=checkbox]:checked+.allArea-item:before {
     width: 30px;
     height: 20px;
     opacity: 0;
-    background: url('../img/check.png') no-repeat;
+    background: url('https://www.ezairyu.mofa.go.jp/img/check.png') no-repeat;
 }
 
 .all:checked+.area-label:before {
@@ -184,7 +184,7 @@ input[type=checkbox]:checked+.allArea-item:before {
     height: 20px;
     content: ' ';
     opacity: 0;
-    background: url('../img/check.png') no-repeat;
+    background: url('https://www.ezairyu.mofa.go.jp/img/check.png') no-repeat;
 }
 
 .area_item input:checked+.country-item:before {
