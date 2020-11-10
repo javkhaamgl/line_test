@@ -75,8 +75,19 @@ def reset():
 
 @app.route('/tabireg/faq')
 def faq():
-    return render_template('/tabireg/faq.html')       
-   
+    return render_template('/tabireg/faq.html')    
+
+@app.route('/tabireg/legalmatters')
+def legalmatters():
+    return render_template('/tabireg/legalmatters.html')           
+
+@app.route('/tabireg/privacy')
+def privacy():
+    return render_template('/tabireg/privacy.html')      
+
+@app.route('/tabireg/companylist')
+def companylist():
+    return render_template('/tabireg/companylist.html')         
 if __name__ == '__main__':
     app.debug = True
     app.run()

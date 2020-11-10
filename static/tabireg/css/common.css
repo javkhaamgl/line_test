@@ -809,7 +809,7 @@ body {
   bottom: 1px;
   width: 26px;
   height: 20px;
-  background: url('../img/check.png') no-repeat;
+  background: url('https://www.ezairyu.mofa.go.jp/img/check.png') no-repeat;
 }
 .checkbox label.active .checkRight:after {
   content: ' ';
@@ -819,7 +819,7 @@ body {
   bottom: 1px;
   width: 26px;
   height: 20px;
-  background: url('../img/check.png') no-repeat;
+  background: url('https://www.ezairyu.mofa.go.jp/img/check.png') no-repeat;
 }
 .selectbox {
   display: block;
@@ -1277,7 +1277,7 @@ ul.headerMenu li a span:after {
   left: 0;
   width: 16px;
   height: 16px;
-  background: url('../img/icon_alert.png') no-repeat;
+  background: url('https://www.ezairyu.mofa.go.jp/img/icon_alert.png') no-repeat;
   background-position: center center;
 }
 .listCol3, .listCol2 {
