@@ -1,315 +1,314 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="content-language" content="ja">
-        <meta property="fb:app_id" content="621416251289480"/>
-        <meta property="og:title" content="外務省海外旅行登録「たびレジ」"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/"/>
-        <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
-        <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
-        <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！"/>
-        <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」"/>
-        <meta name="format-detection" content="telephone=no,email=no">
-        <title>たびレジ - 外務省 海外安全情報配信サービス</title>
-        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
 
-        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="content-language" content="ja">
+    <meta property="fb:app_id" content="621416251289480" />
+    <meta property="og:title" content="外務省海外旅行登録「たびレジ」" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/" />
+    <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png" />
+    <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png" />
+    <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！" />
+    <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」" />
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>たびレジ - 外務省 海外安全情報配信サービス</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/application.js') }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-          gtag('config', 'UA-49881348-4');
-        </script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header id="header">
-                <div class="headerInner">
-                    <div class="logo">
-                        <a href="index.html"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
+    gtag('config', 'UA-49881348-4');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="index.html"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
                         <p>
                             外務省 海外安全情報配信サービス
-                        </p></a>
-                    </div>
-                    <nav id="nav">
-                        <ul class="headerMenu">
-                            <li class="registerMenu">
-                                <a href="/tabireg/agree"><span class="redColor">新規利用者登録をする</span></a>
-                                <a href="/tabireg/login">
-                                    <span class="subtxt2">追加・変更・削除</span><div class="icon">
-                                        <div class="pencil"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="instantRegisterMenu">
-                                <a href="tabireg/simple/register"><span class="blueColor">利用者登録をせずに利用する</span></a>
-                                <a href="/tabireg/simple/auth">
-                                    <span class="subtxt2">追加・変更・削除</span><div class="icon">
-                                        <div class="pencil"></div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <div class="headerIconMenuArea">
-                            <ul class="headerIconMenu">
-                                <li class="guidance"><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
-                                <li class="faq"><a href="faq.html">よくある質問</a></li>
-                                <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
-                            </ul>
-                            <div id="logstatus">
-                                <ul class="headerIconMenu">
-                                    <li class="corp"><a href="/tabireg/companylist">企業・法人の方へ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <div class="headerBnr">
-                        <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png" alt="PC 外務省"></a>
-                        <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
-                    </div>
-                    <div class="menuBtn" id="menuBtn">
-                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
-                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon"
-                        id="closeMenuIcon">
-                    </div>
-                </div>
-                <div class="dropdownMenu" id="dropdownMenu">
-                    <div class="dropdownInner">
-                        <ul class="listNav">
-                            <li><a href="agree.html" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="login"
-                                class="submenu submenu1">追加・変更・削除</a></li>
-                            <li><a href="simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a
-                                href="simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
-                        </ul>
-
-                        <div class="halfColListBlock">
-                            <ul class="listNav">
-                                <li><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
-                            </ul>
-                            <ul class="listNav">
-                                <li><a href="faq.html">よくある質問</a></li>
-                            </ul>
-                            <ul class="listNav">
-                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
-                            </ul>
-                            <ul class="listNav">
-                                <li><a href="/tabireg/companylist">企業・法人の方へ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div id="contents">
-                <div class="breadcrumbs">
-                    <div class="breadcrumbsInner">
-                        <ol class="clearfix">
-                            <li class="first"><a href="/tabireg">トップページ</a><span></span></li>
-                            <li class="current"><a href="/tabireg/privacy">プライバシーポリシー</a></li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="contentsInner">
-                    <div class="zairyuSubmitFormInner">
-                        <div class="privacy_box">
-                            <div id="h2" class="sp_mt10 sp_mb10">
-                                <label>外務省海外旅行登録「たびレジ」におけるプライバシーポリシー</label>
-                            </div>
-                            <div class="contents">
-                                <div class="contents_area">
-                                    <div class="inner">
-                                        <div class="container5">
-                                            <h3>1&nbsp;基本的考え方</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    外務省領事局では、外務省海外旅行登録「たびレジ」（以下「当サイト」という。）に登録された皆様の情報を、利用目的の範囲内で適切に取り扱います。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>2&nbsp;管理する個人情報の範囲</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    （１）当サイトでは、皆様から登録された以下の情報を個人情報ファイルとして管理します。
-                                                </p>
-                                                <p class="pp_indent">
-                                                    １氏名、２生年月日、３電話番号（複数）、４メールアドレス（複数）、同行者情報（複数）(５氏名、６電話番号）
-                                                </p>
-                                                <p class="pp_indent">
-                                                    ７ツアー会社、８同行者数、渡航先情報（複数）(９渡航先国・地域、１０都市、１１滞在期間)
-                                                </p>
-                                                <p class="pp_text">
-                                                    （２）皆様から登録された情報は、旅行終了から30日を経過した時点で、統計情報として集計（個人情報は消去）した後に削除します。ただし、「旅行者情報を旅行終了後1年間保存する」を選択された場合、氏名、生年月日、電話番号（複数）、メールアドレス（複数）、ツアー会社の各情報を、最終旅行終了後1年間保存しその後削除します。
-                                                </p>
-                                                <p class="pp_text">
-                                                    なお、当サイトでは、クッキー（サーバー側で一意に利用者を識別するために、サーバーから利用者に送信され、利用者のコンピュータに蓄積される情報）を使用していますが、その目的は、利用者との通信（セッション）を保持するためであり、アクセス件数の把握等の情報収集には利用していません。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>3&nbsp;利用目的</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    （１）登録していただいた情報は、外務省、在外公館及び日本台湾交流協会における邦人援護等領事業務用として利用します。
-                                                </p>
-                                                <p class="pp_text">
-                                                    （２）当サイトでは，サイトの利用状況を把握するために<a href="https://developers.google.com/analytics/" class="txtUnderline" target="_blank">Google Analytics</a>を利用しています。Google Analyticsは，クッキーを利用して利用者の情報を収集します。詳細については，「<a href="https://policies.google.com/technologies/partner-sites?hl=ja" class="txtUnderline" target="_blank">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>」をご覧ください。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>4&nbsp;利用及び提供の制限</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    登録していただいた情報は、法令に基づく開示請求があった場合、違法行為があった場合、その他特別の理由のある場合を除き、「３．利用目的」以外の目的のために自ら利用し、又は第三者に提供しません。ただし、統計的に集計処理された情報については公表することがあります。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>5&nbsp;安全確保の措置</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    外務省領事局は、収集した情報の漏えい、滅失又はき損の防止その他収集した情報の適切な管理のために必要な措置を講じます。なお、当サイトの運用については外部に委託することがありますが、委託先においても収集した情報の適切な管理のための必要な措置を講じます。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>6&nbsp;自己に関する情報の開示</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    「行政機関の保有する個人情報の保護に関する法律」（平成15年法律第58号）に規定する「保有個人情報」について、登録者は自己に関する情報の開示請求ができます。
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>7&nbsp;SMS配信を停止する方法</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    登録された携帯電話番号は、事件・事故や災害時の安否確認、救援活動、ショートメッセージサービス（ＳＭＳ）を用いた緊急情報の発信に使用します。米国の携帯電話番号を登録した場合、54120の番号に宛てて「ＳＴＯＰ」という本文をＳＭＳ送信することにより、いつでもＳＭＳの受信を停止することができます。また、54120の番号に宛てて「ＨＥＬＰ」という本文をＳＭＳ送信することにより、本ＳＭＳに関する概要説明をＳＭＳで受信できます。詳細についてはmofasms@mofa.go.jpまでご連絡ください。ＳＭＳの送受信に当たっては、契約プランに基づいて課金されることがあります。詳細は下記をご確認ください。
-                                                    <br>
-                                                    <a href="https://www.anzen.mofa.go.jp/c_info/sms_compliance.html" class="txtUnderline" target="_blank">https://www.anzen.mofa.go.jp/c_info/sms_compliance.html</a>（英語のみ）
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>8&nbsp;適用範囲</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    本方針は、当サイトにおいてのみ適用されます。<br>
-                                                    なお、一部のソーシャルネットワーキングサービス（ＳＮＳ）は、ログインした状態で、当該ＳＮＳの「ボタン」等が設置されたウェブサイトを閲覧した場合、当該「ボタン」等を押さなくとも、当該ウェブサイトからＳＮＳに対し、ユーザーＩＤ・アクセスしているサイト等の情報が自動で送信されていることがあります。<br>
-                                                    当サイトで利用しているＳＮＳのプライバシーポリシー等は、各事業者のサイト等でご確認ください。<br>
-                                                    <br>
-                                                    （参考）<br>
-                                                    Facebookのシェアボタン（Facebookのソーシャルプラグイン）については、Facebook社によるデータに関するポリシー（<a href="https://www.facebook.com/privacy/explanation" class="txtUnderline" target="_blank">Facebook社ホームページ</a>）参照。<br>
-                                                    Twitterのツイートボタン（Twitterボタン）については、Twitter社によるプライバシーポリシー（<a href="https://twitter.com/privacy?lang=ja#update" class="txtUnderline" target="_blank">Twitter社ホームページ</a>）参照。<br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <h3>9&nbsp;その他</h3>
-                                            <div class="pp_text_area">
-                                                <p class="pp_text">
-                                                    外務省領事局では、本方針を改定することがあります。改定する場合は当サイトでお知らせします。
-                                                </p>
-                                                <br>
-                                            </div>
-                                        </div>
-                                        <div class="container5">
-                                            <div class="pp_text_area">
-                                                <dl>
-                                                    <dt>
-                                                        【お問い合わせ先】
-                                                    </dt>
-                                                    <dd>
-                                                        <p class="contact_text">
-                                                            外務省領事局政策課
-                                                        </p>
-                                                        <p class="contact_text">
-                                                            〒100-8919　東京都千代田区霞が関2-2-1
-                                                        </p>
-                                                    </dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="addButtonGroup">
-                        <a href="/tabireg" class="btn btnBack sp_btnMargin">
-                            トップページに戻る
-                        </a>
-                    </div>
-                </div>
-                <footer id="footer">
-                    <div class="contentsInner">
-                        <div class="layout_sp">
-                            <ul class="listNav">
-                                <li>
-                                    <a href="/tabireg">TOP</a>
-                                </li>
-                                <li>
-                                    <a href="/tabireg/faq">よくある質問</a>
-                                </li>
-                                <li>
-                                    <a href="/tabireg/legalmatters">法的事項</a>
-                                </li>
-                                <li>
-                                    <a href="/tabireg/privacy">プライバシーポリシー</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a>
-                                </li>
-                            </ul>
-                            <div class="footerBottomBar">
-                                <div id="pageTop">
-                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="copyright">
-                            Copyright &copy; Ministry of Foreign
-                            Affairs of Japan
-                        </div>
-                        <ul class="socialBtns">
-                            <li>
-                                <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
-                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
-                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="addressArea">
-                        <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
-                            <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
-                            <br class="contact">
-                                電話（代表）03-3580-3311　法人番号　9000012040001
                         </p>
+                    </a>
+                </div>
+                <nav id="nav">
+                    <ul class="headerMenu">
+                        <li class="registerMenu">
+                            <a href="/tabireg/agree"><span class="redColor">新規利用者登録をする</span></a>
+                            <a href="/tabireg/login">
+                                <span class="subtxt2">追加・変更・削除</span>
+                                <div class="icon">
+                                    <div class="pencil"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="instantRegisterMenu">
+                            <a href="tabireg/simple/register"><span class="blueColor">利用者登録をせずに利用する</span></a>
+                            <a href="/tabireg/simple/auth">
+                                <span class="subtxt2">追加・変更・削除</span>
+                                <div class="icon">
+                                    <div class="pencil"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="headerIconMenuArea">
+                        <ul class="headerIconMenu">
+                            <li class="guidance"><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                            <li class="faq"><a href="faq.html">よくある質問</a></li>
+                            <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <div id="logstatus">
+                            <ul class="headerIconMenu">
+                                <li class="corp"><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </footer>
+                </nav>
+                <div class="headerBnr">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png" alt="PC 外務省"></a>
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon" id="closeMenuIcon">
+                </div>
             </div>
+            <div class="dropdownMenu" id="dropdownMenu">
+                <div class="dropdownInner">
+                    <ul class="listNav">
+                        <li><a href="agree.html" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="login" class="submenu submenu1">追加・変更・削除</a></li>
+                        <li><a href="simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a href="simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
+                    </ul>
+                    <div class="halfColListBlock">
+                        <ul class="listNav">
+                            <li><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="faq.html">よくある質問</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="contents">
+            <div class="breadcrumbs">
+                <div class="breadcrumbsInner">
+                    <ol class="clearfix">
+                        <li class="first"><a href="/tabireg">トップページ</a><span></span></li>
+                        <li class="current"><a href="/tabireg/privacy">プライバシーポリシー</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="contentsInner">
+                <div class="zairyuSubmitFormInner">
+                    <div class="privacy_box">
+                        <div id="h2" class="sp_mt10 sp_mb10">
+                            <label>外務省海外旅行登録「たびレジ」におけるプライバシーポリシー</label>
+                        </div>
+                        <div class="contents">
+                            <div class="contents_area">
+                                <div class="inner">
+                                    <div class="container5">
+                                        <h3>1&nbsp;基本的考え方</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                外務省領事局では、外務省海外旅行登録「たびレジ」（以下「当サイト」という。）に登録された皆様の情報を、利用目的の範囲内で適切に取り扱います。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>2&nbsp;管理する個人情報の範囲</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                （１）当サイトでは、皆様から登録された以下の情報を個人情報ファイルとして管理します。
+                                            </p>
+                                            <p class="pp_indent">
+                                                １氏名、２生年月日、３電話番号（複数）、４メールアドレス（複数）、同行者情報（複数）(５氏名、６電話番号）
+                                            </p>
+                                            <p class="pp_indent">
+                                                ７ツアー会社、８同行者数、渡航先情報（複数）(９渡航先国・地域、１０都市、１１滞在期間)
+                                            </p>
+                                            <p class="pp_text">
+                                                （２）皆様から登録された情報は、旅行終了から30日を経過した時点で、統計情報として集計（個人情報は消去）した後に削除します。ただし、「旅行者情報を旅行終了後1年間保存する」を選択された場合、氏名、生年月日、電話番号（複数）、メールアドレス（複数）、ツアー会社の各情報を、最終旅行終了後1年間保存しその後削除します。
+                                            </p>
+                                            <p class="pp_text">
+                                                なお、当サイトでは、クッキー（サーバー側で一意に利用者を識別するために、サーバーから利用者に送信され、利用者のコンピュータに蓄積される情報）を使用していますが、その目的は、利用者との通信（セッション）を保持するためであり、アクセス件数の把握等の情報収集には利用していません。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>3&nbsp;利用目的</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                （１）登録していただいた情報は、外務省、在外公館及び日本台湾交流協会における邦人援護等領事業務用として利用します。
+                                            </p>
+                                            <p class="pp_text">
+                                                （２）当サイトでは，サイトの利用状況を把握するために<a href="https://developers.google.com/analytics/" class="txtUnderline" target="_blank">Google Analytics</a>を利用しています。Google Analyticsは，クッキーを利用して利用者の情報を収集します。詳細については，「<a href="https://policies.google.com/technologies/partner-sites?hl=ja" class="txtUnderline" target="_blank">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>」をご覧ください。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>4&nbsp;利用及び提供の制限</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                登録していただいた情報は、法令に基づく開示請求があった場合、違法行為があった場合、その他特別の理由のある場合を除き、「３．利用目的」以外の目的のために自ら利用し、又は第三者に提供しません。ただし、統計的に集計処理された情報については公表することがあります。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>5&nbsp;安全確保の措置</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                外務省領事局は、収集した情報の漏えい、滅失又はき損の防止その他収集した情報の適切な管理のために必要な措置を講じます。なお、当サイトの運用については外部に委託することがありますが、委託先においても収集した情報の適切な管理のための必要な措置を講じます。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>6&nbsp;自己に関する情報の開示</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                「行政機関の保有する個人情報の保護に関する法律」（平成15年法律第58号）に規定する「保有個人情報」について、登録者は自己に関する情報の開示請求ができます。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>7&nbsp;SMS配信を停止する方法</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                登録された携帯電話番号は、事件・事故や災害時の安否確認、救援活動、ショートメッセージサービス（ＳＭＳ）を用いた緊急情報の発信に使用します。米国の携帯電話番号を登録した場合、54120の番号に宛てて「ＳＴＯＰ」という本文をＳＭＳ送信することにより、いつでもＳＭＳの受信を停止することができます。また、54120の番号に宛てて「ＨＥＬＰ」という本文をＳＭＳ送信することにより、本ＳＭＳに関する概要説明をＳＭＳで受信できます。詳細についてはmofasms@mofa.go.jpまでご連絡ください。ＳＭＳの送受信に当たっては、契約プランに基づいて課金されることがあります。詳細は下記をご確認ください。
+                                                <br>
+                                                <a href="https://www.anzen.mofa.go.jp/c_info/sms_compliance.html" class="txtUnderline" target="_blank">https://www.anzen.mofa.go.jp/c_info/sms_compliance.html</a>（英語のみ）
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>8&nbsp;適用範囲</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                本方針は、当サイトにおいてのみ適用されます。<br>
+                                                なお、一部のソーシャルネットワーキングサービス（ＳＮＳ）は、ログインした状態で、当該ＳＮＳの「ボタン」等が設置されたウェブサイトを閲覧した場合、当該「ボタン」等を押さなくとも、当該ウェブサイトからＳＮＳに対し、ユーザーＩＤ・アクセスしているサイト等の情報が自動で送信されていることがあります。<br>
+                                                当サイトで利用しているＳＮＳのプライバシーポリシー等は、各事業者のサイト等でご確認ください。<br>
+                                                <br>
+                                                （参考）<br>
+                                                Facebookのシェアボタン（Facebookのソーシャルプラグイン）については、Facebook社によるデータに関するポリシー（<a href="https://www.facebook.com/privacy/explanation" class="txtUnderline" target="_blank">Facebook社ホームページ</a>）参照。<br>
+                                                Twitterのツイートボタン（Twitterボタン）については、Twitter社によるプライバシーポリシー（<a href="https://twitter.com/privacy?lang=ja#update" class="txtUnderline" target="_blank">Twitter社ホームページ</a>）参照。<br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <h3>9&nbsp;その他</h3>
+                                        <div class="pp_text_area">
+                                            <p class="pp_text">
+                                                外務省領事局では、本方針を改定することがあります。改定する場合は当サイトでお知らせします。
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="container5">
+                                        <div class="pp_text_area">
+                                            <dl>
+                                                <dt>
+                                                    【お問い合わせ先】
+                                                </dt>
+                                                <dd>
+                                                    <p class="contact_text">
+                                                        外務省領事局政策課
+                                                    </p>
+                                                    <p class="contact_text">
+                                                        〒100-8919　東京都千代田区霞が関2-2-1
+                                                    </p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="addButtonGroup">
+                    <a href="/tabireg" class="btn btnBack sp_btnMargin">
+                        トップページに戻る
+                    </a>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="contentsInner">
+                    <div class="layout_sp">
+                        <ul class="listNav">
+                            <li>
+                                <a href="/tabireg">TOP</a>
+                            </li>
+                            <li>
+                                <a href="/tabireg/faq">よくある質問</a>
+                            </li>
+                            <li>
+                                <a href="/tabireg/legalmatters">法的事項</a>
+                            </li>
+                            <li>
+                                <a href="/tabireg/privacy">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a>
+                            </li>
+                        </ul>
+                        <div class="footerBottomBar">
+                            <div id="pageTop">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        Copyright &copy; Ministry of Foreign
+                        Affairs of Japan
+                    </div>
+                    <ul class="socialBtns">
+                        <li>
+                            <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="addressArea">
+                    <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                        <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                        <br class="contact">
+                        電話（代表）03-3580-3311　法人番号　9000012040001
+                    </p>
+                </div>
+            </footer>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

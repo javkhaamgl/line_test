@@ -1,134 +1,146 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="content-language" content="ja">
-        <meta property="fb:app_id" content="621416251289480"/>
-        <meta property="og:title" content="外務省海外旅行登録「たびレジ」"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/"/>
-        <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
-        <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png"/>
-        <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！"/>
-        <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」"/>
-        <meta name="format-detection" content="telephone=no,email=no">
-        <title>たびレジ - 外務省 海外安全情報配信サービス</title>
-        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
-        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/application.js') }}"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="外務省,海外旅行,海外出張,渡航,旅行日程,緊急時,情報提供,緊急連絡,緊急一斉通報,安全,パスポくん" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="content-language" content="ja">
+    <meta property="fb:app_id" content="621416251289480" />
+    <meta property="og:title" content="外務省海外旅行登録「たびレジ」" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ezairyu.mofa.go.jp/tabireg/" />
+    <meta property="og:image" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png" />
+    <meta property="og:image:secure_url" content="https://www.ezairyu.mofa.go.jp/tabireg/images/fb_banner.png" />
+    <meta property="og:description" content="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はリンク先で！" />
+    <meta property="og:site_name" content="外務省海外旅行登録「たびレジ」" />
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>たびレジ - 外務省 海外安全情報配信サービス</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/application.js') }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'UA-49881348-4');
           agreejson();
         </script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header id="header">
-                <div class="headerInner">
-                    <div class="logo">
-                        <a href="/tabireg"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="/tabireg"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="たびレジ 外務省 海外安全情報配信サービス">
                         <p>
                             外務省 海外安全情報配信サービス
-                        </p></a>
-                    </div>
-                    
-                    <div class="headerBnr">
-                        <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png"
-                        alt="PC 外務省"></a><a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img
-                        src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
-                    </div>
-                    <div class="menuBtn" id="menuBtn">
-                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
-                        <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon"
-                        id="closeMenuIcon">
-                    </div>
+                        </p>
+                    </a>
                 </div>
-                <div class="dropdownMenu" id="dropdownMenu">
-                    <div class="dropdownInner">
+                <div class="headerBnr">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png" alt="PC 外務省"></a><a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon" id="closeMenuIcon">
+                </div>
+            </div>
+            <div class="dropdownMenu" id="dropdownMenu">
+                <div class="dropdownInner">
+                    <ul class="listNav">
+                        <li><a href="agree" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="login" class="submenu submenu1">追加・変更・削除</a></li>
+                        <li><a href="simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a href="simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
+                    </ul>
+                    <div class="halfColListBlock">
                         <ul class="listNav">
-                            <li><a href="agree" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="login"
-                                class="submenu submenu1">追加・変更・削除</a></li>
-                            <li><a href="simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a
-                                href="simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
+                            <li><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
                         </ul>
-
-                        <div class="halfColListBlock">
-                            <ul class="listNav">
-                                <li><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
-                            </ul>
-                            <ul class="listNav">
-                                <li><a href="/tabireg/faq">よくある質問</a></li>
-                            </ul>
-                            <ul class="listNav">
-                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
-                            </ul>
-                            <ul class="listNav">
-                                <li><a href="/tabireg/companylist">企業・法人の方へ</a></li>
-                            </ul>
-                        </div>
+                        <ul class="listNav">
+                            <li><a href="/tabireg/faq">よくある質問</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                        </ul>
                     </div>
                 </div>
-            </header>
-            <div id="contents">
-                <div class="breadcrumbs">
-                    <div class="breadcrumbsInner">
-                        <ol class="clearfix">
-                            <li class="first"><a href="/">トップページ</a><span></span></li>
-                            <li class="current"><a href="agree">プライバシーポリシー同意</a></li>
-                        </ol>
-                    </div>
+            </div>
+        </header>
+        <div id="contents">
+            <div class="breadcrumbs">
+                <div class="breadcrumbsInner">
+                    <ol class="clearfix">
+                        <li class="first"><a href="/">トップページ</a><span></span></li>
+                        <li class="current"><a href="agree">プライバシーポリシー同意</a></li>
+                    </ol>
                 </div>
-                <div class="contentsInner">
-                    <div class="zairyuSubmitFormInner">
-                        <div class="txt sp_mb10">
-                            <p>
-                                <label>外務省海外旅行登録「たびレジ」に登録される場合は、以下のプライバシーポリシーに同意のうえ、「同意する（登録画面に進む）」ボタンを押してください。<br></label>
-                            </p>
+            </div>
+            <div class="contentsInner">
+                <div class="zairyuSubmitFormInner">
+                    <div class="txt sp_mb10">
+                        <p>
+                            <label>外務省海外旅行登録「たびレジ」に登録される場合は、以下のプライバシーポリシーに同意のうえ、「同意する（登録画面に進む）」ボタンを押してください。<br></label>
+                        </p>
+                    </div>
+                    <div class="agree_box">
+                        <div id="h2" class="sp_mt10 sp_mb10">
+                            <label>外務省海外旅行登録「たびレジ」におけるプライバシーポリシー</label>
                         </div>
-                        <div class="agree_box">
-                            <div id="h2" class="sp_mt10 sp_mb10">
-                                <label>外務省海外旅行登録「たびレジ」におけるプライバシーポリシー</label>
-                            </div>
-                            <div class="contents">
-                                <div class="contents_area">
-                                    <div class="inner">
-                                    </div>
+                        <div class="contents">
+                            <div class="contents_area">
+                                <div class="inner">
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="addButtonGroup">
-                        <a href="tabireg">
+                </div>
+                <div class="addButtonGroup">
+                    <a href="tabireg">
                         <button type="button" class="btn btnBack sp_btnMargin">
                             <label class="btntxt">同意しない<br>(トップページに戻る)</label>
                         </button></a>
-                        <a href="mail">
+                    <a href="mail">
                         <button type="button" class="btn btnPrimary limit_dual_submit sp_btnMargin">
                             <label class="btntxt">同意する<br>(登録画面に進む)</label>
                         </button></a>
-                    </div>
                 </div>
-                <footer id="footer">
-                    <div class="contentsInner">
-                        <ul class="footerMenu layout_pc">
+            </div>
+            <footer id="footer">
+                <div class="contentsInner">
+                    <ul class="footerMenu layout_pc">
+                        <li>
+                            <a href="index.html">TOP</a>
+                        </li>
+                        <li>
+                            <a href="/tabireg/faq">よくある質問</a>
+                        </li>
+                        <li>
+                            <a href="/tabireg/legalmatters">法的事項</a>
+                        </li>
+                        <li>
+                            <a href="/tabireg/privacy">プライバシーポリシー</a>
+                        </li>
+                        <li>
+                            <a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a>
+                        </li>
+                    </ul>
+                    <div class="layout_sp">
+                        <ul class="listNav">
                             <li>
-                                <a href="index.html">TOP</a>
+                                <a href="tabireg">TOP</a>
                             </li>
                             <li>
                                 <a href="/tabireg/faq">よくある質問</a>
@@ -143,56 +155,39 @@
                                 <a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a>
                             </li>
                         </ul>
-                        <div class="layout_sp">
-                            <ul class="listNav">
-                                <li>
-                                    <a href="tabireg">TOP</a>
-                                </li>
-                                <li>
-                                    <a href="/tabireg/faq">よくある質問</a>
-                                </li>
-                                <li>
-                                    <a href="/tabireg/legalmatters">法的事項</a>
-                                </li>
-                                <li>
-                                    <a href="/tabireg/privacy">プライバシーポリシー</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a>
-                                </li>
-                            </ul>
-                            <div class="footerBottomBar">
-                               <div id="pageTop">
-                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
-                                </div>
+                        <div class="footerBottomBar">
+                            <div id="pageTop">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
                             </div>
                         </div>
-                        <div class="copyright">
-                            Copyright &copy; Ministry of Foreign
-                            Affairs of Japan
-                        </div>
-                        <ul class="socialBtns">
-                            <li>
-                                <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
-                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
-                                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="addressArea">
-                        <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
-                            <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
-                            <br class="contact">
-                                電話（代表）03-3580-3311　法人番号　9000012040001
-                        </p>
+                    <div class="copyright">
+                        Copyright &copy; Ministry of Foreign
+                        Affairs of Japan
                     </div>
-                </footer>
-            </div>
+                    <ul class="socialBtns">
+                        <li>
+                            <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="addressArea">
+                    <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                        <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                        <br class="contact">
+                        電話（代表）03-3580-3311　法人番号　9000012040001
+                    </p>
+                </div>
+            </footer>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
