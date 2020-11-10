@@ -26,51 +26,51 @@ def tabireg():
     return render_template('/tabireg/index.html')
 
 @app.route('/tabireg/registration')
-def registration():
+def tabireg_registration():
     return render_template('/tabireg/registration.html')   
 
 @app.route('/tabireg/agree')
-def agree():
+def tabireg_agree():
     return render_template('/tabireg/agree.html')       
 
 @app.route('/tabireg/login')
-def login():
+def tabireg_login():
     return render_template('/tabireg/login.html')   
 
 @app.route('/tabireg/simple/register')
-def register():
+def tabireg_simple_register():
     return render_template('/tabireg/simple/register.html')      
 
 @app.route('/tabireg/simple/auth')
-def auth():
+def tabireg_simple_auth():
     return render_template('/tabireg/simple/auth.html')      
 
 @app.route('/tabireg/simple/delete')
-def delete():
+def tabireg_simple_delete():
     return render_template('/tabireg/simple/delete.html')   
 
 @app.route('/tabireg/mail')
-def mail():
+def tabireg_mail():
     return render_template('/tabireg/mail.html')   
    
 @app.route('/tabireg/user/password/reset')
-def reset():
+def tabireg_user_password_reset():
     return render_template('/tabireg/user/password/reset.html')  
 
 @app.route('/tabireg/faq')
-def faq():
+def tabireg_faq():
     return render_template('/tabireg/faq.html')    
 
 @app.route('/tabireg/legalmatters')
-def legalmatters():
+def tabireg_legalmatters():
     return render_template('/tabireg/legalmatters.html')           
 
 @app.route('/tabireg/privacy')
-def privacy():
+def tabireg_privacy():
     return render_template('/tabireg/privacy.html')      
 
 @app.route('/tabireg/companylist')
-def companylist():
+def tabireg_companylist():
     return render_template('/tabireg/companylist.html')         
 if __name__ == '__main__':
     app.debug = True
