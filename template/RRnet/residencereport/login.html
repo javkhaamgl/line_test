@@ -19,16 +19,17 @@
     <meta name="google-site-verification" content="N0I7Gn7tk6h1v2Q-qlCJqWOkGAi4X4FP06SXTddKtb8" />
     <meta name="format-detection" content="telephone=no,email=no">
     <title>在留届 - インターネットによるオンライン在留届</title>
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/jquery-ui.js"></script>
-    <link href="/css/jquery-ui.css" rel="stylesheet" />
-    <link href="/css/jquery-ui.structure.css" rel="stylesheet" />
-    <link href="/css/jquery-ui.theme.css" rel="stylesheet" />
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery-ui.structure.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/jquery-ui.theme.css') }}">
     <noscript>
         <label>&lt;img src="/js/awstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"&gt;</label>
     </noscript>
-    <script type="text/javascript" src="/js/common.js" integrity="sha256-Hl7gjBL29cI5/krhwLFRsk17CR9d1QhG9KveTt9I+BI=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/checked.js" integrity="sha256-hJaY1V9nt2xVdsedT2JbWjzV3vlSw1hYEWh1M4j/K5g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/common.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/checked.js') }}"></script>
     <script type="text/javascript">
     /*<![CDATA[*/
     var common_contextPath = "";
@@ -45,8 +46,11 @@
 
     gtag('config', 'UA-49881348-4');
     </script>
-    <link rel="stylesheet" href="/RRnet/css/common.css">
-    <link rel="stylesheet" href="/RRnet/css/style.css">
+ <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    
     <script type="text/javascript" src="/RRnet/js/html5.js"></script>
     <script type="text/javascript" src="/RRnet/js/application.js"></script>
     <script type="text/javascript" src="/RRnet/js/inputlimit.js"></script>
