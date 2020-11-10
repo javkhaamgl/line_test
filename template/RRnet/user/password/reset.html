@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>在留届 - インターネットによるオンライン在留届</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <link href="{{ url_for('static',filename='css/jquery-ui.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='css/jquery-ui.structure.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='css/jquery-ui.theme.css') }}" rel="stylesheet" />
+    <noscript>
+        <label>&lt;img src="/js/awstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"&gt;</label>
+    </noscript>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/common.js') }}" integrity="sha256-Hl7gjBL29cI5/krhwLFRsk17CR9d1QhG9KveTt9I+BI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/checked.js') }}" integrity="sha256-hJaY1V9nt2xVdsedT2JbWjzV3vlSw1hYEWh1M4j/K5g=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    var common_contextPath = "";
+    var common_errorPath = "\/error";
+    /*]]>*/
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49881348-4');
+    </script>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='RRnet/js/application.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/inputlimit.js') }}"></script>
+</head>
+
+<body class="backok">
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="/RRnet" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/logo_orrnet.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                    <a href="/RRnet" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/logo_orrnet_sp.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                </div>
+                <nav id="nav">
+                    <ul class="headerMenu">
+                    </ul>
+                </nav>
+                <div class="headerBnr">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/logo_mofa.png" alt="外務省"></a>
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/logo_mofa_sp.png" alt="外務省"></a>
+                </div>
+                <div id="logstatus">
+                    <ul class="headerIconMenu">
+                        <li class="faq"><a href="/RRnet/faq">よくある質問</a></li>
+                        <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_menu.png" alt="MENU" id="menuIcon">
+                    <img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_close_menu.png" alt="MENU" id="closeMenuIcon">
+                </div>
+            </div>
+            <div class="dropdownMenu" id="dropdownMenu">
+                <div class="dropdownInner">
+                    <ul class="listNav">
+                        <li><a href="/RRnet/agree">在留届を提出する方</a></li>
+                        <li><a href="residencereport/login">変更届・帰国届を提出する方</a></li>
+                        <li><a href="residencereport/password/reset">パスワードを忘れた方</a></li>
+                    </ul>
+                    <div class="halfColListBlock">
+                        <ul class="listNav">
+                            <li><a href="/RRnet/faq">よくあるご質問</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="contents">
+            <div class="breadcrumbs">
+                <div class="breadcrumbsInner">
+                    <ol>
+                        <li class="first"><a>利用者情報確認・変更</a><span></span></li>
+                        <li class="last current"><a>パスワード再登録</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="zairyuSectionBlock">
+                <section class="contentsSection zairyuInfoSection">
+                    <div class="contentsInner">
+                        <h2>パスワード再登録</h2>
+                    </div>
+                </section>
+            </div>
+            <div class="whiteColorBg">
+                <div class="zairyuSubmitFormInner">
+                    <div class="contentsInner">
+                        <div class="zairyuSubmitForm">
+                            <div class="mb20">
+                                <p>
+                                    <label>利用者ID（メールアドレス）を入力して、メールを送信するボタンを押してください。</label> <br> <label>このメールアドレスに、パスワード変更案内メールを送付します。</label>
+                                    <br>
+                                </p>
+                            </div>
+                            <p class="txt">
+                                <span class="requiredLabel">必須</span>必須項目は必ず入力してください。
+                            </p>
+                            <div>
+                                <div class="box_inner">
+                                </div>
+                            </div>
+                            <form class="check_inputs" action="/RRnet/user/password/reset" method="POST"><input type="hidden" name="_csrf" value="7a6a216d-fabb-459a-8979-d0762bee0505" />
+                                <div class="noidform">
+                                    <table class="formTable">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><label>利用者ID（メールアドレス）<span class="requiredLabel">必須</span></label></th>
+                                                <td>
+                                                    <div style="display: none;" class="checkedArea"><span style="display: none;" class="mailaddress">形式が不正です。</span><span style="display: none;" class="notblank">入力は必須です。</span></div><input type="email" name="userMailAddress" id="userMailAddress" maxlength="254" value="" with="mail" class="w75p checked" placeholder="" rule="mailaddress notblank"></input>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="submitButtonGroup txt_c p30">
+                                        <button type="button" name="backUserTop" class="btn btnPrimary w192_p txt_block check_buttons" onclick="javascript:history.back();">前の画面へ戻る</button>
+                                        <button type="submit" name="resetPassword" class="btn btnPrimary w192_p txt_block limit_eternal_submit">メールを送信する</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="contentsInner">
+                <ul class="footerMenu layout_pc">
+                    <li><a href="/RRnet">TOP</a></li>
+                    <li><a href="/RRnet/faq">よくある質問</a></li>
+                    <li><a href="/RRnet/legalmatters">法的事項</a></li>
+                    <li><a href="/RRnet/privacy">プライバシーポリシー</a></li>
+                    <li><a href="/RRnet/accessibility">アクセシビリティ</a></li>
+                    <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                </ul>
+                <div class="layout_sp">
+                    <ul class="listNav">
+                        <li><a href="/RRnet">TOP</a></li>
+                        <li><a href="/RRnet/faq">よくある質問</a></li>
+                        <li><a href="/RRnet/legalmatters">法的事項</a></li>
+                        <li><a href="/RRnet/privacy">プライバシーポリシー</a></li>
+                        <li><a href="/RRnet/accessibility">アクセシビリティ</a></li>
+                        <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                    </ul>
+                    <div class="footerBottomBar">
+                        <div id="pageTop"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/pagetop.png" alt="PAGETOP" class="pagetop"></div>
+                    </div>
+                </div>
+                <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+            </div>
+            <div class="addressArea">
+                <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                    <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                    <br class="contact">
+                    電話（代表）03-3580-3311　法人番号　9000012040001
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

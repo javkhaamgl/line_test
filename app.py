@@ -45,6 +45,10 @@ def RRnet_res_login():
 def RRnet_pass_reset():
     return render_template('/RRnet/residencereport/password/reset.html')
 
+@app.route('/RRnet/user/password/reset')
+def RRnet_userpass_reset():
+    return render_template('/RRnet/user/password/reset.html')
+
 @app.route('/tabireg')
 def tabireg():
     return render_template('/tabireg/index.html')
