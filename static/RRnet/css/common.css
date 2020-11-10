@@ -1544,7 +1544,7 @@ ul.headerIconMenu li a:after {
 }
 
 ul.headerIconMenu li.faq a:after {
-    background-image: url('../img/icon_faq.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/RRnet/img/icon_faq.png');
 }
 
 ul.headerIconMenu li.inquiry a:after {
@@ -2121,7 +2121,7 @@ ul.headerIconMenu li.logout a:after {
     .msgAlert span:after {
         width: 24px;
         height: 24px;
-        background: url(../img/sp/icon_alert_sp.png) no-repeat;
+        background: url(https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_alert_sp.png) no-repeat;
         background-size: 24px 24px;
     }
     .listCol3 li {
@@ -2228,7 +2228,7 @@ ul.headerIconMenu li.logout a:after {
         display: inline-block;
         width: 10px;
         height: 54px;
-        background: url('../img/sp/arrow.png') no-repeat;
+        background: url('https://www.ezairyu.mofa.go.jp/RRnet/img/sp/arrow.png') no-repeat;
         background-position: right center;
         background-size: 100% auto;
     }

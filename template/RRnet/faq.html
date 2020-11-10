@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="private">
+    <meta name="content-language" content="ja">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="google-site-verification" content="N0I7Gn7tk6h1v2Q-qlCJqWOkGAi4X4FP06SXTddKtb8" />
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>在留届 - 在留届を提出する方</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='RRnet/js/application.js') }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49881348-4');
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        var headerHight = $("#header").height();
+        $('a[href^="#"]').click(function() {
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top - headerHight;
+            $("html, body").animate({ scrollTop: position }, 550, "swing");
+            return false;
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="/RRnet" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/logo_orrnet.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                    <a href="/RRnet" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/logo_orrnet_sp.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                </div>
+                <nav id="nav">
+                    <ul class="headerMenu">
+                    </ul>
+                </nav>
+                <div class="headerBnr">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/logo_mofa.png" alt="外務省"></a>
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/logo_mofa_sp.png" alt="外務省"></a>
+                </div>
+                <div id="logstatus">
+                    <ul class="headerIconMenu">
+                        <li class="faq"><a href="/RRnet/faq">よくある質問</a></li>
+                        <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_menu.png" alt="MENU" id="menuIcon">
+                    <img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_close_menu.png" alt="MENU" id="closeMenuIcon">
+                </div>
+            </div>
+            <div class="dropdownMenu" id="dropdownMenu">
+                <div class="dropdownInner">
+                    <ul class="listNav">
+                        <li><a href="/RRnet/agree">在留届を提出する方</a></li>
+                        <li><a href="residencereport/login">変更届・帰国届を提出する方</a></li>
+                        <li><a href="residencereport/password/reset">パスワードを忘れた方</a></li>
+                    </ul>
+                    <div class="halfColListBlock">
+                        <ul class="listNav">
+                            <li><a href="/RRnet/faq">よくあるご質問</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="">
+            <div class="pageTitleArea">
+                <div class="contentsInner">
+                    <h1 class="txt">在留届ＦＡＱ</h1>
+                </div>
+            </div>
+            <div class="contentsInner">
+                <div class="contentTitleArea">
+                    <p class="txt_r mt10 mb20">
+                        <a href="/RRnet">トップページ</a> ＞ 在留届ＦＡＱ
+                    </p>
+                    <h2 class="fs160p keyColor txt_c mb20"><strong>在留届ＦＡＱ</strong></h2>
+                </div>
+                <div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">質問(1)</th>
+                            <td><a href="#q1">在留届とは何ですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(2)</th>
+                            <td><a href="#q2">在留届は出さなくてはいけないものですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(3)</th>
+                            <td><a href="#q3">在留届の提出を怠るとどうなりますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(4)</th>
+                            <td><a href="#q4">在留届はどこに出せばよいのですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(5)</th>
+                            <td><a href="#q5">在留届を提出する大使館・総領事館はどのように確認することが出来ますか？。</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(6)</th>
+                            <td><a href="#q6">在留届には何を書くのですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(7)</th>
+                            <td><a href="#q7">既に海外で３ヶ月以上滞在することが決まっているのですが、渡航前に管轄する大使館・総領事館に在留届を提出してもよいですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(8)</th>
+                            <td><a href="#q8">在留届はどうやって提出すれば良いのですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(9)</th>
+                            <td><a href="#q9">在留届の用紙はどこで手に入れることができるのですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(10)</th>
+                            <td><a href="#q10">日本国籍以外の家族を同居家族として登録できますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(11)</th>
+                            <td><a href="#q11">海外で子供が生まれたのですが、その子供も在留届を提出しなくてはいけませんか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(12)</th>
+                            <td><a href="#q12">海外で引っ越しをしたのですが、管轄する大使館・総領事館は変わりませんでした。この場合、在留届は変更しなくて良いのですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(13)</th>
+                            <td><a href="#q13">今滞在している国から違う国に引っ越しすることとなった場合、引っ越し先の住所地を管轄する大使館・総領事館に在留届を提出することで良いですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(14)</th>
+                            <td><a href="#q14">帰国届を提出せずに帰国してしまいました。帰国届は日本に帰国してからでも提出はできますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(15)</th>
+                            <td><a href="#q15">筆頭者が帰国し、同居家族が在留する場合の手続きを教えて下さい。</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(16)</th>
+                            <td><a href="#q16">変更届や帰国届を提出しないと、どうなりますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(17)</th>
+                            <td><a href="#q17">大使館・総領事館の窓口やＦＡＸで提出した在留届を「オンライン在留届（ORRネット）」で変更できますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(18)</th>
+                            <td><a href="#q18">パスワードを忘れてしまったのですが、どうしたら良いでしょうか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(19)</th>
+                            <td><a href="#q19">在留届を提出したかどうか忘れてしまったのですが、どうしたら良いでしょうか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(20)</th>
+                            <td><a href="#q20">名前や住所の入力にはどのような文字種類が使用できるのでしょうか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(21)</th>
+                            <td><a href="#q21">アカウントロックを解除したいのですがどうすれば良いですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(22)</th>
+                            <td><a href="#q22">ジャパン・レール・パス購入のため「在留届の写し」を入手する方法を教えて下さい。</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(23)</th>
+                            <td><a href="#q23">利用者IDとはなんですか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(24)</th>
+                            <td><a href="#q24">利用者ID（メールアドレス）は変更できますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(25)</th>
+                            <td><a href="#q25">文字の大きさを変更することはできますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(26)</th>
+                            <td><a href="#q26">利用場面ごとに提出する届出を教えて下さい。</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(27)</th>
+                            <td><a href="#q27">在留届で入力する職業について教えて下さい。</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(28)</th>
+                            <td><a href="#q28">このシステムは、なりすまし等についてどのような対策がとられていますか？</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(29)</th>
+                            <td><a href="#q29">動作環境について</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(30)</th>
+                            <td><a href="#q30">通信の安全性について</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(31)</th>
+                            <td><a href="#q31">他の方と共用するパソコン等で「オンライン在留届（ORRネット）」を利用する場合の注意点</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">質問(32)</th>
+                            <td><a href="#q32">このサイトは安全なサイトですか？</a></td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q1">質問(1)：在留届とは何ですか？</h3>
+                    </div>
+                    <table class="faqTable answer_area">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                「在留届」は、外務省が海外にいる日本人の実態を把握したり、海外で邦人が巻き込まれたことが危惧される緊急事態やその他の事件・事故が発生したときなど、大使館や総領事館が在留邦人の安否を確認し支援を行ったり、メールによる迅速な情報提供を行う際に欠かせない資料です。<br>
+                                また、在留邦人が、大使館・総領事館において在外選挙人名簿登録申請などの領事サービスを受ける場合にも利用されたり、海外在留邦人に関する各種統計、政府が海外在留邦人の教育・医療等の長期的な施策を検討する際の基礎資料にもなっています。<br>
+                                送付されるメールの例を以下に示します。<br>
+                                <br> <b>例１）テロ事件等の発生情報</b>
+                                <table class="mail_table">
+                                    <tbody>
+                                        <tr>
+                                            <th>差出人：在デトロイト日本国総領事館<br>
+                                                件名：【緊急】 ○○○○大学内における銃撃事件の発生</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>○詳細は不明なるも、×日午前９時過ぎ、○○○○大学内で銃撃が発生した模様です。</p>
+                                                <p>○最新情報の入手に努め、付近には近づかないよう注意して下さい。</p>
+                                                <p>○本件に関して、邦人が被害に遭ったとの情報がある場合は、在デトロイト総領事館までご連絡下さい。</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>（問い合わせ窓口）</p>
+                                                <p>在デトロイト日本国総領事館</p>
+                                                <p>電話：△△△－△△△△</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br> <b>例２）教科書の配布</b>
+                                <table class="mail_table">
+                                    <tbody>
+                                        <tr>
+                                            <th>差出人: 在瀋陽日本国総領事館<br>
+                                                件名：平成３０年度小・中学生向け前期教科書配布</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>○平成３０年度前期小・中学生向け教科書の配布を開始いたします。</p>
+                                                <p>○配布の対象となるのは昨年９月末までに当館に配布申請を行った方となります。</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>当館では、管轄地域内（遼寧省（大連市を除く）、吉林省、黒龍江省）に在住する方で、昨年９月末までに当館に配布申請を行った方を対象に、前期教科書の配付を行います。</p>
+                                                <p>なお、瀋陽日本人補習学校に在籍中の児童生徒は、学校から配付されますので、受け取りの必要はありません。</p>
+                                                <p>また、大連市在住の児童生徒は当館在大連領事事務所から配布します。当館から配布することはできませんので、ご注意ください。</p>
+                                                <p>受取方法等、詳しい情報は、下記ＵＲＬ（当館ホームページ）よりご確認ください。</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>【問い合わせ先】</p>
+                                                <p>在瀋陽日本国総領事館　領事担当</p>
+                                                <p>電話：△△△－△△△△</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br> <b>例３）在外選挙のお知らせ</b>
+                                <table class="mail_table">
+                                    <tbody>
+                                        <tr>
+                                            <th>差出人: 在サウジアラビア日本国大使館<br>
+                                                件名: 第XX回衆議院総選挙における在外投票の実施について</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>○当館における投票所は、XX月XX日からXX日までのX日間、午前９時３０分から午後５時まで開設します。</p>
+                                                <p>　投票には、（１）在外選挙人証、（２）旅券等の身分証明書が必要です。</p>
+                                                <p>○その他、郵便等投票や日本国内における投票の方法もあります。</p>
+                                                <p>○衆議院の小選挙区は、在外選挙人証の表面に記載されていますが、本年７月に区割り改定が行われたことにより、変更が生じている場合もありますので、ご確認ください。</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>第XX回衆議院総選挙の在外投票が以下のとおり行われます。</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>１．選挙の日程</p>
+                                                <p>○ 公示日：平成xx年xx月xx日（火）</p>
+                                                <p>○ 在外公館投票の開始日：平成xx年xx月xx日（水）</p>
+                                                <p>○ 日本国内の投票日　：平成xx年xx月xx日（日）</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>～中略～</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>【問い合わせ先】</p>
+                                                <p>在サウジアラビア日本国大使館領事部</p>
+                                                <p>電話：△△△－△△△△</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br> <b>例４）外務省海外安全ホームページの危険情報の更新情報</b>
+                                <table class="mail_table">
+                                    <tbody>
+                                        <tr>
+                                            <th>差出人：外務省海外安全ホームページ　最新情報<br>
+                                                件名：【危険情報】ギニアの危険情報【一部地域の危険レベル引き下げ】（更新）</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>ギニアの危険情報を改訂しました（【一部地域の危険レベル引き下げ】（更新））。</p>
+                                                <p>
+                                                    <br>
+                                                </p>
+                                                <p>詳細は以下のリンク先をご確認ください。</p>
+                                                <p>(PC)==> http://www.xxxxxx</p>
+                                                <p>(携帯)==> http://www.yyyyyy</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q2">質問(2)：在留届は出さなくてはいけないものですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>在留届は旅券法第１６条によって、外国に住所又は居所を定めて３ヶ月以上滞在する日本人に、その住所や居所を管轄する日本の大使館又は総領事館への提出を義務づけているものです。提出は現地に到着して住所等が決まった後で提出するようにしてください。<br>
+                                なお、３ヶ月未満の滞在の方は、「たびレジ」に登録するようお願いします。<br>
+                                <br>
+                                【旅券法第１６条（外国滞在の届出）】<br>
+                                １　旅券の名義人で外国に住所又は居所を定めて三月以上滞在するものは、外務省令で定めるところにより、当該地域に係る領事館の領事官に届け出なければならない。<br>
+                                ２　また、「在留届」提出後、連絡先、転居（提出先在外公館の管轄区域外への転出も含む）や家族の移動など「在留届」の記載事項に変更があったときは「変更届」、帰国するときは「帰国届」を提出するようにしてください。<br>
+                                <br>
+                                【外務省施行規則第１２条（外国滞在の届出）】<br>
+                                １　法第１６条の規定による届出は、旅券の名義人が外国に住所又は居所を定めて三月以上滞在しようとするときは、遅滞なく、当該住所又は居所を管轄する領事官（当該住所又は居所を管轄する領事官がない場合には、最寄りの領事官）に別記第十四号様式による在留届一通を提出してしなければならない。<br>
+                                ２　前項の届出をした者は、住所、居所その他の届出事項に変更を生じたときは、遅滞なく、また当該届出をした領事官の管轄区域を去るときは、事前に、その旨を当該領事官に届け出なければならない。<br>
+                                ３　第二項の届出は、世帯ごとにすることができる。<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q3">質問(3)：在留届の提出を怠るとどうなりますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>「在留届」が提出されていないと、現地の大使館・総領事館では、滞在している方の滞在の事実を知ることができません。<br>
+                                したがって、特に在留邦人が巻き込まれたことが危惧される事件・事故または災害等が発生した場合、「在留届」に記載された所在地や緊急連絡先の情報に基づき大使館・総領事館が行うことによる安否確認や、本邦留守宅への連絡を行うことができなくなります。<br>
+                                また、在外選挙人名簿登録をする場合にも、在留届が必要になります。<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q4">質問(4)：在留届はどこに出せばよいのですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>在留届は、あなたが海外で３ヶ月以上滞在するための住所を定めた際に、その地を管轄する大使館・総領事館に提出してください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q5">質問(5)：在留届を提出する大使館・総領事館はどのように確認することが出来ますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td><a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="link_to_mofaj">外務省ホームページ</a>で確認できます。また、「オンライン在留届（ORRネット）」で提出する場合には、あなたの住所を入力すると、当該地域を管轄する大使館・総領事館が自動的に選択されます。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q6">質問(6)：在留届には何を書くのですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>在留届には、氏名、本籍、海外での住所、留守宅などの連絡先、日本国旅券（パスポート）番号、同居家族（配偶者、子ども）などを記入します。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q7">質問(7)：既に海外で３ヶ月以上滞在することが決まっているのですが、渡航行く前に管轄する大使館、・総領事館に在留届を提出してもよいですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>在留届には、到着した日を記入することとなっており、ここに未来の日付を入力することはできません。現地に到着して住所または居所が決まってから在留届を提出してください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q8">質問(8)：在留届はどうやって提出すれば良いのですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>「オンライン在留届（ORRネット）」から提出が出来ます。用紙に記入して届け出る場合は、あなたが滞在される住所地を管轄する大使館・総領事館に直接出向き提出していただくか、郵送又はＦＡＸで送付してください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q9">質問(9)：在留届の用紙はどこで手に入れることができるのですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>在留届の用紙は、大使館・総領事館で入手することが可能です。<br>
+                                インターネットからＰＤＦファイルをダウンロードして入手することも可能です。<br>
+                                <br>
+                                <a href="http://www.mofa.go.jp/mofaj/toko/todoke/zairyu/image/zairyu.pdf" target="_blank">在留届のダウンロードはこちらから</a>（別ウィンドが開きます）</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q10">質問(10)：日本国籍以外の家族を同居家族として登録できますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>日本国籍をお持ちでない同居家族は、日本国籍欄で「無」を選択した上で、 日本国旅券（パスポート）番号欄を入力せず空白で登録ください。 なお、日本国籍でない方は筆頭者としては登録できません。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q11">質問(11)：海外で子供が生まれたのですが、その子供も在留届を提出しなくてはいけませんか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>お子さまが生まれた場合、大使館・総領事館の窓口で出生届の届出を行う際に、変更届もあわせて提出するようにしてください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q12">質問(12)：海外で引っ越しをしたのですが、管轄する大使館・総領事館は変わりませんでした。この場合、在留届は変更しなくて良いのですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                仮に引っ越した先が同じ大使館・総領事館管轄地域内であっても、万が一、事件・事故が起きた場合、変更届が提出されていなければあなたの安否等の確認が困難になりますので、変更届を提出してください。<br>
+                                なお、現在の在留届を「オンライン在留届（ORRネット）」で提出された方であれば、「オンライン在留届（ORRネット）」上で「変更届、帰国・転出届を提出する」のボタンから変更届を提出することもできます。<br>
+                                また、在外選挙人登録をされている方は在外選挙人証の住所変更が必要となります。詳しくは「在外選挙人名簿登録申請の流れ」をご覧ください。<br>
+                                <br>
+                                <a href="http://www.mofa.go.jp/mofaj/toko/senkyo/flow.html">在外選挙人名簿登録申請の流れはこちら</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q13">質問(13)：今滞在している国から違う国に引っ越しすることとなった場合、引っ越し先の住所地を管轄する大使館・総領事館に在留届を提出することで良いですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>新たな引っ越し先を管轄している大使館・総領事館に在留届を提出する前に、現在の住所を管轄している大使館・総領事館に帰国・転出届を提出して下さい。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q14">質問(14)：帰国届を提出せずに帰国してしまいましたが、帰国届は日本に帰国してからでも提出はできますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>最初に在留届を大使館・総領事館に直接提出された方、もしくは郵送又はＦAＸで提出された方は、 帰国届を大使館・総領事館に電子メール以外の方法（郵送、FAX等）で提出してください<br>
+                                「オンライン在留届（ORRネット））で届出された方は、日本に帰国されてからでも「オンライン在留届（ORRネット）」で帰国届を提出できます。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q15">質問(15)：筆頭者が帰国し、同居家族が在留する場合の手続きを教えて下さい。</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                筆頭者が帰国もしくは転出し、家族が残る場合、それぞれ帰国届もしくは転出届を提出して下さい。<br>
+                                その後、残った家族の中から新たに筆頭者を立て、改めて在留届を提出して下さい。<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q16">質問(16)：変更届や帰国届を提出しないと、どうなりますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>旅券法令上、在留届を提出した方は、届出事項に変更が生じたときは遅滞なく変更届や帰国届を提出しなければなりません。変更届がないと、いざという時の連絡などが受けられないこともあります。<br>
+                                また、帰国届の提出がないと、すでに帰国された後も、注意喚起や安否確認のためのSMSやメールがみなさんの電話番号やメールアドレスに送信されることになります。緊急事態の際、大使館・総領事館は、既に帰国しているあなたの安否確認に時間をとられ、 実際に滞在している他のみなさんの安否確認がそれだけ遅れることにもなりかねませんので、帰国または転居される際には帰国届、変更届の提出をお願いします。<br>
+                                <br>
+                                なお、平成26年4月1日より、以下の方については、当該大使館・総領事館の管轄地域から転出したものとして扱わせて頂きますのでご了承下さい。<br>
+                                1「滞在期間」欄記載の滞在終了予定日を経過した後、特段のご連絡を頂いておらず、更にその後1年間、当該の大使館・総領事館において在留が確認できない方<br>
+                                2「滞在期間」欄記載の滞在終了予定日が到来していない方のうち、1年以上の期間にわたり、当該の大使館・総領事館から連絡がつかない方</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q17">質問(17)：大使館・総領事館の窓口やＦＡＸで提出した在留届を「オンライン在留届（ORRネット）」で変更できますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>最初に在留届を大使館・総領事館に直接提出された方、もしくは郵送又はＦＡＸでの提出された方は、変更届や帰国届を紙面又はＦＡＸで提出してください。「オンライン在留届（ORRネット）」では変更できません。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q18">質問(18)：パスワードを忘れてしまったのですが、どうしたら良いでしょうか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>パスワードを忘れてしまった方は、日本国旅券（パスポート）の番号と本システムに登録したメールアドレスをご用意の上、 「パスワード再登録」のボタンか下のリンクをクリックして所定の事項を入力してください。<br>
+                                登録いただいているメールアドレスにパスワード再登録用のメールをお送りします。<br>
+                                <br>
+                                <a class="txt_block mb30" href="user/password/reset">利用者IDをお持ちの方でパスワードを忘れた方はこちら</a><br>
+                                <a href="residencereport/password/reset">利用者IDをお持ちでない方でパスワードを忘れた方はこちら</a></td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q19">質問(19)：在留届を提出したかどうか忘れてしまったのですが、どうしたら良いでしょうか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                新規に入力をしていただくか、又は管轄区域の大使館・総領事館にお問い合わせ下さい。<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q20">質問(20)：名前や住所の入力にはどのような文字種類が使用できるのでしょうか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>名前や住所などの入力に使用可能/不可能な文字は以下のとおりです。<br>
+                                <br>
+                                ・可能：仮名、漢字（JIS第2水準文字まで）アルファベット、漢数字及び算用数字、<br>
+                                記号 ! " # $ % & ' ( ) * + , - . / : ; <=> ? @ [ \ ] ^ _ ` { | } ~ <br>
+                                    ・不可能：漢字(JIS第3水準文字以上)、記号が付いた特殊文字、上記以外の数字及び記号<br>
+                                    <br>
+                                    氏名(ローマ字)は、日本国旅券（パスポート）の氏名と同じ表記で入力してください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q21">質問(21)：アカウントロックを解除したいのですがどうすれば良いですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>「オンライン在留届（ORRネット）」では、パスワード入力を一定回数以上間違えるとアカウントがロックされ、ログイン及びパスワード再登録が出来なくなります。 2時間後に、再度ログインあるいはパスワード再登録を行ってください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q22">質問(22)：ジャパン・レール・パス購入のため「在留届の写し」を入手する方法を教えて下さい。</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                以下のページをご参照ください。<br>
+                                <br>
+                                <a href="http://www.mofa.go.jp/mofaj/ca/cs/page23_002045.html">ジャパン・レール・パスを利用するために大使館・総領事館で取得可能な書類のご案内 </a></td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q23">質問(23)：利用者IDとはなんですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                2018年3月より、ログイン方法を「旅券番号、生年月日、パスワード」から「メールアドレス、パスワード」に変更しました。<br>
+                                利用者IDは、ログインの際に用いるメールアドレスを指します。<br>
+                                2018年3月以前に「オンライン在留届（ORRネット）」に登録されている方は、変更届の提出時にログイン方法の変更に伴う手続きが必要になります。<br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q24">質問(24)：利用者ID（メールアドレス）は変更できますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>「オンライン在留届（ORRネット）」では、在留届筆頭者のメールアドレス（初期値）を登録時の利用者IDとしていますが、在留届の「筆頭者メールアドレス」欄を変更しただけでは利用者IDは変更されません。在留届提出後に利用者IDを変更する場合は、「在留届メニュー」から「利用者情報の確認・変更」を選んでください。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q25">質問(25)：文字の大きさを変更することはできますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                各ブラウザの設定により表示サイズを変更することができます。<br>
+                                変更方法は以下のとおりです。<br>
+                                <br>
+                                Windows 7、8.1、10環境
+                                <br>
+                                <div class="mb30">
+                                    ・Internet Explorer<br>
+                                    　Internet Explorer Ver.8<br>
+                                    　　1.Internet Explorerを起動してください。<br>
+                                    　　2.キーボードの「Alt」キーを押してください。<br>
+                                    　　3.画面上部にメニューバーが表示されますので、「ページ」ボタンを押してください。<br>
+                                    　　4.「ページ」リストが表示されますので、「拡大」ボタンを押してください。<br>
+                                    　　5.「拡大」リストが表示されますので、拡大したいサイズを選択してください。<br>
+                                    <br>
+                                    　Internet Explorer Ver.9、10、11<br>
+                                    　　1.Internet Explorerを起動してください。<br>
+                                    　　2.画面右上の「歯車」ボタン（ツールボタン）を押してください。<br>
+                                    　　3.「ツール」リストが表示されますので、「拡大」ボタンを押してください。<br>
+                                    　　4.「拡大」リストが表示されますので、拡大したいサイズを選択してください。<br>
+                                    <a href="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_1.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_1.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                    <br>
+                                    ・Microsoft Edge<br>
+                                    　1.Microsoft Edgeを起動してください。<br>
+                                    　2.画面右上の「…」ボタン（詳細ボタン）を押してください。<br>
+                                    　3.「詳細」リストが表示されますので、「+」（拡大）または「-」（縮小）で、サイズを変更してください。<br>
+                                    <a href="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_2.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_2.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                </div>
+                                <div class="mb30">
+                                    ・Firefox<br>
+                                    　1.Firefoxを起動してください。<br>
+                                    　2.画面右上の「≡」ボタン（メニューボタン）を押してください。<br>
+                                    　3.「メニュー」リストが表示されますので、「+」（拡大）または「-」（縮小）で、サイズを変更してください。<br>
+                                    <a href="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_3.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_3.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                </div>
+                                <div class="mb30">
+                                    ・Google Chrome<br>
+                                    　1.Google Chromeを起動してください。<br>
+                                    　2.画面右上の「︙」ボタン（設定ボタン）を押してください。<br>
+                                    　3.「設定」リストが表示されますので、「拡大/縮小」の「+」（拡大）または「-」（縮小）で、サイズを変更してください。<br>
+                                    <a href="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_4.png" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq29_4.png" class="faq29 img-responsive" alt="faq説明"></a><br>
+                                </div>
+                                <div class="mb30">
+                                    Mac環境 <br>
+                                    <br>
+                                    ・Safari<br>
+                                    　1.Safariを起動してください。<br>
+                                    　2.画面上部のメニューバーの「表示」ボタンを押してください。<br>
+                                    　3.「表示」リストが表示されますので、「拡大」または「縮小」で、サイズを変更してください。<br>
+                                </div>
+                                <div class="mb30">
+                                    スマートフォン環境<br>
+                                    <br>
+                                    ・Android4.1以上<br>
+                                    <br>
+                                    　Google Chrome<br>
+                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                    <br>
+                                    　Androidブラウザ<br>
+                                    　　以下のいずれかの方法でサイズを変更することができます。<br>
+                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                    　　2.ピンチズーム（※）で拡大してください。<br>
+                                    <br>
+                                    ・iOS 7.0以上<br>
+                                    <br>
+                                    　Google Chrome<br>
+                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                    <br>
+                                    　Safari<br>
+                                    　以下のいずれかの方法でサイズを変更することができます。<br>
+                                    　　1.スマートフォン本体を横向きにして、画面を拡大してください。<br>
+                                    　　2.ピンチズーム（※）で拡大してください。<br>
+                                    <br>
+                                    ※ピンチズーム…2本の指を画面に当てたまま広げるように動かすと、画面が拡大します。<br>
+                                    　縮小したいときは、2本の指を閉じるように動かします。<br>
+                                    <br>
+                                    スマートフォンの場合は、お使いの機種や設定により、文字の大きさを変更できない可能性があります。<br>
+                                    変更できない場合は、メーカー各社にお問い合わせください。
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q26">質問(26)：利用場面ごとに提出する届出を教えて下さい。</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                1.新規に海外に3か月以上の滞在をされる方<br>
+                                　在留届を提出して下さい。<br>
+                                <br>
+                                2. 現在の大使館・総領事館管轄区域に引き続き滞在し、在留届の届出内容が変更になった方<br>
+                                　変更届を提出して下さい。<br>
+                                <br>
+                                3.日本に帰国する予定が決まった方、もしくは既に帰国された方<br>
+                                　帰国・転出届を提出して下さい。<br>
+                                <br>
+                                4.在留届提出先の大使館・総領事館管轄区域から転出する予定が決まった方、もしくは既に転出された方<br>
+                                　帰国・転出届を提出して下さい。<br>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q27">質問(27)：在留届で入力する職業について教えて下さい。</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>以下の表を参考に入力して下さい。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td class="text2">
+                                <div class="faqBlock">
+                                    <div class="faqListHeader">(１)民間企業関係者</span></div>
+                                    <ol class="faqList">
+                                        <li class="colL w70p txt_l col4line">
+                                            <p>
+                                                (ア) 商社、銀行、証券、保険、製造業、運輸（船舶、航空）、土木、建設、広告、宣伝、水産、鉱業、林業、旅行斡旋、倉庫、不動産、その他の営利企業及びその関連団体の職員<br>
+                                                (イ) 経済団体（ＮＧＯ、ＮＰＯ等を含みます）の職員<br>
+                                                (ウ) 外国企業 （本邦における支社や現地法人の有無を問いません）の職員
+                                            </p>
+                                        </li>
+                                        <li class="colR w30p txt_l col4line">
+                                            <p>現地採用職員を含みます。</p>
+                                        </li>
+                                    </ol>
+                                    <div class="faqListHeader">(２)報道関係者</span></div>
+                                    <ol class="faqList">
+                                        <li class="colL w100p txt_l col2line">
+                                            <p>
+                                                (ア) 新聞、雑誌、放送、通信社など報道機関の特派員<br>
+                                                (イ) 上記報道機関の現地採用職員
+                                            </p>
+                                        </li>
+                                    </ol>
+                                    <div class="faqListHeader">(３)自由業及び専門的職業関係者</span></div>
+                                    <ol class="faqList">
+                                        <li class="colL w70p txt_l col12line">
+                                            <p>
+                                                (ア) 僧侶、宣教師<br>
+                                                (イ) 文芸家、著述家（上記(２)に含まれる方は除きます。）<br>
+                                                (ウ) 弁護士、会計士<br>
+                                                (エ) 碁、将棋、茶道、華道、日本舞踊、琴、尺八、三味線、柔道、空手、合気道師範等<br>
+                                                (オ) 芸術家、 芸能家 （音楽家、 美術家、 写真家を含みます。）<br>
+                                                (カ) 建築家<br>
+                                                (キ) 医師、獣医師（開業又は病院等に雇用されている方。）<br>
+                                                (ク) 服装、デザイン関係者<br>
+                                                (ケ) 理容師、美容師、看護師、鍼灸師、コック、ひな鑑別師、大工、庭師、漁師、ファッションモデル、その他の特殊技能者<br>
+                                                (コ) 自営業<br>
+                                                (サ) その他の自由業
+                                            </p>
+                                        </li>
+                                        <li class="colR w30p txt_l col12line">
+                                            <p>その主たる目的が留学、研究にある方は下記(４)を選択して下さい。</p>
+                                        </li>
+                                    </ol>
+                                    <div class="faqListHeader">(４)留学生・研究者・教師</span></div>
+                                    <ol class="faqList">
+                                        <li class="colL w100p txt_l col4line">
+                                            <p>
+                                                (ア) 公費及び私費の留学生<br>
+                                                (イ) 大学、 研究所その他の教育、 研究機関において教育又は研究に従事している方<br>
+                                                (ウ) 日本語などの教師<br>
+                                                　　日本人学校等の在外教育施設に政府より派遣されている方は、下記 (５)(キ)を選択して下さい。
+                                            </p>
+                                        </li>
+                                    </ol>
+                                    <div class="faqListHeader">(５)政府関係機関職員</span></div>
+                                    <ol class="faqList">
+                                        <li class="colL w70p txt_l col12line">
+                                            <p>
+                                                (ア) 日本大使館・総領事館の職員<br>
+                                                (イ) 日本銀行及び独立行政法人等の職員<br>
+                                                (ウ) 日本商工会議所を始めとする公共性の高い組織の職員<br>
+                                                　　（公用旅券所持者・一般旅券所持者の別を問いません。）<br>
+                                                (エ) 地方自治体等の海外事務所の職員<br>
+                                                　　（公用旅券所持者・一般旅券所持者の別を問いません。）<br>
+                                                (オ) 技術協力のための政府派遣専門家、 技術者及び協力隊員<br>
+                                                (カ) 国連、その他の国際機関の職員<br>
+                                                (キ) 日本人学校等の在外教育施設に派遣教員として政府より派遣されている方<br>
+                                                (ク) その他公用旅券所持者で派遣及び滞在の経費の全部又は一部が公費でありかつ派遣機関の用務に従事する方<br>
+                                                　　在留資格が主として留学あるいは研究の場合は上記(４)を選択して下さい。
+                                            </p>
+                                        </li>
+                                        <li class="colR w30p txt_l col12line">
+                                            <p>派遣職員、家事補助員及び現地採用職員を含みます。</p>
+                                        </li>
+                                    </ol>
+                                    <div class="faqListHeader">(６)その他</span></div>
+                                    <ol class="faqList">
+                                        <li class="colL w100p txt_l col6line">
+                                            <p>
+                                                (ア) ホテルボーイ、ハウスメイド、給仕、掃除婦、その他単純労働者<br>
+                                                (イ) 外国政府職員<br>
+                                                　　技術協力のため、わが国政府より外国政府に派遣されている方は上記(５)を選択して下さい。<br>
+                                                (ウ) ワーキング・ホリデー制度による滞在者<br>
+                                                (エ) 無職、フリーター<br>
+                                                (オ) その他上記いずれの分類にも属さない方、または分類不可能もしくは不明の方
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q28">質問(28)：このシステムは、なりすまし等についてどのような対策がとられていますか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>なりすましや改ざん等の防止策として、 利用者IDとご自身で設定されたパスワードによる本人確認を行っており、 第三者による悪意の改ざん等を防止しています。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q29">質問(29)：動作環境について</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td colspan="2">本システムで提供する画面に対応したブラウザは以下のとおりです。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td colspan="3" class="text2">(1)OS及びブラウザ種類</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">Windows 7、8.1、10環境</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">ブラウザ</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">&middot;Internet Explorer</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2" colspan="2">Windows 7をお使いのお客様：Internet Explorer Ver.11</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2" colspan="2">Windows 8.1をお使いのお客様：Internet Explorer Ver.11</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2" colspan="2">Windows 10をお使いのお客様：Internet Explorer Ver.11,Edge</td>
+                        </tr>
+                        <tr>
+                            <td class="text2" colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">&middot;Firefox</td>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">&middot;Google Chrome</td>
+                        </tr>
+                        <tr>
+                            <td class="text2" colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">Mac環境</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">&middot;Safari6以上</td>
+                        </tr>
+                        <tr>
+                            <td class="text2" colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">スマートフォン環境</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">&middot;Android 4.4.2以上</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">Google Chrome</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">Androidブラウザ</td>
+                        </tr>
+                        <tr>
+                            <td class="text2" colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="text2">&nbsp;</td>
+                            <td class="text2">&middot;iOS 7.0以上</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">Google Chrome</td>
+                        </tr>
+                        <tr>
+                            <td class="text2 sp_none">&nbsp;</td>
+                            <td class="text2">Safari6以上</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td class="text2" colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td colspan="3" class="text2">(2)入力文字</td>
+                        </tr>
+                        <tr>
+                            <td width="5%" class="text2 sp_none">&nbsp;</td>
+                            <td colspan="2" class="text2">本システムでは、外字及び機種依存文字の対応はされておりません。 </td>
+                        </tr>
+                        <tr>
+                            <td width="5%" class="text2 sp_none">&nbsp;</td>
+                            <td colspan="2" class="text2">また、第3水準及び第4水準の漢字を取り扱うことはできません。 </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q30">質問(30)：通信の安全性について</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>「オンライン在留届（ORRネット）」では、SSL(Secure Socket Layer)での暗号化通信を使用し、届出の安全性を高めています。</td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q31">質問(31)：他の方と共用するパソコン等で「オンライン在留届（ORRネット）」を利用する場合の注意点</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                他の方と共用するパソコン等で「オンライン在留届（ORRネット）」を利用する際には、他の方にパスワードや個人情報を知られてしまうことを防ぐため、ブラウザの「オートコンプリート」機能（過去の入力内容を記憶し、次回から簡易に再入力できる機能※）を無効化した上で届出等を行い、利用後はcookie及びキャッシュも削除するようお願いします。ブラウザの「オートコンプリート」の無効化及びcookieやキャッシュの削除方法はブラウザ毎に異なるので、お使いのブラウザのヘルプ等を参照願います。<br>
+                                <br>
+                                ※「オートコンプリート」を有効にすると過去の入力内容をブラウザが記憶し、 ログイン時のパスワード入力が不要となり、また過去に入力した文字列の一部を入力しただけで簡単に全ての文字列を入力できます。
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                    <div class="faqBlueTitleArea">
+                        <h3 id="q32">質問(32)：このサイトは安全なサイトですか？</h3>
+                    </div>
+                    <table class="faqTable">
+                        <tr>
+                            <th scope="row">回答：</th>
+                            <td>
+                                <p class="mb30">
+                                    本サイトはSSL通信により通信内容を暗号化し「なりすまし」「盗聴」「改ざん」に対する安全性を高めています。 <br>
+                                    この通信内容の暗号化にあたっては「サーバ証明書」を使用しており、 この安全な通信が行われていることは、ブラウザ画面に「鍵マーク」が表示されることで確認できます。 <br>
+                                </p>
+                                <div class="mb30">
+                                    Internet Explorerでの証明書情報の見方<br>
+                                    <a href="#" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq30_1.png" class="faq30 img-responsive" alt="faq説明"></a><br>
+                                    　1.Internet Explorerを起動してください。<br>
+                                    　2.アドレスバーの「鍵マーク」を押してください。<br>
+                                    　3.ダイアログが表示されますので、「証明書の表示」を押してください。<br>
+                                </div>
+                                <div class="mb30">
+                                    FireFoxでの証明書情報の見方<br>
+                                    <a href="#" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq30_2.png" class="faq30 img-responsive" alt="faq説明"></a><br>
+                                    　1.Firefoxを起動してください。<br>
+                                    　2.アドレスバーの「鍵マーク」を押してください。<br>
+                                    　3.ダイアログが表示されますので、「＞」を押してください。<br>
+                                    　4.「詳細を表示」を押してください。<br>
+                                </div>
+                                <div class="mb30">
+                                    Google Chromeでの証明書情報の見方<br>
+                                    <a href="#" target="blank"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/faq30_3.png" class="faq30 img-responsive" alt="faq説明"></a><br>
+                                    　1.Google Chromeを起動してください。<br>
+                                    　2.アドレスバーの「鍵マーク」を押してください。<br>
+                                    　3.ダイアログが表示されますので、「有効」を押してください。<br>
+                                </div>
+                                <div class="mb30">
+                                    証明書情報に含まれる情報<br>
+                                    サブジェクト<br>
+                                    CN = www.ezairyu.mofa.go.jp <br>
+                                    OU = The Ministry of Foreign Affairs (外務省) <br>
+                                    O = The Ministry of Foreign Affairs (外務省) <br>
+                                    L = CHIYODA-KU (千代田区) <br>
+                                    S = TOKYO (東京都) <br>
+                                    C = JP (日本) <br>
+                                    発行者コモンネーム（CN）: Symantec Class 3 Secure Server CA - G4<br>
+                                </div>
+                                <p>
+                                    ※ SSL（Secure Socket Layer）通信とは、インターネット上でデータを暗号化して送受信する仕組みのひとつです。 <br>
+                                    クレジットカード番号や、一般に秘匿すべきとされる個人に関する情報を取り扱うWebサイトで、これらの情報が盗み取られるのを防止するため、広く利用されています。 <br>
+                                    また、SSLは暗号化に加え、電子証明書により通信相手の本人性を証明し、なりすましを防止するなど、今日のインターネットの安心・安全を支えています。 <br>
+                                    （総務省「国民のための情報セキュリティサイト」(<a href="http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/structure/03.html">http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/basic/structure/03.html</a>)より）<br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="txt_r mb10"><a href="#">▲ページの先頭に戻る</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="contentsInner">
+            <ul class="footerMenu layout_pc">
+                <li><a href="/RRnet">TOP</a></li>
+                <li><a href="/RRnet/faq">よくある質問</a></li>
+                <li><a href="/RRnet/legalmatters">法的事項</a></li>
+                <li><a href="/RRnet/privacy">プライバシーポリシー</a></li>
+                <li><a href="/RRnet/accessibility">アクセシビリティ</a></li>
+                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+            </ul>
+            <div class="layout_sp">
+                <ul class="listNav">
+                    <li><a href="/RRnet">TOP</a></li>
+                    <li><a href="/RRnet/faq">よくある質問</a></li>
+                    <li><a href="/RRnet/legalmatters">法的事項</a></li>
+                    <li><a href="/RRnet/privacy">プライバシーポリシー</a></li>
+                    <li><a href="/RRnet/accessibility">アクセシビリティ</a></li>
+                    <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                </ul>
+                <div class="footerBottomBar">
+                    <div id="pageTop"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/pagetop.png" alt="PAGETOP" class="pagetop"></div>
+                </div>
+            </div>
+            <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+        </div>
+        <div class="addressArea">
+            <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                <br class="contact">
+                電話（代表）03-3580-3311　法人番号　9000012040001
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

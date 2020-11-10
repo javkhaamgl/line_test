@@ -432,7 +432,7 @@
 }
 
 .faqSection {
-    background: url('../img/top/bg_faq_section.png') 0 100% no-repeat;
+    background: url('https://www.ezairyu.mofa.go.jp/RRnet/img/top/bg_faq_section.png') 0 100% no-repeat;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/top/bg_faq_section.png', sizingMethod='scale');
     padding-top: 46px;
