@@ -654,12 +654,12 @@ body {
 }
 
 .btnMain span {
-    background-image: url('../img/btn_arrow_down.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/btn_arrow_down.png');
     background-size: 19px 12px;
 }
 
 .btnMain2 span {
-    background-image: url('../img/btn_arrow.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/btn_arrow.png');
     background-size: 12px 19px;
 }
 
@@ -674,7 +674,7 @@ body {
 
 .btnGhost span {
     padding-right: 24px;
-    background-image: url('../img/btn_arrow.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/btn_arrow.png');
     background-size: 12px 19px;
 }
 

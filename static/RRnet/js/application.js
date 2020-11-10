@@ -182,7 +182,7 @@ function noticejson() {
     $.ajax({
             type: "GET",
             dataType: "json",
-            url: "/static/html/notice_orr.json"
+            url: "/static/html/notice_tabireg.json"
         })
         .then(
             function(data) {
