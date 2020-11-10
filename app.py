@@ -38,8 +38,16 @@ def RRnet_accessibility():
     return render_template('/RRnet/accessibility.html')
 
 @app.route('/RRnet/residencereport/login')
-def RRnet_residencereport_login():
+def RRnet_res_login():
     return render_template('/RRnet/residencereport/login.html')
+
+@app.route('/RRnet/residencereport/password/reset')
+def RRnet_pass_reset():
+    return render_template('/RRnet/residencereport/password/reset.html')
+
+@app.route('/RRnet/user/password/reset')
+def RRnet_userpass_reset():
+    return render_template('/RRnet/user/password/reset.html')
 
 @app.route('/tabireg')
 def tabireg():
