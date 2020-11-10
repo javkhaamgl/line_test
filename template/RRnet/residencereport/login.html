@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="private">
+    <meta name="content-language" content="ja">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="google-site-verification" content="N0I7Gn7tk6h1v2Q-qlCJqWOkGAi4X4FP06SXTddKtb8" />
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>在留届 - インターネットによるオンライン在留届</title>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+    <link href="/css/jquery-ui.css" rel="stylesheet" />
+    <link href="/css/jquery-ui.structure.css" rel="stylesheet" />
+    <link href="/css/jquery-ui.theme.css" rel="stylesheet" />
+    <noscript>
+        <label>&lt;img src="/js/awstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"&gt;</label>
+    </noscript>
+    <script type="text/javascript" src="/js/common.js" integrity="sha256-Hl7gjBL29cI5/krhwLFRsk17CR9d1QhG9KveTt9I+BI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/checked.js" integrity="sha256-hJaY1V9nt2xVdsedT2JbWjzV3vlSw1hYEWh1M4j/K5g=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    var common_contextPath = "";
+    var common_errorPath = "\/error";
+    /*]]>*/
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49881348-4');
+    </script>
+    <link rel="stylesheet" href="/RRnet/css/common.css">
+    <link rel="stylesheet" href="/RRnet/css/style.css">
+    <script type="text/javascript" src="/RRnet/js/html5.js"></script>
+    <script type="text/javascript" src="/RRnet/js/application.js"></script>
+    <script type="text/javascript" src="/RRnet/js/inputlimit.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var FUTURE_ADD_YEAR = 10;
+        var date = new Date();
+        var futureDate = new Date(date.getFullYear() + FUTURE_ADD_YEAR, 11, 31);
+        var minDate = new Date(1900, 0, 1);
+        /*<![CDATA[*/
+        var buttonImage = "\/tabireg\/img\/calender.png"; /*]]>*/
+
+        $.datepicker.setDefaults({
+            dateFormat: "yy/mm/dd",
+            dayNamesMin: ['日', '月', '火', '水', '木', '金', '土'],
+            minDate: new Date(1900, 0, 1),
+            maxDate: date,
+            showOn: 'button',
+            showOtherMonths: true,
+            changeYear: true,
+            changeMonth: true,
+            buttonImageOnly: true,
+            buttonImage: buttonImage,
+            yearRange: '1900:' + date.getFullYear(),
+            beforeShow: function(input, inst) {
+                /* 開く前に日付を上書き. */
+                var year = $(this).parents(".selectboxGroup").find(".year").val();
+                var month = $(this).parents(".selectboxGroup").find(".month").val();
+                var date = $(this).parents(".selectboxGroup").find(".date").val();
+                $(this).datepicker('setDate', new Date(year + '/' + month + '/' + date));
+                $(this).datepicker("refresh");
+            },
+            onSelect: function(dateText, inst) {
+                /* カレンダー確定時にフォームに反映. */
+                var dates = dateText.split('/');
+                $(this).parents(".selectboxGroup").find(".year").val(dates[0]);
+                $(this).parents(".selectboxGroup").find(".month").val(dates[1]);
+                $(this).parents(".selectboxGroup").find(".date").val(dates[2]);
+            }
+        });
+
+        // 生年月日カレンダー
+        var Year1 = minDate.getFullYear();
+        var Month1 = ("0" + (minDate.getMonth() + 1)).substr(-2);
+        var Day1 = ("0" + minDate.getDate()).substr(-2);
+
+        $(".datepicker2").datepicker({});
+        // セレクトボックスに値を設定
+        setTimeout(function() {
+            $(".datepicker2").each(function(i, element) {
+                $(element).parents(".selectboxGroup").find(".year").val(Year1);
+                // 1桁の時、設定しなければいけない形式が01,02・・・という形式のため、substrを使用して制御
+                $(element).parents(".selectboxGroup").find(".month").val(Month1);
+                $(element).parents(".selectboxGroup").find(".date").val(Day1);
+            });
+        });
+    });
+    </script>
+</head>
+
+<body class="backok">
+    <div id="wrapper">
+        <header id="header">
+
+            <body>
+                <div class="headerInner">
+                    <div class="logo">
+                        <a href="/RRnet/index.html" class="layout_pc">
+                            <img src="/RRnet/img/logo_orrnet.png" alt="在留届 - インターネットによるオンライン在留届">
+                        </a>
+                        <a href="/RRnet/index.html" class="layout_sp">
+                            <img src="/RRnet/img/sp/logo_orrnet_sp.png" alt="在留届 - インターネットによるオンライン在留届">
+                        </a>
+                    </div>
+                    <nav id="nav">
+                        <ul class="headerMenu">
+                            <li>
+                                <a href="/RRnet/agree.html">在留届を提出</a>
+                            </li>
+                            <li>
+                                <a href="/RRnet/residencereport/login">変更届・帰国届を提出</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="headerBnr">
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_pc"><img src="/RRnet/img/logo_mofa.png" alt="外務省"></a>
+                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_sp"><img src="/RRnet/img/sp/logo_mofa_sp.png" alt="外務省"></a>
+                    </div>
+                    <div id="logstatus">
+                        <ul class="headerIconMenu">
+                            <li class="faq"><a href="/RRnet/faq.html">よくある質問</a></li>
+                            <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menuBtn" id="menuBtn">
+                        <img src="/RRnet/img/sp/icon_menu.png" alt="MENU" id="menuIcon">
+                        <img src="/RRnet/img/sp/icon_close_menu.png" alt="MENU" id="closeMenuIcon">
+                    </div>
+                </div>
+                <div class="dropdownMenu" id="dropdownMenu">
+                    <div class="dropdownInner">
+                        <ul class="listNav">
+                            <li><a href="/RRnet/agree.html">在留届を提出する方</a></li>
+                            <li><a href="/RRnet/residencereport/login">変更届・帰国届を提出する方</a></li>
+                        </ul>
+                        <div class="halfColListBlock">
+                            <ul class="listNav">
+                                <li><a href="/RRnet/faq.html">よくあるご質問</a></li>
+                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </header>
+        <div class="zairyuSubmitForm">
+            <div class="breadcrumbs">
+                <div class="breadcrumbsInner">
+                    <ol>
+                        <li class="first"><a>トップページ</a><span></span></li>
+                        <li class="last current"><a>ログイン認証</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="zairyuSectionBlock">
+                <section class="contentsSection zairyuInfoSection">
+                    <div class="contentsInner">
+                        <h2>変更届、帰国・転出届を提出する方</h2>
+                    </div>
+                </section>
+            </div>
+            <div class="contentsInner">
+                <div class="zairyuSubmitFormInner p0">
+                    <ul class="mt10 mb10 importantNotices">
+                        <li>
+                            2018年3月17日以降、メールアドレスを利用者ＩＤ（※）として登録するよう変更しました。2018年3月16日以前に在留届を提出された方は、「利用者IDをお持ちでない方」からログインし、以下の操作をお願いします。<br>
+                            ※利用者IDの詳細は
+                            <a href="/RRnet/faq.html#q23" target="_blank" class="txtUnderline">FAQ (23)</a>をご参照ください。
+                        </li>
+                        <li>
+                            在留届を書面で日本国大使館、日本国総領事館に提出した方は、在留届を提出した在外公館に直接お問合せください。<br>
+                            管轄の在外公館は<a href="https://www.mofa.go.jp/mofaj/annai/zaigai/list/index.html" target="_blank" class="txtUnderline">こちら</a>からお調べいただけます。
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="box_inner">
+                        </div>
+                    </div>
+                    <table class="w100p table_fix">
+                        <tbody>
+                            <tr>
+                                <td class="tdleft_half sp_block">
+                                    <form action="/ezairyuLogin" method="post"><input type="hidden" name="_csrf" value="c4447560-5088-4bc0-8ce3-cac087457c73" />
+                                        <div class="yesidform">
+                                            <div class="padding_top25">
+                                                <p class="mb15 fs120p"></p>
+                                            </div>
+                                            <p class="txt fs18px">2018年3月17日以降に在留届を提出、もしくは変更届を提出されたことがある方はこちら </p>
+                                            <br>
+                                            <div>
+                                                <button type="button" class="btn_toggle fs100p w100p toggle_b toggle_close">
+                                                    利用者IDをお持ちの方
+                                                </button>
+                                            </div>
+                                            <div class="toggle">
+                                                <p class="txt mt10">
+                                                    <span class="requiredLabel">必須</span>必須項目は必ず入力してください。
+                                                </p>
+                                                <table class="formTable">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>利用者ID(メールアドレス)<span class="requiredLabel">必須</span></th>
+                                                            <td class="p10">
+                                                                <div class="inputText">
+                                                                    <div style="display: none;" class="checkedArea"><span style="display: none;" class="mailaddress">形式が不正です。</span><span style="display: none;" class="notblank">入力は必須です。</span></div><input type="email" class="w70p sp_fLeft checked" title="textbox" with="mail" name="username" value="" maxlength="254" placeholder="" rule="mailaddress notblank"></input>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>パスワード<span class="requiredLabel">必須</span></th>
+                                                            <td class="p10">
+                                                                <div class="inputText">
+                                                                    <div style="display: none;" class="checkedArea"><span style="display: none;" class="notblank">入力は必須です。</span></div><input type="password" class="w70p sp_fLeft checked" name="password" maxlength="30" rule="notblank"><label class="floatLabel">(半角英数記号)</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="submitButtonGroup txt_c p20">
+                                                    <button type="submit" class="btn btnPrimary w208_p txt_block limit_dual_submit" name="psoNewLogin">ログイン</button>
+                                                    <button type="reset" class="btn btnPrimary w208_p txt_block btncolor_not">クリア</button>
+                                                </div>
+                                                <div class="submitButtonGroup p0 mb20">
+                                                    <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change2" onClick="location.href='../user/password/reset'">パスワードを忘れた方</button>
+                                                </div>
+                                            </div>
+                                            <div class="border_blue_dashed"></div>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="tdright_half sp_block">
+                                    <form action="/ezairyuLogin" method="post"><input type="hidden" name="_csrf" value="c4447560-5088-4bc0-8ce3-cac087457c73" />
+                                        <div class="noidform mt30">
+                                            <p class="mb15 fs120p"></p>
+                                            <p class="txt fs18px">2018年3月16日以前に在留届を提出された方で、今回初めて変更届・帰国届を提出される方はこちら </p>
+                                            <br>
+                                            <div>
+                                                <button type="button" class="btn_toggle fs100p w100p toggle_b toggle_close">
+                                                    利用者IDをお持ちでない方
+                                                </button>
+                                            </div>
+                                            <div class="toggle">
+                                                <p class="txt mt10">
+                                                    <span class="requiredLabel">必須</span>必須項目は必ず入力してください。
+                                                </p>
+                                                <table class="formTable">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>生年月日<span class="requiredLabel">必須</span></th>
+                                                            <td class="p10">
+                                                                <div class="selectboxGroup twoLine">
+                                                                    <div class="selectboxDateArea" id="birthDay">
+                                                                        <label class="selectboxLabel mt10">西暦</label>
+                                                                        <div class="selectbox yearBox">
+                                                                            <select class="year" name="birthdayYear" id="birthdayYear">
+                                                                                <option value="1900">1900</option>
+                                                                                <option value="1901">1901</option>
+                                                                                <option value="1902">1902</option>
+                                                                                <option value="1903">1903</option>
+                                                                                <option value="1904">1904</option>
+                                                                                <option value="1905">1905</option>
+                                                                                <option value="1906">1906</option>
+                                                                                <option value="1907">1907</option>
+                                                                                <option value="1908">1908</option>
+                                                                                <option value="1909">1909</option>
+                                                                                <option value="1910">1910</option>
+                                                                                <option value="1911">1911</option>
+                                                                                <option value="1912">1912</option>
+                                                                                <option value="1913">1913</option>
+                                                                                <option value="1914">1914</option>
+                                                                                <option value="1915">1915</option>
+                                                                                <option value="1916">1916</option>
+                                                                                <option value="1917">1917</option>
+                                                                                <option value="1918">1918</option>
+                                                                                <option value="1919">1919</option>
+                                                                                <option value="1920">1920</option>
+                                                                                <option value="1921">1921</option>
+                                                                                <option value="1922">1922</option>
+                                                                                <option value="1923">1923</option>
+                                                                                <option value="1924">1924</option>
+                                                                                <option value="1925">1925</option>
+                                                                                <option value="1926">1926</option>
+                                                                                <option value="1927">1927</option>
+                                                                                <option value="1928">1928</option>
+                                                                                <option value="1929">1929</option>
+                                                                                <option value="1930">1930</option>
+                                                                                <option value="1931">1931</option>
+                                                                                <option value="1932">1932</option>
+                                                                                <option value="1933">1933</option>
+                                                                                <option value="1934">1934</option>
+                                                                                <option value="1935">1935</option>
+                                                                                <option value="1936">1936</option>
+                                                                                <option value="1937">1937</option>
+                                                                                <option value="1938">1938</option>
+                                                                                <option value="1939">1939</option>
+                                                                                <option value="1940">1940</option>
+                                                                                <option value="1941">1941</option>
+                                                                                <option value="1942">1942</option>
+                                                                                <option value="1943">1943</option>
+                                                                                <option value="1944">1944</option>
+                                                                                <option value="1945">1945</option>
+                                                                                <option value="1946">1946</option>
+                                                                                <option value="1947">1947</option>
+                                                                                <option value="1948">1948</option>
+                                                                                <option value="1949">1949</option>
+                                                                                <option value="1950">1950</option>
+                                                                                <option value="1951">1951</option>
+                                                                                <option value="1952">1952</option>
+                                                                                <option value="1953">1953</option>
+                                                                                <option value="1954">1954</option>
+                                                                                <option value="1955">1955</option>
+                                                                                <option value="1956">1956</option>
+                                                                                <option value="1957">1957</option>
+                                                                                <option value="1958">1958</option>
+                                                                                <option value="1959">1959</option>
+                                                                                <option value="1960">1960</option>
+                                                                                <option value="1961">1961</option>
+                                                                                <option value="1962">1962</option>
+                                                                                <option value="1963">1963</option>
+                                                                                <option value="1964">1964</option>
+                                                                                <option value="1965">1965</option>
+                                                                                <option value="1966">1966</option>
+                                                                                <option value="1967">1967</option>
+                                                                                <option value="1968">1968</option>
+                                                                                <option value="1969">1969</option>
+                                                                                <option value="1970">1970</option>
+                                                                                <option value="1971">1971</option>
+                                                                                <option value="1972">1972</option>
+                                                                                <option value="1973">1973</option>
+                                                                                <option value="1974">1974</option>
+                                                                                <option value="1975">1975</option>
+                                                                                <option value="1976">1976</option>
+                                                                                <option value="1977">1977</option>
+                                                                                <option value="1978">1978</option>
+                                                                                <option value="1979">1979</option>
+                                                                                <option value="1980">1980</option>
+                                                                                <option value="1981">1981</option>
+                                                                                <option value="1982">1982</option>
+                                                                                <option value="1983">1983</option>
+                                                                                <option value="1984">1984</option>
+                                                                                <option value="1985">1985</option>
+                                                                                <option value="1986">1986</option>
+                                                                                <option value="1987">1987</option>
+                                                                                <option value="1988">1988</option>
+                                                                                <option value="1989">1989</option>
+                                                                                <option value="1990">1990</option>
+                                                                                <option value="1991">1991</option>
+                                                                                <option value="1992">1992</option>
+                                                                                <option value="1993">1993</option>
+                                                                                <option value="1994">1994</option>
+                                                                                <option value="1995">1995</option>
+                                                                                <option value="1996">1996</option>
+                                                                                <option value="1997">1997</option>
+                                                                                <option value="1998">1998</option>
+                                                                                <option value="1999">1999</option>
+                                                                                <option value="2000">2000</option>
+                                                                                <option value="2001">2001</option>
+                                                                                <option value="2002">2002</option>
+                                                                                <option value="2003">2003</option>
+                                                                                <option value="2004">2004</option>
+                                                                                <option value="2005">2005</option>
+                                                                                <option value="2006">2006</option>
+                                                                                <option value="2007">2007</option>
+                                                                                <option value="2008">2008</option>
+                                                                                <option value="2009">2009</option>
+                                                                                <option value="2010">2010</option>
+                                                                                <option value="2011">2011</option>
+                                                                                <option value="2012">2012</option>
+                                                                                <option value="2013">2013</option>
+                                                                                <option value="2014">2014</option>
+                                                                                <option value="2015">2015</option>
+                                                                                <option value="2016">2016</option>
+                                                                                <option value="2017">2017</option>
+                                                                                <option value="2018">2018</option>
+                                                                                <option value="2019">2019</option>
+                                                                                <option value="2020">2020</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="labelYear floatLabel">年</label>
+                                                                        <div class="selectbox">
+                                                                            <select name="birthdayMonth" class="month">
+                                                                                <option value="01" selected="selected">
+                                                                                    01</option>
+                                                                                <option value="02">
+                                                                                    02</option>
+                                                                                <option value="03">
+                                                                                    03</option>
+                                                                                <option value="04">
+                                                                                    04</option>
+                                                                                <option value="05">
+                                                                                    05</option>
+                                                                                <option value="06">
+                                                                                    06</option>
+                                                                                <option value="07">
+                                                                                    07</option>
+                                                                                <option value="08">
+                                                                                    08</option>
+                                                                                <option value="09">
+                                                                                    09</option>
+                                                                                <option value="10">
+                                                                                    10</option>
+                                                                                <option value="11">
+                                                                                    11</option>
+                                                                                <option value="12">
+                                                                                    12</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="selectboxLabel monthLabel">月</label>
+                                                                        <div class="selectbox">
+                                                                            <select name="birthdayDay" class="date">
+                                                                                <option value="01" selected="selected">
+                                                                                    01</option>
+                                                                                <option value="02">
+                                                                                    02</option>
+                                                                                <option value="03">
+                                                                                    03</option>
+                                                                                <option value="04">
+                                                                                    04</option>
+                                                                                <option value="05">
+                                                                                    05</option>
+                                                                                <option value="06">
+                                                                                    06</option>
+                                                                                <option value="07">
+                                                                                    07</option>
+                                                                                <option value="08">
+                                                                                    08</option>
+                                                                                <option value="09">
+                                                                                    09</option>
+                                                                                <option value="10">
+                                                                                    10</option>
+                                                                                <option value="11">
+                                                                                    11</option>
+                                                                                <option value="12">
+                                                                                    12</option>
+                                                                                <option value="13">
+                                                                                    13</option>
+                                                                                <option value="14">
+                                                                                    14</option>
+                                                                                <option value="15">
+                                                                                    15</option>
+                                                                                <option value="16">
+                                                                                    16</option>
+                                                                                <option value="17">
+                                                                                    17</option>
+                                                                                <option value="18">
+                                                                                    18</option>
+                                                                                <option value="19">
+                                                                                    19</option>
+                                                                                <option value="20">
+                                                                                    20</option>
+                                                                                <option value="21">
+                                                                                    21</option>
+                                                                                <option value="22">
+                                                                                    22</option>
+                                                                                <option value="23">
+                                                                                    23</option>
+                                                                                <option value="24">
+                                                                                    24</option>
+                                                                                <option value="25">
+                                                                                    25</option>
+                                                                                <option value="26">
+                                                                                    26</option>
+                                                                                <option value="27">
+                                                                                    27</option>
+                                                                                <option value="28">
+                                                                                    28</option>
+                                                                                <option value="29">
+                                                                                    29</option>
+                                                                                <option value="30">
+                                                                                    30</option>
+                                                                                <option value="31">
+                                                                                    31</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="selectboxLabel dayLabel">日</label>
+                                                                    </div>
+                                                                    <div class="calendarArea">
+                                                                        <input type="text" value="" class="datepicker2" style="display: none;" id="datepicker1" />
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>日本国旅券(パスポート)番号<span class="requiredLabel">必須</span></th>
+                                                            <td class="p10">
+                                                                <div class="inputText">
+                                                                    <div style="display: none;" class="checkedArea"><span style="display: none;" class="passportnumber">半角英字2桁＋半角数字7桁の形式で入力してください。</span><span style="display: none;" class="notblank">入力は必須です。</span></div><input type="text" class="w70p sp_fLeft checked" title="textbox" with="pass" name="passportNo" value="" maxlength="9" placeholder="" rule="passportnumber notblank"></input>
+                                                                </div>
+                                                                <p class="txt mt12">＊現在お持ちの有効な日本国旅券（パスポート）番号を（半角大文字英数）で入力してください。</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>パスワード<span class="requiredLabel">必須</span></th>
+                                                            <td class="p10">
+                                                                <div class="inputText">
+                                                                    <div style="display: none;" class="checkedArea"><span style="display: none;" class="notblank">入力は必須です。</span></div><input type="password" class="w70p sp_fLeft checked" name="password" maxlength="30" rule="notblank"><label class="floatLabel">(半角英数記号)</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="submitButtonGroup txt_c p20">
+                                                    <button type="submit" class="btn btnPrimary w208_p txt_block limit_dual_submit" name="psoOldLogin">
+                                                        ログイン</button>
+                                                    <button type="reset" class="btn btnPrimary w208_p txt_block btncolor_not">クリア</button>
+                                                </div>
+                                                <div class="submitButtonGroup p0 mb20">
+                                                    <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change2" onClick="location.href='../residencereport/password/reset'">パスワードを忘れた方</button>
+                                                </div>
+                                            </div>
+                                            <div class="border_blue_dashed"></div>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="submitButtonGroup">
+                        <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change4" onClick="location.href='../index.html'">トップページへ戻る</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+
+            <body>
+                <div class="contentsInner">
+                    <ul class="footerMenu layout_pc">
+                        <li><a href="/RRnet/index.html">TOP</a></li>
+                        <li><a href="/RRnet/faq.html">よくある質問</a></li>
+                        <li><a href="/RRnet/legalmatters.html">法的事項</a></li>
+                        <li><a href="/RRnet/privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="/RRnet/accessibility.html">アクセシビリティ</a></li>
+                        <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                    </ul>
+                    <div class="layout_sp">
+                        <ul class="listNav">
+                            <li><a href="/RRnet/index.html">TOP</a></li>
+                            <li><a href="/RRnet/faq.html">よくある質問</a></li>
+                            <li><a href="/RRnet/legalmatters.html">法的事項</a></li>
+                            <li><a href="/RRnet/privacy.html">プライバシーポリシー</a></li>
+                            <li><a href="/RRnet/accessibility.html">アクセシビリティ</a></li>
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <div class="footerBottomBar">
+                            <div id="pageTop">
+                                <img src="/RRnet/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+                </div>
+                <div class="addressArea">
+                    <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                        <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                        <br class="contact">
+                        電話（代表）03-3580-3311　法人番号　9000012040001
+                    </p>
+                </div>
+            </body>
+        </footer>
+    </div>
+</body>
+
+</html>

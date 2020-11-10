@@ -19,7 +19,23 @@ def RRnet():
 
 @app.route('/RRnet/agree')
 def RRnet_agree():
-    return render_template('/RRnet/agree.html')   
+    return render_template('/RRnet/agree.html') 
+
+@app.route('/RRnet/faq')
+def RRnet_faq():
+    return render_template('/RRnet/faq.html') 
+
+@app.route('/RRnet/legalmatters')
+def RRnet_legalmatters():
+    return render_template('/RRnet/legalmatters.html')
+
+@app.route('/RRnet/privacy')
+def RRnet_privacy():
+    return render_template('/RRnet/privacy.html')   
+
+@app.route('/RRnet/accessibility')
+def RRnet_accessibility():
+    return render_template('/RRnet/accessibility.html')
 
 @app.route('/tabireg')
 def tabireg():
