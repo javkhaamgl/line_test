@@ -19,16 +19,16 @@
     <meta name="google-site-verification" content="N0I7Gn7tk6h1v2Q-qlCJqWOkGAi4X4FP06SXTddKtb8" />
     <meta name="format-detection" content="telephone=no,email=no">
     <title>在留届 - インターネットによるオンライン在留届</title>
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/jquery-ui.js"></script>
-    <link href="/css/jquery-ui.css" rel="stylesheet" />
-    <link href="/css/jquery-ui.structure.css" rel="stylesheet" />
-    <link href="/css/jquery-ui.theme.css" rel="stylesheet" />
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <link href="{{ url_for('static',filename='css/jquery-ui.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='css/jquery-ui.structure.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static',filename='css/jquery-ui.theme.css') }}" rel="stylesheet" />
     <noscript>
         <label>&lt;img src="/js/awstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"&gt;</label>
     </noscript>
-    <script type="text/javascript" src="/js/common.js" integrity="sha256-Hl7gjBL29cI5/krhwLFRsk17CR9d1QhG9KveTt9I+BI=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/checked.js" integrity="sha256-hJaY1V9nt2xVdsedT2JbWjzV3vlSw1hYEWh1M4j/K5g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/common.js') }}" integrity="sha256-Hl7gjBL29cI5/krhwLFRsk17CR9d1QhG9KveTt9I+BI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/checked.js') }}" integrity="sha256-hJaY1V9nt2xVdsedT2JbWjzV3vlSw1hYEWh1M4j/K5g=" crossorigin="anonymous"></script>
     <script type="text/javascript">
     /*<![CDATA[*/
     var common_contextPath = "";
@@ -45,11 +45,10 @@
 
     gtag('config', 'UA-49881348-4');
     </script>
-    <link rel="stylesheet" href="/RRnet/css/common.css">
-    <link rel="stylesheet" href="/RRnet/css/style.css">
-    <script type="text/javascript" src="/RRnet/js/html5.js"></script>
-    <script type="text/javascript" src="/RRnet/js/application.js"></script>
-    <script type="text/javascript" src="/RRnet/js/inputlimit.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='RRnet/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='RRnet/js/application.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='RRnet/js/inputlimit.js') }}"></script>
     <script type="text/javascript">
     $(function() {
         var FUTURE_ADD_YEAR = 10;
@@ -110,57 +109,47 @@
 <body class="backok">
     <div id="wrapper">
         <header id="header">
-
-            <body>
-                <div class="headerInner">
-                    <div class="logo">
-                        <a href="/RRnet/index.html" class="layout_pc">
-                            <img src="/RRnet/img/logo_orrnet.png" alt="在留届 - インターネットによるオンライン在留届">
-                        </a>
-                        <a href="/RRnet/index.html" class="layout_sp">
-                            <img src="/RRnet/img/sp/logo_orrnet_sp.png" alt="在留届 - インターネットによるオンライン在留届">
-                        </a>
-                    </div>
-                    <nav id="nav">
-                        <ul class="headerMenu">
-                            <li>
-                                <a href="/RRnet/agree.html">在留届を提出</a>
-                            </li>
-                            <li>
-                                <a href="/RRnet/residencereport/login">変更届・帰国届を提出</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="headerBnr">
-                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_pc"><img src="/RRnet/img/logo_mofa.png" alt="外務省"></a>
-                        <a href="http://www.mofa.go.jp/mofaj/" class="layout_sp"><img src="/RRnet/img/sp/logo_mofa_sp.png" alt="外務省"></a>
-                    </div>
-                    <div id="logstatus">
-                        <ul class="headerIconMenu">
-                            <li class="faq"><a href="/RRnet/faq.html">よくある質問</a></li>
-                            <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
-                        </ul>
-                    </div>
-                    <div class="menuBtn" id="menuBtn">
-                        <img src="/RRnet/img/sp/icon_menu.png" alt="MENU" id="menuIcon">
-                        <img src="/RRnet/img/sp/icon_close_menu.png" alt="MENU" id="closeMenuIcon">
-                    </div>
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="/RRnet" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/logo_orrnet.png" alt="在留届 - インターネットによるオンライン在留届"></a>
+                    <a href="/RRnet" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/logo_orrnet_sp.png" alt="在留届 - インターネットによるオンライン在留届"></a>
                 </div>
-                <div class="dropdownMenu" id="dropdownMenu">
-                    <div class="dropdownInner">
+                <nav id="nav">
+                    <ul class="headerMenu">
+                    </ul>
+                </nav>
+                <div class="headerBnr">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/logo_mofa.png" alt="外務省"></a>
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/logo_mofa_sp.png" alt="外務省"></a>
+                </div>
+                <div id="logstatus">
+                    <ul class="headerIconMenu">
+                        <li class="faq"><a href="/RRnet/faq">よくある質問</a></li>
+                        <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_menu.png" alt="MENU" id="menuIcon">
+                    <img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/icon_close_menu.png" alt="MENU" id="closeMenuIcon">
+                </div>
+            </div>
+            <div class="dropdownMenu" id="dropdownMenu">
+                <div class="dropdownInner">
+                    <ul class="listNav">
+                        <li><a href="/RRnet/agree">在留届を提出する方</a></li>
+                        <li><a href="residencereport/login">変更届・帰国届を提出する方</a></li>
+                        <li><a href="residencereport/password/reset">パスワードを忘れた方</a></li>
+                    </ul>
+                    <div class="halfColListBlock">
                         <ul class="listNav">
-                            <li><a href="/RRnet/agree.html">在留届を提出する方</a></li>
-                            <li><a href="/RRnet/residencereport/login">変更届・帰国届を提出する方</a></li>
+                            <li><a href="/RRnet/faq">よくあるご質問</a></li>
                         </ul>
-                        <div class="halfColListBlock">
-                            <ul class="listNav">
-                                <li><a href="/RRnet/faq.html">よくあるご質問</a></li>
-                                <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
-                            </ul>
-                        </div>
+                        <ul class="listNav">
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
                     </div>
                 </div>
-            </body>
+            </div>
         </header>
         <div class="zairyuSubmitForm">
             <div class="breadcrumbs">
@@ -184,7 +173,7 @@
                         <li>
                             2018年3月17日以降、メールアドレスを利用者ＩＤ（※）として登録するよう変更しました。2018年3月16日以前に在留届を提出された方は、「利用者IDをお持ちでない方」からログインし、以下の操作をお願いします。<br>
                             ※利用者IDの詳細は
-                            <a href="/RRnet/faq.html#q23" target="_blank" class="txtUnderline">FAQ (23)</a>をご参照ください。
+                            <a href="/RRnet/faq#q23" target="_blank" class="txtUnderline">FAQ (23)</a>をご参照ください。
                         </li>
                         <li>
                             在留届を書面で日本国大使館、日本国総領事館に提出した方は、在留届を提出した在外公館に直接お問合せください。<br>
@@ -524,7 +513,7 @@
                                                     <button type="reset" class="btn btnPrimary w208_p txt_block btncolor_not">クリア</button>
                                                 </div>
                                                 <div class="submitButtonGroup p0 mb20">
-                                                    <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change2" onClick="location.href='../residencereport/password/reset'">パスワードを忘れた方</button>
+                                                    <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change2" onClick="location.href='/RRnet/residencereport/password/reset'">パスワードを忘れた方</button>
                                                 </div>
                                             </div>
                                             <div class="border_blue_dashed"></div>
@@ -535,48 +524,43 @@
                         </tbody>
                     </table>
                     <div class="submitButtonGroup">
-                        <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change4" onClick="location.href='../index.html'">トップページへ戻る</button>
+                        <button type="button" class="btn btnPrimary w208_p txt_block btncolor_change4" onClick="location.href='/RRnet'">トップページへ戻る</button>
                     </div>
                 </div>
             </div>
         </div>
         <footer id="footer">
-
-            <body>
-                <div class="contentsInner">
-                    <ul class="footerMenu layout_pc">
-                        <li><a href="/RRnet/index.html">TOP</a></li>
-                        <li><a href="/RRnet/faq.html">よくある質問</a></li>
-                        <li><a href="/RRnet/legalmatters.html">法的事項</a></li>
-                        <li><a href="/RRnet/privacy.html">プライバシーポリシー</a></li>
-                        <li><a href="/RRnet/accessibility.html">アクセシビリティ</a></li>
+            <div class="contentsInner">
+                <ul class="footerMenu layout_pc">
+                    <li><a href="/RRnet">TOP</a></li>
+                    <li><a href="/RRnet/faq">よくある質問</a></li>
+                    <li><a href="/RRnet/legalmatters">法的事項</a></li>
+                    <li><a href="/RRnet/privacy">プライバシーポリシー</a></li>
+                    <li><a href="/RRnet/accessibility">アクセシビリティ</a></li>
+                    <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
+                </ul>
+                <div class="layout_sp">
+                    <ul class="listNav">
+                        <li><a href="/RRnet">TOP</a></li>
+                        <li><a href="/RRnet/faq">よくある質問</a></li>
+                        <li><a href="/RRnet/legalmatters">法的事項</a></li>
+                        <li><a href="/RRnet/privacy">プライバシーポリシー</a></li>
+                        <li><a href="/RRnet/accessibility">アクセシビリティ</a></li>
                         <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
                     </ul>
-                    <div class="layout_sp">
-                        <ul class="listNav">
-                            <li><a href="/RRnet/index.html">TOP</a></li>
-                            <li><a href="/RRnet/faq.html">よくある質問</a></li>
-                            <li><a href="/RRnet/legalmatters.html">法的事項</a></li>
-                            <li><a href="/RRnet/privacy.html">プライバシーポリシー</a></li>
-                            <li><a href="/RRnet/accessibility.html">アクセシビリティ</a></li>
-                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/rrnet_contact" target="_blank">お問い合わせ</a></li>
-                        </ul>
-                        <div class="footerBottomBar">
-                            <div id="pageTop">
-                                <img src="/RRnet/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
-                            </div>
-                        </div>
+                    <div class="footerBottomBar">
+                        <div id="pageTop"><img src="https://www.ezairyu.mofa.go.jp/RRnet/img/sp/pagetop.png" alt="PAGETOP" class="pagetop"></div>
                     </div>
-                    <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
                 </div>
-                <div class="addressArea">
-                    <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
-                        <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
-                        <br class="contact">
-                        電話（代表）03-3580-3311　法人番号　9000012040001
-                    </p>
-                </div>
-            </body>
+                <div class="copyright">Copyright &copy; Ministry of Foreign Affairs of Japan</div>
+            </div>
+            <div class="addressArea">
+                <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                    <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                    <br class="contact">
+                    電話（代表）03-3580-3311　法人番号　9000012040001
+                </p>
+            </div>
         </footer>
     </div>
 </body>
