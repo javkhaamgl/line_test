@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="private">
+    <meta name="content-language" content="ja">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="google-site-verification" content="N0I7Gn7tk6h1v2Q-qlCJqWOkGAi4X4FP06SXTddKtb8" />
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>たびレジ - 外務省 海外安全情報配信サービス</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='tabireg/css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-ui.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/html5.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='tabireg/js/application.js') }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49881348-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49881348-4');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="headerInner">
+                <div class="logo">
+                    <a href="/tabireg"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo.png" alt="「たびレジ」 外務省 海外安全情報配信サービス">
+                        <p>
+                            外務省 海外安全情報配信サービス
+                        </p>
+                    </a>
+                </div>
+                <nav id="nav">
+                    <ul class="headerMenu">
+                        <li class="registerMenu">
+                            <a href="/tabireg/agree"><span class="redColor">新規利用者登録をする</span></a>
+                            <a href="login">
+                                <span class="subtxt2">追加・変更・削除</span>
+                                <div class="icon">
+                                    <div class="pencil"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="instantRegisterMenu">
+                            <a href="/tabireg/simple/register"><span class="blueColor">利用者登録をせずに利用する</span></a>
+                            <a href="/tabireg/simple/auth">
+                                <span class="subtxt2">追加・変更・削除</span>
+                                <div class="icon">
+                                    <div class="pencil"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="headerIconMenuArea">
+                        <ul class="headerIconMenu">
+                            <li class="guidance"><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                            <li class="faq"><a href="faq.html">よくある質問</a></li>
+                            <li class="inquiry"><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <div id="logstatus">
+                            <ul class="headerIconMenu">
+                                <li class="corp"><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="headerBnr">
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_pc"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/logo_mofa.png" alt="PC 外務省"></a>
+                    <a href="http://www.mofa.go.jp/mofaj/" target="_blank" class="layout_sp"><img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/logo_mofa_sp.png" alt="SP 外務省"></a>
+                </div>
+                <div class="menuBtn" id="menuBtn">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_menu.png" alt="MENU icon" id="menuIcon">
+                    <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/icon_close_menu.png" alt="closeMenu icon" id="closeMenuIcon">
+                </div>
+            </div>
+            <div class="dropdownMenu" id="dropdownMenu">
+                <div class="dropdownInner">
+                    <ul class="listNav">
+                        <li><a href="/tabireg/agree" class="redColor primaryMenu primary1">新規利用者登録<br>をする</a><a href="login" class="submenu submenu1">追加・変更・削除</a></li>
+                        <li><a href="/tabireg/simple/register" class="blueColor primaryMenu primary2">利用者登録<br>をせずに利用する</a><a href="simple/auth" class="submenu submenu2">追加・変更・削除</a></li>
+                    </ul>
+                    <div class="halfColListBlock">
+                        <ul class="listNav">
+                            <li><a href="registration.html" target="_blank" onclick="var res = window.open('registration.html','登録方法','width=1000,height=800,scrollbars=yes,resizable=yes'); return (res === null);">登録方法</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="/tabireg/faq">よくある質問</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a></li>
+                        </ul>
+                        <ul class="listNav">
+                            <li><a href="/tabireg/companylist">企業・法人の方へ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="contents">
+            <div class="breadcrumbs">
+                <div class="breadcrumbsInner">
+                    <ol class="clearfix">
+                        <li class="first"><a href="/tabireg">トップページ</a><span></span></li>
+                        <li class="current"><a href="/tabireg/companylist">企業等とのデータ連携</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="contentsInner">
+                <div class="privacy_box of_auto border_no">
+                    <h1 class="mt20 fs140p">「たびレジ」連携インターフェイスの利用について</h1>
+                    <div class="contents">
+                        <div class="contents_area">
+                            <div class="inner">
+                                <div class="container5">
+                                    <h3 class="mt20 mb20">海外旅行関連企業等の皆様へ</h3>
+                                    <div class="pp_text_area">
+                                        <p class="pp_text lineh_15e">
+                                            「たびレジ」では、海外旅行関連業者等の皆様向けに海外渡航者のデータを一括で登録することができるインターフェイスを提供しています。<br />
+                                            所定のフォーマットの旅行情報ファイルを「たびレジ」システムにアップロードすることで海外旅行申込者の情報を「たびレジ」に登録することができるインターフェイスです。<br />
+                                            <span class="redColor">「たびレジ」へ旅行情報を連携することにより、海外旅行者へ外務省から旅の安全に関する情報や、緊急時の安否確認を実施いたします。<br />
+                                                海外旅行者の安全な旅行の一助として、海外旅行関連業者等の皆様は「たびレジ」インターフェイスのご利用をご検討ください。</span><br />
+                                            詳しい内容については<a class="txtUnderline" href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact-company" target="_blank">こちら</a>からお問い合わせください。<br />
+                                            <img class="img-responsive" src="https://www.ezairyu.mofa.go.jp/tabireg/img/faq18.png" alt="faq18">
+                                        </p>
+                                    </div>
+                                    <h3 class="mt20 mb20">「たびレジ」データ連携協力各社</h3>
+                                    <div class="pp_text_area border_type1">
+                                        <p class="pp_text contentTitleLine mt30">
+                                            １．旅行会社等によるご利用例
+                                        </p>
+                                        <p class="pp_text lineh_15e mb20">
+                                            各企業・団体の提供するサービス等の申し込みと同時に「たびレジ」に登録できます。<br />
+                                            ※詳細は各企業等にお問い合わせください。
+                                        </p>
+                                        <p class="pp_text lineh_12e mb10">
+                                            　[旅行会社]
+                                        </p>
+                                        <ul class="lineh_12e mb20">
+                                            <li>株式会社エアトリ</li>
+                                            <li>株式会社エイチ・アイ・エス 法人営業グループ</li>
+                                            <li>株式会社ＩＡＣＥトラベル</li>
+                                            <li>ネスグローバル株式会社</li>
+                                            <li>株式会社ネクストヴィジョン</li>
+                                            <li>株式会社ウイングメイト</li>
+                                            <li>名鉄観光サービス株式会社</li>
+                                            <li>郵船トラベル株式会社</li>
+                                            <li>東武トップツアーズ株式会社　東京BTM事業部</li>
+                                            <li>株式会社日本旅行・グローバルビジネストラベル　アローヘッド事業本部</li>
+                                            <li>株式会社アサヒトラベルインターナショナル</li>
+                                            <li>株式会社阪急阪神ビジネストラベル</li>
+                                            <li>株式会社アートツーリスト</li>
+                                            <li>株式会社エヌオーイー／法人営業グループ</li>
+                                            <li>株式会社日本旅行　ＢＴＭ営業部</li>
+                                            <li>株式会社トヨタツーリストインターナショナル</li>
+                                            <li>双日ツーリスト株式会社</li>
+                                            <li>株式会社アイラス</li>
+                                            <li>株式会社日本橋夢屋</li>
+                                            <li>エムオーツーリスト株式会社</li>
+                                            <li>株式会社JTBグループ（法人事業）</li>
+                                            <li>株式会社大塚商会　旅行SP</li>
+                                            <li>株式会社旅工房</li>
+                                            <li>株式会社JTBビジネストラベルソリューションズ</li>
+                                            <li>阪神トラベル・インターナショナル株式会社</li>
+                                            <li>西鉄旅行株式会社</li>
+                                            <li>株式会社アイ・テイ・エス</li>
+                                            <li>株式会社JTB（アラート☆スター）</li>
+                                            <li>通商航空サービス株式会社</li>
+                                            <li>アルプス・トラベル・サービス株式会社</li>
+                                        </ul>
+                                        <p class="pp_text lineh_12e mb10">
+                                            　[保険会社]<br />
+                                        </p>
+                                        <ul class="lineh_12e mb20">
+                                            <li>東京海上日動火災保険株式会社</li>
+                                            <li>東京海上インターナショナルアシスタンス株式会社</li>
+                                        </ul>
+                                        <p class="pp_text lineh_12e mb10">
+                                            　[その他]<br />
+                                        </p>
+                                        <ul class="lineh_12e mb20">
+                                            <li>成功する留学（留学エージェント）</li>
+                                            <li>株式会社ビジョン（グローバルWiFi）</li>
+                                            <li>日本エマージェンシーアシスタンス株式会社（留学生危機管理サービスOSSMA）</li>
+                                            <li>株式会社コム・アンド・コム(安否確認サービス「LifeMail Global」)</li>
+                                            <li>日本アイラック株式会社</li>
+                                        </ul>
+                                        <p class="pp_text lineh_12e mb10">
+                                            　[特定非営利活動法人]
+                                        </p>
+                                        <ul class="lineh_12e mb20">
+                                            <li>海外留学生安全対策協議会</li>
+                                        </ul>
+                                        <p class="pp_text contentTitleLine mt30">
+                                            ２．各企業等内でのご利用例
+                                        </p>
+                                        <p class="pp_text lineh_15e mb10">
+                                            社員等の出張情報等を自動的に「たびレジ」に登録できます。
+                                        </p>
+                                        <ul class="lineh_12e mb20">
+                                            <li>東芝デバイスソリューション株式会社</li>
+                                            <li>三菱重工業株式会社</li>
+                                            <li>株式会社JVCケンウッド・パートナーズ</li>
+                                            <li>千代田化工建設株式会社</li>
+                                            <li>日本工営株式会社</li>
+                                            <li>学校法人明治大学</li>
+                                            <li>三菱日立パワーシステムズ株式会社</li>
+                                            <li>東洋エンジニアリング株式会社</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="addButtonGroup">
+                    <a href="/tabireg" class="btn btnBack sp_btnMargin">
+                        トップページに戻る
+                    </a>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="contentsInner">
+                    <div class="layout_sp">
+                        <ul class="listNav">
+                            <li>
+                                <a href="/tabireg">TOP</a>
+                            </li>
+                            <li>
+                                <a href="/tabireg/faq">よくある質問</a>
+                            </li>
+                            <li>
+                                <a href="/tabireg/legalmatters">法的事項</a>
+                            </li>
+                            <li>
+                                <a href="/tabireg/privacy">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="https://www.enq.ezairyu.mofa.go.jp/m/tabireg_contact" target="_blank">お問い合わせ</a>
+                            </li>
+                        </ul>
+                        <div class="footerBottomBar">
+                            <div id="pageTop">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/sp/pagetop.png" alt="PAGETOP" class="pagetop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        Copyright &copy; Ministry of Foreign
+                        Affairs of Japan
+                    </div>
+                    <ul class="socialBtns">
+                        <li>
+                            <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-url="https://www.ezairyu.mofa.go.jp/tabireg/" data-text="「たびレジ」に登録すると、こんなメリットがあるよ！ ① お役立ち情報の提供、 ②緊急時の情報提供、③緊急時の連絡。登録はこちら。" data-lang="ja" data-hashtags="たびレジ">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_twitter.png" alt="twitter icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="_2vmz" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ezairyu.mofa.go.jp%2Ftabireg%2F&amp;display=popup&amp;ref=plugin&amp;src=like&amp;kid_directed_site=0" target="_blank" id="u_0_4">
+                                <img src="https://www.ezairyu.mofa.go.jp/tabireg/img/icon_facebook.png" alt="facebook icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="addressArea">
+                    <p class="address">外務省　〒100-8919　東京都千代田区霞が関2-2-1
+                        <a href="http://www.mofa.go.jp/mofaj/annai/address/index.html" target="_blank" class="link-map">地図</a>　
+                        <br class="contact">
+                        電話（代表）03-3580-3311　法人番号　9000012040001
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

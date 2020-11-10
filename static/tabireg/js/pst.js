@@ -314,7 +314,7 @@ var Tabireg = (function($) {
                     handler(JSON.parse(nations));
                     return;
                 }
-                $.getJSON(path("/tabireg/json/simpleNation.json")).done(function(nations) {
+                $.getJSON(path("/static/html/simpleNation.json")).done(function(nations) {
                     Tabireg.setCache("nations", nations);
                     handler(nations);
                 }).fail(function(errorData) {

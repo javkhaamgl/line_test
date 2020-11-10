@@ -1160,7 +1160,7 @@ table.noborderTable tr, th, td {
     bottom: 1px;
     width: 26px;
     height: 20px;
-    background: url('../img/check.png') no-repeat;
+    background: url('https://www.ezairyu.mofa.go.jp/img/check.png') no-repeat;
 }
 
 .selectbox {
@@ -1188,7 +1188,7 @@ table.noborderTable tr, th, td {
     font-weight: normal;
     cursor: pointer;
     background: none;
-    background-image: url('../img/select_arrow.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/select_arrow.png');
     background-position: 76px center;
     background-repeat: no-repeat;
     position: relative;
@@ -1405,11 +1405,11 @@ table.familyBox td.edit {
     margin-top:-8px;
     width:15px;
     height:15px;
-    background:url(../img/icon_arrow.png) no-repeat -40px -40px;
+    background:url(https://www.ezairyu.mofa.go.jp/img/icon_arrow.png) no-repeat -40px -40px;
     background-size:auto;
 }
 .btn_toggle.open:after{
-    background:url(../img/icon_arrow.png) no-repeat -40px 0px;
+    background:url(https://www.ezairyu.mofa.go.jp/img/icon_arrow.png) no-repeat -40px 0px;
 }
 .tdleft_half{
     padding-right: 1%;
@@ -1544,19 +1544,19 @@ ul.headerIconMenu li a:after {
 }
 
 ul.headerIconMenu li.faq a:after {
-    background-image: url('../img/icon_faq.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/icon_faq.png');
 }
 
 ul.headerIconMenu li.inquiry a:after {
-    background-image: url('../img/icon_inquiry.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/icon_inquiry.png');
 }
 
 ul.headerIconMenu li.login a:after {
-    background-image: url('../img/icon_normal.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/icon_normal.png');
 }
 
 ul.headerIconMenu li.logout a:after {
-    background-image: url('../img/icon_normal.png');
+    background-image: url('https://www.ezairyu.mofa.go.jp/img/icon_normal.png');
 }
 
 #wrapper .dropdownMenu {
@@ -2121,7 +2121,7 @@ ul.headerIconMenu li.logout a:after {
     .msgAlert span:after {
         width: 24px;
         height: 24px;
-        background: url(../img/sp/icon_alert_sp.png) no-repeat;
+        background: url(https://www.ezairyu.mofa.go.jp/img/sp/icon_alert_sp.png) no-repeat;
         background-size: 24px 24px;
     }
     .listCol3 li {
