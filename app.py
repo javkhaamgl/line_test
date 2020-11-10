@@ -37,6 +37,10 @@ def RRnet_privacy():
 def RRnet_accessibility():
     return render_template('/RRnet/accessibility.html')
 
+@app.route('/RRnet/residencereport/login')
+def RRnet_residencereport_login():
+    return render_template('/RRnet/residencereport/login.html')
+
 @app.route('/tabireg')
 def tabireg():
     return render_template('/tabireg/index.html')
